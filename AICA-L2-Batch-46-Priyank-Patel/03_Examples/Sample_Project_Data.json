@@ -1,0 +1,39 @@
+{
+  "projectName": "SAMPLE HEIGHTS (example data)",
+  "reraNo": "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA00000/010125",
+  "completion": "2028-12-31",
+  "useType": "Mix",
+  "promoter": "SAMPLE DEVELOPERS LLP",
+  "email": "info@sampledevelopers.in",
+  "mobile": "98250 00000",
+  "signatory": "Mr. Sample Partner",
+  "units": [
+    {
+      "b": "A",
+      "s": "10",
+      "o": "0",
+      "r": "48"
+    },
+    {
+      "b": "B",
+      "s": "0",
+      "o": "24",
+      "r": "0"
+    }
+  ],
+  "specs": "RCC frame structure\nVitrified tiles flooring\nConcealed copper wiring\nGranite kitchen platform",
+  "amenities": "Club house\nGymnasium\nChildren play area\nCCTV & 24x7 security\nPower backup for common areas",
+  "listStyle": "inline",
+  "accName": "Sample Heights RERA Collection Account",
+  "accNo": "001234567891234",
+  "loan": "લાગુ પડતું નથી",
+  "qrMode": "link",
+  "qrUrl": "https://gujrera.gujarat.gov.in",
+  "qrImg": "",
+  "qrSize": "20",
+  "preset": "244x305",
+  "w": "244",
+  "h": "305",
+  "bg": "#FFFFFF",
+  "lh": "2.5"
+}
