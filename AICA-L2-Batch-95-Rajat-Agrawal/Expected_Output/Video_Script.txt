@@ -1,0 +1,17 @@
+Hello, I am CA Rajat Agrawal. My capstone is a Python-based Form 35 Appeal Preparation Assistant with optional local generative AI.
+
+It addresses repeated data entry and drafting work when preparing an income tax appeal. I am using wholly fictional documents, not client data.
+
+I load the assessment order, computation sheet, demand notice and client computation. The app extracts identifiers and figures and labels fields for review.
+
+The service date is deliberately not guessed. I verify it using the fictional service record. I enter the intended filing date so the delay indicator updates.
+
+The template mode uses programmed rules and stored paragraphs. It does not reason through the case with a generative model. I replace confirmation placeholders with facts supported by the record.
+
+The optional AI button connects to a downloaded local model through Ollama. If enabled and actually tested, it prepares a fresh draft and review notes. These require manual verification; the application does not research judgments or guarantee legal accuracy.
+
+I enter the synthetic Rs.1,000 challan particulars manually, review all fields and confirm the service and final-review checkboxes. I save the draft and export the working Form 35 PDF and separate facts and grounds.
+
+The application assists preparation. It does not file an appeal on the tax portal. I retain responsibility for verification of facts, law, dates, fees and final drafting.
+
+Thank you.

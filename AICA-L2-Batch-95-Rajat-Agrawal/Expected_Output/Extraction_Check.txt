@@ -1,0 +1,7 @@
+01_Assessment_Order.pdf: Assessment order - 12 values read
+02_Assessment_Computation.pdf: Computation sheet - 9 values read
+03_Demand_Notice.pdf: Demand notice u/s 156 - 5 values read
+04_Client_Return_Computation.pdf: Client computation - 7 values read
+
+Expected fields verified: {"pan": "DEMPA1234Z", "assessment_year": "2024-25", "income_assessed": "17,00,000", "total_addition": "5,00,000", "disputed_demand": "2,02,800", "total_tax_paid": "1,79,400"}
+Final review checks: PASS
