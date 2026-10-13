@@ -1,0 +1,497 @@
+[
+ {
+  "s_no": 369,
+  "hsn": "5806",
+  "description": "Narrow woven fabrics, other than goods of heading 5807; narrow fabrics consisting of warp without weft assembled by means of an adhesive (bolducs)"
+ },
+ {
+  "s_no": 370,
+  "hsn": "5807",
+  "description": "Labels, badges and similar articles of textile materials, in the piece, in strips or cut to shape or size, not embroidered"
+ },
+ {
+  "s_no": 371,
+  "hsn": "5808",
+  "description": "Braids in the piece; ornamental trimmings in the piece, without embroidery, other than knitted or crocheted; tassels, pompons and similar articles; saree fall"
+ },
+ {
+  "s_no": 372,
+  "hsn": "5809",
+  "description": "Woven fabrics of metal thread and woven fabrics of metallised yarn of heading 5605, of a kind used in apparel, as furnishing fabrics or for similar purposes, not elsewhere specified or included; such as Zari borders"
+ },
+ {
+  "s_no": 373,
+  "hsn": "5809, 5810",
+  "description": "Embroidery or zari articles, that is to say,- imi, zari, kasab, salma, dabka, chumki, gota, sitara, naqsi, kora, glass beads, badla, gizai"
+ },
+ {
+  "s_no": 374,
+  "hsn": "5810",
+  "description": "Embroidery in the piece, in strips or in motifs, Embroidered badges, motifs and the like"
+ },
+ {
+  "s_no": 375,
+  "hsn": "5811",
+  "description": "Quilted textile products in the piece, composed of one or more layers of textile materials assembled with padding by stitching or otherwise, other than embroidery of heading 5810"
+ },
+ {
+  "s_no": 376,
+  "hsn": "5901",
+  "description": "Textile fabrics coated with gum or amylaceous substances, of a kind used for the outer covers of books or the like; tracing cloth; prepared painting canvas; buckram and similar stiffened textile fabrics of a kind used for hat foundations"
+ },
+ {
+  "s_no": 377,
+  "hsn": "5902",
+  "description": "Tyre cord fabric of high tenacity yarn of nylon or other polyamides, polyesters or viscose rayon"
+ },
+ {
+  "s_no": 378,
+  "hsn": "5903",
+  "description": "Textile fabrics impregnated, coated, covered or laminated with plastics, other than those of heading 5902"
+ },
+ {
+  "s_no": 379,
+  "hsn": "5904",
+  "description": "Linoleum, whether or not cut to shape; floor coverings consisting of a coating or covering applied on a textile backing, whether or not cut to shape"
+ },
+ {
+  "s_no": 380,
+  "hsn": "5905",
+  "description": "Textile wall coverings"
+ },
+ {
+  "s_no": 381,
+  "hsn": "5906",
+  "description": "Rubberised textile fabrics, other than those of heading 5902"
+ },
+ {
+  "s_no": 382,
+  "hsn": "5907",
+  "description": "Textile fabrics otherwise impregnated, coated or covered; painted canvas being theatrical scenery, studio back-cloths or the like"
+ },
+ {
+  "s_no": 383,
+  "hsn": "5908",
+  "description": "Textile wicks, woven, plaited or knitted, for lamps, stoves, lighters, candles or the like; incandescent gas mantles and tubular knitted gas mantle fabric therefor, whether or not impregnated"
+ },
+ {
+  "s_no": 384,
+  "hsn": "5909",
+  "description": "Textile hose piping and similar textile tubing, with or without lining, armour or accessories of other materials"
+ },
+ {
+  "s_no": 385,
+  "hsn": "5910",
+  "description": "Transmission or conveyor belts or belting, of textile material, whether or not impregnated, coated, covered or laminated with plastics, or reinforced with metal or other material"
+ },
+ {
+  "s_no": 386,
+  "hsn": "5911",
+  "description": "Textile products and articles, for technical uses, specified in Note 7 to this Chapter; such as Textile fabrics, felt and felt-lined woven fabrics, coated, covered or laminated with rubber, leather or other material, of a kind used for card clothing, and similar fabrics of a kind used for other technical purposes, including narrow fabrics made of velvet impregnated with rubber, for covering weaving spindles (weaving beams); Bolting cloth, whether or not made up; Felt for cotton textile industries, woven; Woven textiles felt, whether or not impregnated or coated, of a kind commonly used in other machines; Cotton fabrics and articles used in machinery and plant; Jute fabrics and articles used in machinery or plant; Textile fabrics of metalised yarn of a kind commonly used in paper making or other machinery; Straining cloth of a kind used in oil presses or the like, including that of human hair; Paper maker's felt, woven; Gaskets, washers, polishing discs and other machinery parts of textile articles"
+ },
+ {
+  "s_no": 387,
+  "hsn": "60",
+  "description": "Knitted or crocheted fabrics [All goods]"
+ },
+ {
+  "s_no": 388,
+  "hsn": "61",
+  "description": "Article of apparel and clothing accessories, knitted or crocheted, of sale value not exceeding Rs 2500 per piece"
+ },
+ {
+  "s_no": 389,
+  "hsn": "62",
+  "description": "Articles of apparel and clothing accessories, not knitted or crocheted, of sale value not exceeding Rs. 2500 per piece"
+ },
+ {
+  "s_no": 390,
+  "hsn": "63 [other than 6305 32 00, 6305 33 00, 6309]",
+  "description": "Other made up textile articles, sets, of sale value not exceeding Rs. 2500 per piece"
+ },
+ {
+  "s_no": 391,
+  "hsn": "6309 or 6310",
+  "description": "Worn clothing and other worn articles; rags"
+ },
+ {
+  "s_no": 392,
+  "hsn": "64",
+  "description": "Footwear of sale value not exceeding Rs.2500 per pair"
+ },
+ {
+  "s_no": 393,
+  "hsn": "6501",
+  "description": "Textile caps"
+ },
+ {
+  "s_no": 394,
+  "hsn": "6505",
+  "description": "Hats (knitted/crocheted) or made up from lace or other textile fabrics"
+ },
+ {
+  "s_no": 395,
+  "hsn": "6601",
+  "description": "Umbrellas and sun umbrellas (including walking-stick umbrellas, garden umbrellas and similar umbrellas)"
+ },
+ {
+  "s_no": 396,
+  "hsn": "6602",
+  "description": "Whips, riding-crops and the like"
+ },
+ {
+  "s_no": 397,
+  "hsn": "6602 00 00",
+  "description": "Walking-sticks including seat sticks"
+ },
+ {
+  "s_no": 398,
+  "hsn": "6603",
+  "description": "Parts, trimmings and accessories of articles of heading 6601 or 6602"
+ },
+ {
+  "s_no": 399,
+  "hsn": "6701",
+  "description": "Skins and other parts of birds with their feathers or down, feathers, parts of feathers, down and articles thereof (other than goods of heading 0505 and worked quills and scapes)"
+ },
+ {
+  "s_no": 400,
+  "hsn": "68",
+  "description": "Sand lime bricks or Stone inlay work"
+ },
+ {
+  "s_no": 401,
+  "hsn": "6802",
+  "description": "Statues, statuettes, pedestals; high or low reliefs, crosses, figures of animals, bowls, vases, cups, cachou boxes, writing sets, ashtrays, paper weights, artificial fruit and foliage, etc.; other ornamental goods essentially of stone"
+ },
+ {
+  "s_no": 402,
+  "hsn": "6909",
+  "description": "Pots, jars and similar articles of a kind used for the conveyance and packing of goods of ceramic"
+ },
+ {
+  "s_no": 403,
+  "hsn": "6911",
+  "description": "Tableware, kitchenware, other household articles and toilet articles, of porcelain or china"
+ },
+ {
+  "s_no": 404,
+  "hsn": "6912",
+  "description": "Tableware, kitchenware, other household articles and toilet articles, other than of porcelain or china"
+ },
+ {
+  "s_no": 405,
+  "hsn": "6913",
+  "description": "Statues and other ornamental articles"
+ },
+ {
+  "s_no": 406,
+  "hsn": "7001",
+  "description": "Cullet or other waste or scrap of glass"
+ },
+ {
+  "s_no": 407,
+  "hsn": "7015 10",
+  "description": "Glasses for corrective spectacles and flint buttons"
+ },
+ {
+  "s_no": 408,
+  "hsn": "7018",
+  "description": "Glass beads"
+ },
+ {
+  "s_no": 409,
+  "hsn": "7020",
+  "description": "Globes for lamps and lanterns, Founts for kerosene wick lamps, Glass chimneys for lamps and lanterns"
+ },
+ {
+  "s_no": 410,
+  "hsn": "7310 or 7326",
+  "description": "Mathematical boxes, geometry boxes and colour boxes"
+ },
+ {
+  "s_no": 411,
+  "hsn": "7310, 7323, 7612, or 7615",
+  "description": "Milk cans made of Iron, Steel, or Aluminium"
+ },
+ {
+  "s_no": 412,
+  "hsn": "7317",
+  "description": "Animal shoe nails"
+ },
+ {
+  "s_no": 413,
+  "hsn": "7319",
+  "description": "Sewing needles"
+ },
+ {
+  "s_no": 414,
+  "hsn": "7321",
+  "description": "Kerosene burners, kerosene stoves and wood burning stoves of iron or steel"
+ },
+ {
+  "s_no": 415,
+  "hsn": "7321 or 8516",
+  "description": "Solar cookers"
+ },
+ {
+  "s_no": 416,
+  "hsn": "7323",
+  "description": "Table, kitchen or other household articles of iron & steel; Utensils"
+ },
+ {
+  "s_no": 417,
+  "hsn": "7418",
+  "description": "Table, kitchen or other household articles of copper; Utensils"
+ },
+ {
+  "s_no": 418,
+  "hsn": "7419 80 30",
+  "description": "Brass Kerosene Pressure Stove"
+ },
+ {
+  "s_no": 419,
+  "hsn": "7615",
+  "description": "Table, kitchen or other household articles of aluminium; Utensils"
+ },
+ {
+  "s_no": 420,
+  "hsn": "8306",
+  "description": "Bells, gongs and the like, non-electric, of base metal; statuettes and other ornaments, of base metal; photograph, picture or similar frames, of base metal; mirrors of base metal; metal bidriware"
+ },
+ {
+  "s_no": 421,
+  "hsn": "8401",
+  "description": "Fuel elements (cartridges), non-irradiated, for nuclear reactors"
+ },
+ {
+  "s_no": 422,
+  "hsn": "8407 10 00, 8411",
+  "description": "Aircraft engines"
+ },
+ {
+  "s_no": 423,
+  "hsn": "8408",
+  "description": "Fixed Speed Diesel Engines of power not exceeding 15HP"
+ },
+ {
+  "s_no": 424,
+  "hsn": "8408 20 20",
+  "description": "Agricultural Diesel Engine of cylinder capacity exceeding 250 cc for Tractor"
+ },
+ {
+  "s_no": 425,
+  "hsn": "8413, 8413 91",
+  "description": "Hand pumps and parts thereof"
+ },
+ {
+  "s_no": 426,
+  "hsn": "8413 81 90",
+  "description": "Hydraulic Pumps for tractors"
+ },
+ {
+  "s_no": 427,
+  "hsn": "8414 20 20",
+  "description": "Other hand pumps"
+ },
+ {
+  "s_no": 428,
+  "hsn": "8419 12",
+  "description": "Solar water heater and system"
+ },
+ {
+  "s_no": 429,
+  "hsn": "8420",
+  "description": "Hand operated rubber roller"
+ },
+ {
+  "s_no": 430,
+  "hsn": "8424",
+  "description": "Nozzles for drip irrigation equipment or nozzles for sprinklers"
+ },
+ {
+  "s_no": 431,
+  "hsn": "8424",
+  "description": "Sprinklers; drip irrigation system including laterals; mechanical sprayers"
+ },
+ {
+  "s_no": 432,
+  "hsn": "8432",
+  "description": "Agricultural, horticultural or forestry machinery for soil preparation or cultivation; lawn or sports-ground rollers; Parts [8432 90]"
+ },
+ {
+  "s_no": 433,
+  "hsn": "8433",
+  "description": "Harvesting or threshing machinery, including straw or fodder balers; grass or hay mowers; parts thereof"
+ },
+ {
+  "s_no": 434,
+  "hsn": "8436",
+  "description": "Other agricultural, horticultural, forestry, poultry-keeping or bee-keeping machinery, including germination plant fitted with mechanical or thermal equipment; poultry incubators and brooders; parts thereof"
+ },
+ {
+  "s_no": 435,
+  "hsn": "8452",
+  "description": "Sewing machines, other than book-sewing machine of heading 8440; furniture, bases and covers specially designed for sewing machines; sewing machines needles and parts of sewing machines"
+ },
+ {
+  "s_no": 436,
+  "hsn": "8479",
+  "description": "Composting Machines"
+ },
+ {
+  "s_no": 437,
+  "hsn": "84, 85 or 94",
+  "description": "Following renewable energy devices and parts for their manufacture:- (a) Bio-gas plant; (b) Solar power-based devices; (c) Solar power generator; (d) Wind mills, Wind Operated Electricity Generator (WOEG); (e) Waste to energy plants / devices; (f) Solar lantern / solar lamp; (g) Ocean waves/tidal waves energy devices/plants; (h) Photo voltaic cells, whether or not assembled in modules or made up into panels. Explanation:- If the goods specified in this entry are supplied, by a supplier, along with supplies of other goods and services, one of which being a taxable service specified in the entry at S. No. 38 of the Table mentioned in the notification No. 11/2017-Central Tax (Rate), dated 28th June, 2017 [G.S.R. 690(E)], the value of supply of goods for the purposes of this entry shall be deemed as seventy per cent. of the gross consideration charged for all such supplies, and the remaining thirty per cent. of the gross consideration charged shall be deemed as value of the said taxable service"
+ },
+ {
+  "s_no": 438,
+  "hsn": "8504",
+  "description": "Charger or charging station for Electrically operated vehicles"
+ },
+ {
+  "s_no": 439,
+  "hsn": "8525 60",
+  "description": "Two-way radio (Walkie talkie) used by defence, police and paramilitary forces etc."
+ },
+ {
+  "s_no": 440,
+  "hsn": "87",
+  "description": "Fuel Cell Motor Vehicles including hydrogen vehicles based on fuel cell technology"
+ },
+ {
+  "s_no": 441,
+  "hsn": "87",
+  "description": "Electrically operated vehicles, including two and three wheeled electric vehicles. Explanation.- For the purposes of this entry, ―Electrically operated vehicles‖ means vehicles which are run solely on electrical energy derived from an external source or from one or more electrical batteries fitted to such road vehicles and shall include E- bicycles."
+ },
+ {
+  "s_no": 442,
+  "hsn": "8701",
+  "description": "Tractors (except road tractors for semi-trailers of engine capacity more than 1800 cc)"
+ },
+ {
+  "s_no": 443,
+  "hsn": "8708",
+  "description": "Following parts of tractors namely: a. Rear Tractor wheel rim, b. tractor centre housing, c. tractor housing transmission, d. tractor support front axle"
+ },
+ {
+  "s_no": 444,
+  "hsn": "8708 10 10",
+  "description": "Bumpers and parts thereof for tractors"
+ },
+ {
+  "s_no": 445,
+  "hsn": "8708 30 00",
+  "description": "Brakes assembly and its parts thereof for tractors"
+ },
+ {
+  "s_no": 446,
+  "hsn": "8708 40 00",
+  "description": "Gear boxes and parts thereof for tractors"
+ },
+ {
+  "s_no": 447,
+  "hsn": "8708 50 00",
+  "description": "Transaxles and its parts thereof for tractors"
+ },
+ {
+  "s_no": 448,
+  "hsn": "8708 70 00",
+  "description": "Road wheels and parts and accessories thereof for tractors"
+ },
+ {
+  "s_no": 449,
+  "hsn": "8708 91 00",
+  "description": "(i) Radiator assembly for tractors and parts thereof (ii) Cooling system for tractor engine and parts thereof"
+ },
+ {
+  "s_no": 450,
+  "hsn": "8708 92 00",
+  "description": "Silencer assembly for tractors and parts thereof"
+ },
+ {
+  "s_no": 451,
+  "hsn": "8708 93 00",
+  "description": "Clutch assembly and its parts thereof for tractors"
+ },
+ {
+  "s_no": 452,
+  "hsn": "8708 94 00",
+  "description": "Steering wheels and its parts thereof for tractor"
+ },
+ {
+  "s_no": 453,
+  "hsn": "8708 99 00",
+  "description": "Hydraulic and its parts thereof for tractors"
+ },
+ {
+  "s_no": 454,
+  "hsn": "8708 99 00",
+  "description": "Fender, Hood, Wrapper, Grill, Side Panel, Extension Plates, Fuel Tank and parts thereof for tractors."
+ },
+ {
+  "s_no": 455,
+  "hsn": "8710",
+  "description": "Tanks and other armoured fighting vehicles, motorised, whether or not fitted with weapons, and parts of such vehicles"
+ },
+ {
+  "s_no": 456,
+  "hsn": "8712",
+  "description": "Bicycles and other cycles (including delivery tricycles), not motorised"
+ },
+ {
+  "s_no": 457,
+  "hsn": "8713",
+  "description": "Carriages for disabled persons, whether or not motorised or otherwise mechanically propelled"
+ },
+ {
+  "s_no": 458,
+  "hsn": "8714",
+  "description": "Parts and accessories of bicycles and other cycles (including delivery tricycles), not motorised, of heading 8712"
+ },
+ {
+  "s_no": 459,
+  "hsn": "8714 20",
+  "description": "Parts and accessories of carriage for disabled persons"
+ },
+ {
+  "s_no": 460,
+  "hsn": "8716 20 00",
+  "description": "Self-loading or self-unloading trailers for agricultural purposes"
+ },
+ {
+  "s_no": 461,
+  "hsn": "8716 80",
+  "description": "Hand propelled vehicles (e.g. hand carts, rickshaws and the like); animal drawn vehicles"
+ },
+ {
+  "s_no": 462,
+  "hsn": "88 or Any other Chapter",
+  "description": "Scientific and technical instruments, apparatus, equipment, accessories, parts, components, spares, tools, mock ups and modules, raw material and consumables required for launch vehicles and satellites and payloads"
+ },
+ {
+  "s_no": 463,
+  "hsn": "8802",
+  "description": "Other aircraft (for example, helicopters, aeroplanes), other than for personal use"
+ },
+ {
+  "s_no": 464,
+  "hsn": "8806",
+  "description": "Unmanned aircraft"
+ },
+ {
+  "s_no": 465,
+  "hsn": "8807",
+  "description": "Parts of goods of heading 8802 or 8806"
+ },
+ {
+  "s_no": 466,
+  "hsn": "8901",
+  "description": "Cruise ships, excursion boats, ferry-boats, cargo ships, barges and similar vessels for the transport of persons or goods"
+ },
+ {
+  "s_no": 467,
+  "hsn": "8902",
+  "description": "Fishing vessels; factory ships and other vessels for processing or preserving fishery products"
+ }
+]

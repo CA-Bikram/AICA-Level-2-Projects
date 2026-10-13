@@ -1,0 +1,407 @@
+[
+ {
+  "s_no": 93,
+  "hsn": "1516",
+  "description": "Vegetable fats and oils and their fractions, partly or wholly hydrogenated, inter-esterified, re-esterified or elaidinised, whether or not refined, but not further prepared"
+ },
+ {
+  "s_no": 94,
+  "hsn": "1516",
+  "description": "Animal or microbial fats and animal or microbial oils and their fractions, partly or wholly hydrogenated, inter-esterified, re-esterified or elaidinised, whether or not refined, but not further prepared"
+ },
+ {
+  "s_no": 95,
+  "hsn": "1517",
+  "description": "Margarine, linoxyn; Edible mixtures or preparations of animal, vegetable or microbial fats or oils or of fractions of different fats or oils of this Chapter, other than edible fats or oils or their fractions of heading 1516"
+ },
+ {
+  "s_no": 96,
+  "hsn": "1518",
+  "description": "Animal, vegetable or microbial fats and oils their fractions, boiled, oxidised, dehydrated, sulphurised, blown, polymerised by heat in vacuum or in inert gas or otherwise chemically modified, excluding those of heading 1516; inedible mixtures or preparations of animal, vegetable or microbial fats or oils or of fractions of different fats or oils of this Chapter, not elsewhere specified or included"
+ },
+ {
+  "s_no": 97,
+  "hsn": "1520 00 00",
+  "description": "Glycerol, crude; glycerol waters and glycerol lyes"
+ },
+ {
+  "s_no": 98,
+  "hsn": "1521",
+  "description": "Vegetable waxes (other than triglycerides), Beeswax, other insect waxes and spermaceti, whether or not refined or coloured"
+ },
+ {
+  "s_no": 99,
+  "hsn": "1522",
+  "description": "Degra, residues resulting from the treatment of fatty substances or animal or vegetable waxes"
+ },
+ {
+  "s_no": 100,
+  "hsn": "1601",
+  "description": "Sausages and similar products, of meat, meat offal, blood or insects; food preparations based on these products"
+ },
+ {
+  "s_no": 101,
+  "hsn": "1602",
+  "description": "Other prepared or preserved meat, meat offal, blood or insects"
+ },
+ {
+  "s_no": 102,
+  "hsn": "1603",
+  "description": "Extracts and juices of meat, fish or crustaceans, molluscs or other aquatic invertebrates"
+ },
+ {
+  "s_no": 103,
+  "hsn": "1604",
+  "description": "Prepared or preserved fish; caviar and caviar substitutes prepared from fish eggs"
+ },
+ {
+  "s_no": 104,
+  "hsn": "1605",
+  "description": "Crustaceans, molluscs and other aquatic invertebrates prepared or preserved"
+ },
+ {
+  "s_no": 105,
+  "hsn": "1701",
+  "description": "Cane or beet sugar and chemically pure sucrose, in solid form including refined sugar containing added flavouring or colouring matter, sugar cubes [other than jaggery of all types, khandsari sugar, rab]"
+ },
+ {
+  "s_no": 106,
+  "hsn": "1701 or1702",
+  "description": "Jaggery of all types including Cane Jaggery (gur), Palmyra Jaggery, Khandsari Sugar, Rab, pre-packaged and labelled"
+ },
+ {
+  "s_no": 107,
+  "hsn": "1702 or 1704",
+  "description": "Palmyra sugar, mishri, batasha, bura, sakar, khadi sakar, harda, sakariya, gatta, kuliya, elaichidana, lukumdana, chikkis like puffed rice chikki, peanut chikki, sesame chikki, til chikki, til patti, til revdi, sugar makhana, groundnut sweets, gajak, khaja, khajuli, anarsa"
+ },
+ {
+  "s_no": 108,
+  "hsn": "1702",
+  "description": "Other sugars, including chemically pure lactose, maltose, glucose and fructose, in solid form; sugar syrups not containing added flavouring or colouring matter; caramel"
+ },
+ {
+  "s_no": 109,
+  "hsn": "1703",
+  "description": "Molasses"
+ },
+ {
+  "s_no": 110,
+  "hsn": "1704",
+  "description": "Sugar confectionary (including white chocolate), not containing cocoa, sugar boiled confectionary"
+ },
+ {
+  "s_no": 111,
+  "hsn": "1801",
+  "description": "Cocoa beans whole or broken, raw or roasted"
+ },
+ {
+  "s_no": 112,
+  "hsn": "1802",
+  "description": "Cocoa shells, husks, skins and other cocoa waste"
+ },
+ {
+  "s_no": 113,
+  "hsn": "1803",
+  "description": "Cocoa paste whether or not de-fatted"
+ },
+ {
+  "s_no": 114,
+  "hsn": "1804",
+  "description": "Cocoa butter, fat and oil"
+ },
+ {
+  "s_no": 115,
+  "hsn": "1805",
+  "description": "Cocoa powder, not containing added sugar or sweetening matter"
+ },
+ {
+  "s_no": 116,
+  "hsn": "1806",
+  "description": "Chocolates and other food preparations containing cocoa"
+ },
+ {
+  "s_no": 117,
+  "hsn": "1901 20 00",
+  "description": "Mixes and doughs for the preparation of bread, pastry and other baker's wares"
+ },
+ {
+  "s_no": 118,
+  "hsn": "1901",
+  "description": "Food preparation of millet flour, in powder form, containing at least 70% millets by weight, pre-packaged and labelled; Malt extract, food preparations of flour, groats, meal, starch or malt extract, not containing cocoa or containing less than 40% by weight of cocoa calculated on a totally defatted basis, not elsewhere specified or included; food preparations of goods of heading 0401 to 0404, not containing cocoa or containing less than 5% by weight of cocoa calculated on a totally defatted basis not elsewhere specified or included"
+ },
+ {
+  "s_no": 119,
+  "hsn": "1902",
+  "description": "Seviyan (vermicelli); Pasta, whether or not cooked or stuffed (with meat or other substances) or otherwise prepared, such as spaghetti, macaroni, noodles, lasagne, gnocchi, ravioli, cannelloni; couscous, whether or not prepared"
+ },
+ {
+  "s_no": 120,
+  "hsn": "1903",
+  "description": "Tapioca and substitutes therefor prepared from starch, in the form of flakes, grains, pearls, siftings or in similar forms (sabudana)"
+ },
+ {
+  "s_no": 121,
+  "hsn": "1904",
+  "description": "Puffed rice, commonly known as Muri, flattened or beaten rice, commonly known as chira, parched rice, commonly known as khoi, parched paddy or rice coated with sugar or gur, commonly known as murki, pre-packaged and labelled"
+ },
+ {
+  "s_no": 122,
+  "hsn": "1904",
+  "description": "All goods i.e. Corn flakes, bulgar wheat, prepared foods obtained from cereal flakes (other than puffed rice, commonly known as muri, flattened or beaten rice, commonly known as chira, parched rice, commonly known as khoi, parched paddy or rice coated with sugar or gur, commonly known as murki); Fortified Rice Kernel (FRK)"
+ },
+ {
+  "s_no": 123,
+  "hsn": "1905",
+  "description": "Pastry, cakes, biscuits and other bakers’ wares, whether or not containing cocoa; communion wafers, empty cachets of a kind suitable for pharmaceutical use, sealing wafers, rice paper and similar products; Un-fried or un-cooked snack pellets, by whatever name called, manufactured through process of extrusion; Extruded or expanded products, savoury or salted"
+ },
+ {
+  "s_no": 124,
+  "hsn": "1905 40 00",
+  "description": "Rusks, toasted bread and similar toasted products"
+ },
+ {
+  "s_no": 125,
+  "hsn": "2001",
+  "description": "Vegetables, fruit, nuts and other edible parts of plants, prepared or preserved by vinegar or acetic acid"
+ },
+ {
+  "s_no": 126,
+  "hsn": "2002",
+  "description": "Tomatoes prepared or preserved otherwise than by vinegar or acetic acid"
+ },
+ {
+  "s_no": 127,
+  "hsn": "2003",
+  "description": "Mushrooms and truffles, prepared or preserved otherwise than by vinegar or acetic acid"
+ },
+ {
+  "s_no": 128,
+  "hsn": "2004",
+  "description": "Other vegetables prepared or preserved otherwise than by vinegar or acetic acid, frozen, other than products of heading 2006"
+ },
+ {
+  "s_no": 129,
+  "hsn": "2005",
+  "description": "Other vegetables prepared or preserved otherwise than by vinegar or acetic acid, not frozen, other than products of heading 2006"
+ },
+ {
+  "s_no": 130,
+  "hsn": "2006",
+  "description": "Vegetables, fruit, nuts, fruit-peel and other parts of plants, preserved by sugar (drained, glacé or crystallised)"
+ },
+ {
+  "s_no": 131,
+  "hsn": "2007",
+  "description": "Jams, fruit jellies, marmalades, fruit or nut purée and fruit or nut pastes, obtained by cooking, whether or not containing added sugar or other sweetening matter"
+ },
+ {
+  "s_no": 132,
+  "hsn": "2008",
+  "description": "Fruit, nuts and other edible parts of plants, otherwise prepared or preserved, whether or not containing added sugar or other sweetening matter or spirit, not elsewhere specified or included; such as Ground-nuts, Cashew nut, roasted, salted or roasted and salted, Other roasted nuts and seeds, squash of Mango, Lemon, Orange, Pineapple or other fruits"
+ },
+ {
+  "s_no": 133,
+  "hsn": "2009",
+  "description": "Fruit or nut juices (including grape must) and vegetable juices, unfermented and not containing added spirit, whether or not containing added sugar or other sweetening matter"
+ },
+ {
+  "s_no": 134,
+  "hsn": "2009 89 90",
+  "description": "Tender coconut water, pre-packaged and labelled"
+ },
+ {
+  "s_no": 135,
+  "hsn": "2101 11, 2101 12 00",
+  "description": "Extracts, essences and concentrates of coffee, and preparations with a basis of these extracts, essences or concentrates or with a basis of coffee"
+ },
+ {
+  "s_no": 136,
+  "hsn": "2101 20",
+  "description": "All goods i.e Extracts, essences and concentrates of tea or mate, and preparations with a basis of these extracts, essences or concentrates or with a basis of tea or mate"
+ },
+ {
+  "s_no": 137,
+  "hsn": "2101 30",
+  "description": "Roasted chicory and other roasted coffee substitutes, and extracts, essences and concentrates thereof"
+ },
+ {
+  "s_no": 138,
+  "hsn": "2102",
+  "description": "Yeasts (active and inactive); other single cell micro-organisms, dead (but not including vaccines of heading 3002); prepared baking powders"
+ },
+ {
+  "s_no": 139,
+  "hsn": "2103",
+  "description": "All goods, including sauces and preparations therefor, mixed condiments and mixed seasonings; mustard flour and meal and prepared mustard including Curry paste, mayonnaise and salad dressings"
+ },
+ {
+  "s_no": 140,
+  "hsn": "2104",
+  "description": "Soups and broths and preparations therefor; homogenised composite food preparations"
+ },
+ {
+  "s_no": 141,
+  "hsn": "2105 00 00",
+  "description": "Ice cream and other edible ice, whether or not containing cocoa"
+ },
+ {
+  "s_no": 142,
+  "hsn": "2106",
+  "description": "Texturised vegetable proteins (soya bari), Bari made of pulses including mungodi and batters; Roasted Gram idli/dosa batter, chutney powder; Sweetmeats"
+ },
+ {
+  "s_no": 143,
+  "hsn": "2106 90",
+  "description": "Namkeens, bhujia, mixture, chabena and similar edible preparations in ready for consumption form, whether or not pre-packaged and labelled"
+ },
+ {
+  "s_no": 144,
+  "hsn": "2106 90 91",
+  "description": "Diabetic foods"
+ },
+ {
+  "s_no": 145,
+  "hsn": "2106",
+  "description": "Food preparations not elsewhere specified or included [other than pan masala]"
+ },
+ {
+  "s_no": 146,
+  "hsn": "2201",
+  "description": "Waters, including natural or artificial mineral waters and aerated waters, not containing added sugar or other sweetening matter nor flavoured"
+ },
+ {
+  "s_no": 147,
+  "hsn": "2201 90 10",
+  "description": "Ice and snow"
+ },
+ {
+  "s_no": 148,
+  "hsn": "2202 99",
+  "description": "Plant-based milk drinks, ready for direct consumption as beverages"
+ },
+ {
+  "s_no": 149,
+  "hsn": "2202 99 10",
+  "description": "Soya milk drinks, whether or not sweetened or flavoured"
+ },
+ {
+  "s_no": 150,
+  "hsn": "2202 99 20",
+  "description": "Fruit pulp or fruit juice based drinks [other than Carbonated Beverages of Fruit Drink or Carbonated Beverages with Fruit Juice]"
+ },
+ {
+  "s_no": 151,
+  "hsn": "2202 99 30",
+  "description": "Beverages containing milk"
+ },
+ {
+  "s_no": 152,
+  "hsn": "2207",
+  "description": "Ethyl alcohol supplied to Oil Marketing Companies or Petroleum refineries for blending with motor spirit (petrol)"
+ },
+ {
+  "s_no": 153,
+  "hsn": "2301",
+  "description": "Flours, meals and pellets, of meat or meat offal, of fish or of crustaceans, molluscs or other aquatic invertebrates, unfit for human consumption; greaves"
+ },
+ {
+  "s_no": 154,
+  "hsn": "2302",
+  "description": "Bran, sharps and other residues, whether or not in the form of pellets, derived from the sifting, milling or other working of cereals or of leguminous plants [other than aquatic feed including shrimp feed and prawn feed, poultry feed and cattle feed, including grass, hay and straw, supplement and additives, husk of pulses including chilka, concentrates including chuni or churi, khanda, wheat bran, de-oiled cake]"
+ },
+ {
+  "s_no": 155,
+  "hsn": "2302",
+  "description": "Rice bran (other than de-oiled rice bran)"
+ },
+ {
+  "s_no": 156,
+  "hsn": "2303",
+  "description": "Residues of starch manufacture and similar residues, beet-pulp, bagasse and other waste of sugar manufacture, brewing or distilling dregs and waste, whether or not in the form of pellets"
+ },
+ {
+  "s_no": 157,
+  "hsn": "2304",
+  "description": "Oil-cake and other solid residues, whether or not ground or in the form of pellets, resulting from the extraction of soyabean oil"
+ },
+ {
+  "s_no": 158,
+  "hsn": "2305",
+  "description": "Oil-cake and other solid residues, whether or not ground or in the form of pellets, resulting from the extraction of ground-nut oil"
+ },
+ {
+  "s_no": 159,
+  "hsn": "2306",
+  "description": "Oil-cake and other solid residues, whether or not ground or in the form of pellets, resulting from the extraction of vegetable or microbial fats or oils, other than those of heading 2304 or 2305 other than cottonseed oil cake and de-oiled rice bran"
+ },
+ {
+  "s_no": 160,
+  "hsn": "2307",
+  "description": "Wine lees; argol"
+ },
+ {
+  "s_no": 161,
+  "hsn": "2309",
+  "description": "Fish soluble paste"
+ },
+ {
+  "s_no": 162,
+  "hsn": "2401",
+  "description": "Tobacco leave"
+ },
+ {
+  "s_no": 163,
+  "hsn": "2502",
+  "description": "Unroasted iron pyrites"
+ },
+ {
+  "s_no": 164,
+  "hsn": "2503",
+  "description": "Sulphur of all kinds, other than sublimed sulphur, precipitated sulphur and colloidal sulphur"
+ },
+ {
+  "s_no": 165,
+  "hsn": "2504",
+  "description": "Natural graphite"
+ },
+ {
+  "s_no": 166,
+  "hsn": "2505",
+  "description": "Natural sands of all kinds, whether or not coloured, other than metal bearing sands of Chapter 26"
+ },
+ {
+  "s_no": 167,
+  "hsn": "2506",
+  "description": "Quartz (other than natural sands); quartzite, whether or not roughly trimmed or merely cut, by sawing or otherwise, into blocks or slabs of a rectangular (including square) shape"
+ },
+ {
+  "s_no": 168,
+  "hsn": "2507",
+  "description": "Kaolin and other kaolinic clays, whether or not calcined"
+ },
+ {
+  "s_no": 169,
+  "hsn": "2508",
+  "description": "Other clays (not including expanded clays of heading 6806), andalusite, kyanite and sillimanite, whether or not calcined; mullite; chamotte or dinas earths"
+ },
+ {
+  "s_no": 170,
+  "hsn": "2509",
+  "description": "Chalk"
+ },
+ {
+  "s_no": 171,
+  "hsn": "2510",
+  "description": "Natural calcium phosphates, natural aluminium calcium phosphates and phosphatic chalk"
+ },
+ {
+  "s_no": 172,
+  "hsn": "2511",
+  "description": "Natural barium sulphate (barytes); natural barium carbonate (witherite), whether or not calcined, other than barium oxide of heading 2816"
+ },
+ {
+  "s_no": 173,
+  "hsn": "2512",
+  "description": "Siliceous fossil meals (for example, kieselguhr, tripolite and diatomite) and similar siliceous earths, whether or not calcined, of an apparent specific gravity of 1 or less"
+ }
+]

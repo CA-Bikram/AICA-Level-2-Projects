@@ -1,0 +1,357 @@
+[
+ {
+  "s_no": 468,
+  "hsn": "8904",
+  "description": "Tugs and pusher craft"
+ },
+ {
+  "s_no": 469,
+  "hsn": "8905",
+  "description": "Light-vessels, fire-floats, dredgers, floating cranes and other vessels the navigability of which is subsidiary to their main function; floating docks; floating or submersible drilling or production platforms"
+ },
+ {
+  "s_no": 470,
+  "hsn": "8906",
+  "description": "Other vessels, including warships and lifeboats other than rowing boats"
+ },
+ {
+  "s_no": 471,
+  "hsn": "8907",
+  "description": "Other floating structures (for example, rafts, tanks, coffer-dams, landing-stages, buoys and beacons)"
+ },
+ {
+  "s_no": 472,
+  "hsn": "Any chapter",
+  "description": "Parts of goods of headings 8901, 8902, 8904, 8905, 8906, 8907"
+ },
+ {
+  "s_no": 473,
+  "hsn": "90",
+  "description": "Coronary stents and coronary stent systems for use with cardiac catheters"
+ },
+ {
+  "s_no": 474,
+  "hsn": "90 or any other Chapter",
+  "description": "Artificial kidney"
+ },
+ {
+  "s_no": 475,
+  "hsn": "90 or any other Chapter",
+  "description": "Blood glucose monitoring system (Glucometer) and test strips"
+ },
+ {
+  "s_no": 476,
+  "hsn": "90 or any other Chapter",
+  "description": "Patent Ductus Arteriosus / Atrial Septal Defect occlusion device"
+ },
+ {
+  "s_no": 477,
+  "hsn": "90 or any other Chapter",
+  "description": "Parts of the following goods, namely: - (i) Crutches; (ii) Wheel chairs; (iii)Walking frames; (iv)Tricycles; (v)Braillers; and (vi) Artificial limbs"
+ },
+ {
+  "s_no": 478,
+  "hsn": "90 or any other Chapter",
+  "description": "Assistive devices, rehabilitation aids and other goods for disabled, specified in List 1 appended to this Schedule"
+ },
+ {
+  "s_no": 479,
+  "hsn": "90 or 84",
+  "description": "Disposable sterilized dialyzer or micro barrier of artificial kidney"
+ },
+ {
+  "s_no": 480,
+  "hsn": "9001",
+  "description": "Contact lenses; Spectacle lenses"
+ },
+ {
+  "s_no": 481,
+  "hsn": "9003",
+  "description": "Frames and mountings for spectacles, goggles or the like, and parts thereof"
+ },
+ {
+  "s_no": 482,
+  "hsn": "9004",
+  "description": "Spectacles, corrective (including goggles for correcting vision)"
+ },
+ {
+  "s_no": 483,
+  "hsn": "9018",
+  "description": "Instruments and appliances used in medical, surgical, dental or veterinary sciences, including scientigraphic apparatus, other electro-medical apparatus and sight-testing instruments"
+ },
+ {
+  "s_no": 484,
+  "hsn": "9019",
+  "description": "Mechano-therapy appliances; massage apparatus; psychological aptitude-testing apparatus; ozone therapy, oxygen therapy, aerosol therapy, artificial respiration or other therapeutic respiration apparatus"
+ },
+ {
+  "s_no": 485,
+  "hsn": "9020",
+  "description": "Other breathing appliances and gas masks, excluding protective masks having neither mechanical parts nor replaceable filters"
+ },
+ {
+  "s_no": 486,
+  "hsn": "9021",
+  "description": "Orthopaedic appliances, such as crutches, surgical belts, and trusses; Splints and other fracture appliances; artificial parts of the body; other appliances which are worn or carried, or implanted in the body, to compensate for a defect or disability; intraocular lens [other than hearing aids]"
+ },
+ {
+  "s_no": 487,
+  "hsn": "9022",
+  "description": "Apparatus based on the use of X-rays or of alpha, beta or gamma radiations, for medical, surgical, dental or veterinary uses, including radiography or radiotherapy apparatus, X-ray tubes and other X-ray generators, high tension generators, control panels and desks, screens, examinations or treatment tables, chairs and the like"
+ },
+ {
+  "s_no": 488,
+  "hsn": "9025",
+  "description": "Thermometers for medical, surgical, dental or veterinary usage"
+ },
+ {
+  "s_no": 489,
+  "hsn": "9027",
+  "description": "Instruments and apparatus for medical, surgical, dental or veterinary uses, for physical or chemical analysis"
+ },
+ {
+  "s_no": 490,
+  "hsn": "9403",
+  "description": "Furniture wholly made of bamboo, cane or rattan"
+ },
+ {
+  "s_no": 491,
+  "hsn": "9404",
+  "description": "Coir products (except coir mattresses)"
+ },
+ {
+  "s_no": 492,
+  "hsn": "9404",
+  "description": "Products wholly made of quilted textile materials not exceeding Rs 2500 per piece"
+ },
+ {
+  "s_no": 493,
+  "hsn": "9404",
+  "description": "Cotton quilts of sale value not exceeding Rs. 2500 per piece"
+ },
+ {
+  "s_no": 494,
+  "hsn": "9401 10 00",
+  "description": "Aircraft seats"
+ },
+ {
+  "s_no": 495,
+  "hsn": "9405",
+  "description": "Hurricane lanterns, Kerosene lamp / pressure lantern, petromax, glass chimney, and parts thereof"
+ },
+ {
+  "s_no": 496,
+  "hsn": "9503",
+  "description": "Toy balloons made of natural rubber latex"
+ },
+ {
+  "s_no": 497,
+  "hsn": "9503",
+  "description": "Toys like tricycles, scooters, pedal cars etc. (including parts and accessories thereof) [other than electronic toys]"
+ },
+ {
+  "s_no": 498,
+  "hsn": "9504",
+  "description": "Playing cards, chess board, carom board and other board games, like ludo, etc. (other than Video game consoles and Machines)"
+ },
+ {
+  "s_no": 499,
+  "hsn": "9506",
+  "description": "Sports goods other than articles and equipment for general physical exercise"
+ },
+ {
+  "s_no": 500,
+  "hsn": "9507",
+  "description": "Fishing hooks"
+ },
+ {
+  "s_no": 501,
+  "hsn": "9507",
+  "description": "Fishing rods, and other line fishing tackle; fish landing nets, butterfly nets and similar nets; decoy birds (other than those of heading 9208 or 9705) and similar hunting or shooting requisites"
+ },
+ {
+  "s_no": 502,
+  "hsn": "9601",
+  "description": "Worked ivory, bone, tortoise shell, horn, antlers, corals, mother of pearl, and other animal carving material and articles of these materials, articles of coral (including articles obtained by moulding)"
+ },
+ {
+  "s_no": 503,
+  "hsn": "9603 [other than 9603 10 00]",
+  "description": "Broomsticks (other than brooms consisting of twigs or other vegetable materials bound together, with or without handles)"
+ },
+ {
+  "s_no": 504,
+  "hsn": "9603 21 00",
+  "description": "Tooth brushes including dental-plate brushes"
+ },
+ {
+  "s_no": 505,
+  "hsn": "9607",
+  "description": "Slide fasteners and parts thereof"
+ },
+ {
+  "s_no": 506,
+  "hsn": "9615",
+  "description": "Combs, hair-slides and the like; hairpins, curling pins, curling grips, hair-curlers and the like, other than those of heading 8516, and parts thereof"
+ },
+ {
+  "s_no": 507,
+  "hsn": "9619 00 30, 9619 00 40, or 9619 00 90",
+  "description": "All goods"
+ },
+ {
+  "s_no": 508,
+  "hsn": "9701",
+  "description": "Paintings, drawings and pastels, executed entirely by hand, other than drawings of heading 4906 and other than hand-painted or hand-decorated manufactured articles; collages, mosaics and similar decorative plaques"
+ },
+ {
+  "s_no": 509,
+  "hsn": "9702",
+  "description": "Original engravings, prints and lithographs"
+ },
+ {
+  "s_no": 510,
+  "hsn": "9703",
+  "description": "Original sculptures and statuary, in any material"
+ },
+ {
+  "s_no": 511,
+  "hsn": "9704",
+  "description": "Postage or revenue stamps, stamp-postmarks, first-day covers, postal stationery (stamped paper), and the like, used or unused, other than those of heading 4907"
+ },
+ {
+  "s_no": 512,
+  "hsn": "9705",
+  "description": "Collections and collectors' pieces of zoological, botanical, mineralogical, anatomical, historical, archaeological, paleontological, ethnographic or numismatic interest including numismatic coins"
+ },
+ {
+  "s_no": 513,
+  "hsn": "9706",
+  "description": "Antiques of an age exceeding one hundred years"
+ },
+ {
+  "s_no": 514,
+  "hsn": "9804",
+  "description": "All drugs or medicines including their salts and esters and diagnostic test kits and formulations intended for personal use [other than those specified at nil at S No. 113 of Notification No. 10/2025-Central Tax (Rate) dated 17th September, 2025]"
+ },
+ {
+  "s_no": 515,
+  "hsn": "Any chapter",
+  "description": "Rosaries, prayer beads or Hawan samagri"
+ },
+ {
+  "s_no": 516,
+  "hsn": "Any chapter",
+  "description": "Biomass briquettes or solid bio fuel pellets"
+ },
+ {
+  "list": "1",
+  "item_no": 1,
+  "description": "(A)   (1) Braille writers and braille writing instruments"
+ },
+ {
+  "list": "1",
+  "item_no": 2,
+  "description": "(A)   (2) Hand writing equipment Braille Frames, Slates, Writing Guides, Script Writing Guides, Styli, Braille Erasers"
+ },
+ {
+  "list": "1",
+  "item_no": 3,
+  "description": "(A)   (3) Canes, Electronic aids like the Sonic Guide"
+ },
+ {
+  "list": "1",
+  "item_no": 4,
+  "description": "(A)   (4) Optical, Environmental Sensors"
+ },
+ {
+  "list": "1",
+  "item_no": 5,
+  "description": "(A)   (5) Arithmetic aids like the Taylor Frame (arithmetic and algebra types), Cubarythm, Speaking or Braille calculator"
+ },
+ {
+  "list": "1",
+  "item_no": 6,
+  "description": "(A)   (6) Geometrical aids like combined Graph and Mathematical Demonstration Board, Braille Protractors, Scales, Compasses and Spar Wheels"
+ },
+ {
+  "list": "1",
+  "item_no": 7,
+  "description": "(A)   (7) Electronic measuring equipment, such as calipers, micrometers, comparators, gauges, gauge blocks Levels, Rules, Rulers and Yardsticks"
+ },
+ {
+  "list": "1",
+  "item_no": 8,
+  "description": "(A)   (8) Drafting, Drawing aids, tactile displays"
+ },
+ {
+  "list": "1",
+  "item_no": 9,
+  "description": "(A)   (9) Specially adapted clocks and watches"
+ },
+ {
+  "list": "1",
+  "item_no": 10,
+  "description": "(B)   (1) Wheel chairs falling under heading No. 87.13 of the First Schedule"
+ },
+ {
+  "list": "1",
+  "item_no": 11,
+  "description": "(B)   (2) Retro fitment kits for vehicles used by the disabled"
+ },
+ {
+  "list": "1",
+  "item_no": 12,
+  "description": "(C)   Artificial electronic larynx and spares thereof"
+ },
+ {
+  "list": "1",
+  "item_no": 13,
+  "description": "(D)   Artificial electronic ear (Cochlear implant)"
+ },
+ {
+  "list": "1",
+  "item_no": 14,
+  "description": "(E)   (1) Talking books (in the form of cassettes, discs or other sound reproductions) and large-print books, braille embossers, talking calculators, talking thermometers"
+ },
+ {
+  "list": "1",
+  "item_no": 15,
+  "description": "(E)   (2) Equipment for the mechanical or the computerized production of braille and recorded material such as braille computer terminals and displays, electronic braille, transfer and pressing machines and stereo typing machines"
+ },
+ {
+  "list": "1",
+  "item_no": 16,
+  "description": "(E)   (3) Braille paper"
+ },
+ {
+  "list": "1",
+  "item_no": 17,
+  "description": "(E)   (4) All tangible appliances including articles, instruments, apparatus, specially designed for use by the blind"
+ },
+ {
+  "list": "1",
+  "item_no": 18,
+  "description": "(E)   (5) Aids for improving mobility of the blind such as electronic orientation and obstacle detection appliance and white canes"
+ },
+ {
+  "list": "1",
+  "item_no": 19,
+  "description": "(E)   (6) Technical aids for education, rehabilitation, vocational training and employment of the blind such as Braille typewriters, braille watches, teaching and learning aids, games and other instruments and vocational aids specifically adapted for use of the blind"
+ },
+ {
+  "list": "1",
+  "item_no": 20,
+  "description": "(E)   (7) Assistive listening devices, audiometers"
+ },
+ {
+  "list": "1",
+  "item_no": 21,
+  "description": "(E)   (8) External catheters, special jelly cushions to prevent bed sores, stair lift, urine collection bags"
+ },
+ {
+  "list": "1",
+  "item_no": 22,
+  "description": "(E)   (9) Instruments and implants for severely physically handicapped patients and joints replacement and spinal instruments and implants including bone cement."
+ }
+]

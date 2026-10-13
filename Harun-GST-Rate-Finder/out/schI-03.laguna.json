@@ -1,0 +1,532 @@
+[
+ {
+  "s_no": 263,
+  "hsn": "3822",
+  "description": "All diagnostic kits or reagents including certified reference materials"
+ },
+ {
+  "s_no": 264,
+  "hsn": "3826",
+  "description": "Bio-diesel supplied to Oil Marketing Companies for blending with High Speed Diesel"
+ },
+ {
+  "s_no": 265,
+  "hsn": "3926",
+  "description": "Feeding bottles, Plastic beads"
+ },
+ {
+  "s_no": 266,
+  "hsn": "4001",
+  "description": "Natural rubber, balata, gutta-percha, guayule, chicle and similar natural gums, in primary forms or in plates, sheets or strip"
+ },
+ {
+  "s_no": 267,
+  "hsn": "4004 00 00",
+  "description": "Waste, parings or scrap of rubber (other than hard rubber)"
+ },
+ {
+  "s_no": 268,
+  "hsn": "4007",
+  "description": "Latex Rubber Thread"
+ },
+ {
+  "s_no": 269,
+  "hsn": "4011",
+  "description": "Rear Tractor tyres and rear tractor tyre tubes"
+ },
+ {
+  "s_no": 270,
+  "hsn": "4011 30 00",
+  "description": "New pneumatic tyres, of rubber of a kind used on aircraft"
+ },
+ {
+  "s_no": 271,
+  "hsn": "4011 70 00",
+  "description": "Tyre for tractors"
+ },
+ {
+  "s_no": 272,
+  "hsn": "4011, 4013",
+  "description": "Pneumatic tyres or inner tubes, of rubber, of a kind used on/in bicycles, cycle-rickshaws and three wheeled powered cycle rickshaws"
+ },
+ {
+  "s_no": 273,
+  "hsn": "4013 90 49",
+  "description": "Tube for tractor tyres"
+ },
+ {
+  "s_no": 274,
+  "hsn": "4014",
+  "description": "Nipples of feeding bottles"
+ },
+ {
+  "s_no": 275,
+  "hsn": "4015",
+  "description": "Surgical rubber gloves or medical examination rubber gloves"
+ },
+ {
+  "s_no": 276,
+  "hsn": "4016",
+  "description": "Rubber bands"
+ },
+ {
+  "s_no": 277,
+  "hsn": "4017",
+  "description": "Waste or scrap of hard rubber"
+ },
+ {
+  "s_no": 278,
+  "hsn": "4101",
+  "description": "Raw hides and skins of bovine (including buffalo) or equine animals (fresh, or salted, dried, limed, pickled or otherwise preserved, but not tanned, parchment-dressed or further prepared), whether or not dehaired or split"
+ },
+ {
+  "s_no": 279,
+  "hsn": "4102",
+  "description": "Raw skins of sheep or lambs (fresh, or salted, dried, limed, pickled or otherwise preserved, but not tanned, parchment-dressed or further prepared), whether or not with wool on or split"
+ },
+ {
+  "s_no": 280,
+  "hsn": "4103",
+  "description": "Other raw hides and skins (fresh, or salted, dried, limed, pickled or otherwise preserved, but not tanned, parchment-dressed or further prepared), whether or not dehaired or split"
+ },
+ {
+  "s_no": 281,
+  "hsn": "4104",
+  "description": "Tanned or crust hides and skins of bovine (including buffalo) or equine animals, without hair on, whether or not split, but not further prepared"
+ },
+ {
+  "s_no": 282,
+  "hsn": "4105",
+  "description": "Tanned or crust skins of sheep or lambs, without wool on, whether or not split, but not further prepared"
+ },
+ {
+  "s_no": 283,
+  "hsn": "4106",
+  "description": "Tanned or crust hides and skins of other animals, without wool or hair on, whether or not split, but not further prepared"
+ },
+ {
+  "s_no": 284,
+  "hsn": "4107",
+  "description": "Leather further prepared after tanning or crusting, including parchment-dressed leather, of bovine (including buffalo) or equine animals, without hair on, whether or not split, other than leather of heading 4114"
+ },
+ {
+  "s_no": 285,
+  "hsn": "4112",
+  "description": "Leather further prepared after tanning or crusting, including parchment-dressed leather, of sheep or lamb, without wool on, whether or not split, other than leather of heading 4114"
+ },
+ {
+  "s_no": 286,
+  "hsn": "4113",
+  "description": "Leather further prepared after tanning or crusting, including parchment-dressed leather, of other animals, without wool or hair on, whether or not split, other than leather of heading 4114"
+ },
+ {
+  "s_no": 287,
+  "hsn": "4114",
+  "description": "Chamois (including combination chamois) leather; patent leather and patent laminated leather; metallised leather"
+ },
+ {
+  "s_no": 288,
+  "hsn": "4115",
+  "description": "Composition leather with a basis of leather or leather fibre, in slabs, sheets or strip, whether or not in rolls; parings and other waste of leather or of composition leather, not suitable for the manufacture of leather articles; leather dust, powder and flour"
+ },
+ {
+  "s_no": 289,
+  "hsn": "4202 22 20",
+  "description": "Hand bags and shopping bags, of cotton"
+ },
+ {
+  "s_no": 290,
+  "hsn": "4202 22 30",
+  "description": "Hand bags and shopping bags, of jute"
+ },
+ {
+  "s_no": 291,
+  "hsn": "4203",
+  "description": "Gloves specially designed for use in sports"
+ },
+ {
+  "s_no": 292,
+  "hsn": "44 or any Chapter",
+  "description": "The following goods, namely: — b. Cement Bonded Particle Board; c. Jute Particle Board; d. Rice Husk Board; e. Glass-fibre Reinforced Gypsum Board (GRG) f. Sisal-fibre Boards; g. Bagasse Board; and h. Cotton Stalk Particle Board i. Particle/fibre board manufactured from agricultural crop residues"
+ },
+ {
+  "s_no": 293,
+  "hsn": "44, 68, 83",
+  "description": "Idols of wood, stone [including marble] and metals [other than those made of precious metals]"
+ },
+ {
+  "s_no": 294,
+  "hsn": "4401",
+  "description": "Wood in chips or particles; sawdust and wood waste and scrap, whether or not agglomerated in logs, briquettes, pellets or similar forms"
+ },
+ {
+  "s_no": 295,
+  "hsn": "4404",
+  "description": "Hoopwood; split poles; piles, pickets and stakes of wood, pointed but not sawn lengthwise; wooden sticks, roughly trimmed but not turned, bent or otherwise worked, suitable for the manufacture of walking-sticks, umbrellas, tool handles or the like"
+ },
+ {
+  "s_no": 296,
+  "hsn": "4405",
+  "description": "Wood wool; wood flour"
+ },
+ {
+  "s_no": 297,
+  "hsn": "4406",
+  "description": "Railway or tramway sleepers (cross-ties) of wood"
+ },
+ {
+  "s_no": 298,
+  "hsn": "4408",
+  "description": "Sheets for veneering (including those obtained by slicing laminated wood), for plywood or for similar laminated wood and other wood, sawn lengthwise, sliced or peeled, whether or not planed, sanded, spliced or end-jointed, of a thickness not exceeding 6 mm [for match splints]"
+ },
+ {
+  "s_no": 299,
+  "hsn": "4409",
+  "description": "Bamboo flooring"
+ },
+ {
+  "s_no": 300,
+  "hsn": "4415",
+  "description": "Packing cases, boxes, crates, drums and similar packings, of wood; cable-drums of wood; pallets, box pallets and other load boards, of wood; pallet collars of wood"
+ },
+ {
+  "s_no": 301,
+  "hsn": "4416",
+  "description": "Casks, barrels, vats, tubs and other coopers’ products and parts thereof, of wood, including staves"
+ },
+ {
+  "s_no": 302,
+  "hsn": "4417",
+  "description": "Tools, tool bodies, tool handles, broom or brush bodies and handles, of wood; boot or shoe lasts and trees, of wood"
+ },
+ {
+  "s_no": 303,
+  "hsn": "4418",
+  "description": "Bamboo wood building joinery"
+ },
+ {
+  "s_no": 304,
+  "hsn": "4419",
+  "description": "Tableware and Kitchenware of wood"
+ },
+ {
+  "s_no": 305,
+  "hsn": "4420",
+  "description": "Wood marquetry and inlaid wood; caskets and cases for jewellery or cutlery, and similar articles, of wood; statuettes and other ornaments, of wood; wooden articles of furniture not falling in Chapter 94"
+ },
+ {
+  "s_no": 306,
+  "hsn": "4421",
+  "description": "Other articles of wood; such as clothes hangers, Spools, cops, bobbins, sewing thread reels and the like of turned wood for various textile machinery, Match splints, Pencil slats, Parts of wood, namely oars, paddles and rudders for ships, boats and other similar floating structures, Parts of domestic decorative articles used as tableware and kitchenware [other than Wood paving blocks, articles of densified wood not elsewhere included or specified, Parts of domestic decorative articles used as tableware and kitchenware]"
+ },
+ {
+  "s_no": 307,
+  "hsn": "4501",
+  "description": "Natural cork, raw or simply prepared"
+ },
+ {
+  "s_no": 308,
+  "hsn": "4502 00 00",
+  "description": "Natural cork, debacked or roughly squared, or in rectangular (including square) blocks, plates, sheets or strip (including sharp-edged blanks for corks or stoppers)"
+ },
+ {
+  "s_no": 309,
+  "hsn": "4503",
+  "description": "Articles of natural cork such as Corks and Stoppers, Shuttlecock cork bottom"
+ },
+ {
+  "s_no": 310,
+  "hsn": "4504",
+  "description": "Agglomerated cork (with or without a binding substance) and articles of agglomerated cork"
+ },
+ {
+  "s_no": 311,
+  "hsn": "4601, 4602",
+  "description": "Manufactures of straw, of esparto or of other plaiting materials; basketware and wickerwork"
+ },
+ {
+  "s_no": 312,
+  "hsn": "4701",
+  "description": "Mechanical wood pulp"
+ },
+ {
+  "s_no": 313,
+  "hsn": "4703",
+  "description": "Chemical wood pulp, soda or sulphate, other than dissolving grades"
+ },
+ {
+  "s_no": 314,
+  "hsn": "4704",
+  "description": "Chemical wood pulp, sulphite, other than dissolving grades"
+ },
+ {
+  "s_no": 315,
+  "hsn": "4705",
+  "description": "Wood pulp obtained by a combination of mechanical and chemical pulping processes"
+ },
+ {
+  "s_no": 316,
+  "hsn": "4706",
+  "description": "Pulps of fibres derived from recovered (waste and scrap) paper or paperboard or of other fibrous cellulosic material"
+ },
+ {
+  "s_no": 317,
+  "hsn": "4707",
+  "description": "Recovered waste or scrap of paper or paperboard"
+ },
+ {
+  "s_no": 318,
+  "hsn": "48",
+  "description": "Paper splints for matches, whether or not waxed, Asphaltic roofing sheets"
+ },
+ {
+  "s_no": 319,
+  "hsn": "39, 48",
+  "description": "Paper Sacks/Bags and bio-degradable bags"
+ },
+ {
+  "s_no": 320,
+  "hsn": "4801",
+  "description": "Newsprint, in rolls or sheets"
+ },
+ {
+  "s_no": 321,
+  "hsn": "4817 30",
+  "description": "Boxes, pouches, wallets and writing compendiums, of paper or paperboard, containing an assortment of paper stationery"
+ },
+ {
+  "s_no": 322,
+  "hsn": "4819 10, 4819 20",
+  "description": "Cartons, boxes and cases of, - (a) Corrugated paper or paper boards; or (b) Non-corrugated paper or paper board"
+ },
+ {
+  "s_no": 323,
+  "hsn": "4823",
+  "description": "Paper pulp moulded trays; Kites, Paper mache articles"
+ },
+ {
+  "s_no": 324,
+  "hsn": "4901",
+  "description": "Brochures, leaflets and similar printed matter, whether or not in single sheets"
+ },
+ {
+  "s_no": 325,
+  "hsn": "5004 to 5006",
+  "description": "Silk yarn"
+ },
+ {
+  "s_no": 326,
+  "hsn": "5007",
+  "description": "Woven fabrics of silk or of silk waste"
+ },
+ {
+  "s_no": 327,
+  "hsn": "5104",
+  "description": "Garneted stock of wool or of fine or coarse animal hair, shoddy wool"
+ },
+ {
+  "s_no": 328,
+  "hsn": "5105",
+  "description": "Wool and fine or coarse animal hair, carded or combed"
+ },
+ {
+  "s_no": 329,
+  "hsn": "5106 to 5110",
+  "description": "Yarn of wool or of animal hair"
+ },
+ {
+  "s_no": 330,
+  "hsn": "5111 to 5113",
+  "description": "Woven fabrics of wool or of animal hair"
+ },
+ {
+  "s_no": 331,
+  "hsn": "5201 to 5203",
+  "description": "Cotton and Cotton waste"
+ },
+ {
+  "s_no": 332,
+  "hsn": "5204",
+  "description": "Cotton sewing thread, whether or not put up for retail sale"
+ },
+ {
+  "s_no": 333,
+  "hsn": "5205 to 5207",
+  "description": "Cotton yarn [other than khadi yarn]"
+ },
+ {
+  "s_no": 334,
+  "hsn": "5208 to 5212",
+  "description": "Woven fabrics of cotton"
+ },
+ {
+  "s_no": 335,
+  "hsn": "5301",
+  "description": "All goods i.e. flax, raw or processed but not spun; flax tow and waste (including yarn waste and garneted stock)"
+ },
+ {
+  "s_no": 336,
+  "hsn": "5302",
+  "description": "True hemp (Cannabis sativa L), raw or processed but not spun; tow and waste of true hemp (including yarn waste and garneted stock)"
+ },
+ {
+  "s_no": 337,
+  "hsn": "5303",
+  "description": "All goods i.e. textile bast fibres [other than jute fibres, raw or processed but not spun]; tow and waste of these fibres (including yarn waste and garneted stock)"
+ },
+ {
+  "s_no": 338,
+  "hsn": "5305 to 5308",
+  "description": "All goods [other than coconut coir fibre] including yarn of flax, jute, other textile bast fibres, other vegetable textile fibres; paper yarn including coir pith compost pre-packaged and labelled"
+ },
+ {
+  "s_no": 339,
+  "hsn": "5309 to 5311",
+  "description": "Woven fabrics of other vegetable textile fibres, paper yarn"
+ },
+ {
+  "s_no": 340,
+  "hsn": "5401",
+  "description": "Sewing thread of manmade filaments, whether or not put up for retail sale"
+ },
+ {
+  "s_no": 341,
+  "hsn": "5402, 5403, 5404, 5405, 5406",
+  "description": "All goods including synthetic or artificial filament yarns"
+ },
+ {
+  "s_no": 342,
+  "hsn": "5407, 5408",
+  "description": "Woven fabrics of manmade textile materials"
+ },
+ {
+  "s_no": 343,
+  "hsn": "5501, 5502",
+  "description": "Synthetic or artificial filament tow"
+ },
+ {
+  "s_no": 344,
+  "hsn": "5503, 5504, 5506, 5507",
+  "description": "Synthetic or artificial staple fibres"
+ },
+ {
+  "s_no": 345,
+  "hsn": "5505",
+  "description": "Waste of manmade fibres"
+ },
+ {
+  "s_no": 346,
+  "hsn": "5508",
+  "description": "Sewing thread of manmade staple fibres, whether or not put up for retail sale"
+ },
+ {
+  "s_no": 347,
+  "hsn": "5509, 5510, 5511",
+  "description": "Yarn of manmade staple fibres"
+ },
+ {
+  "s_no": 348,
+  "hsn": "5512 to 5516",
+  "description": "Woven fabrics of manmade staple fibres"
+ },
+ {
+  "s_no": 349,
+  "hsn": "5601",
+  "description": "Wadding of textile materials and articles thereof; such as Absorbent cotton wool except cigarette filter rods"
+ },
+ {
+  "s_no": 350,
+  "hsn": "5602",
+  "description": "Felt, whether or not impregnated, coated, covered or laminated"
+ },
+ {
+  "s_no": 351,
+  "hsn": "5603",
+  "description": "Nonwovens, whether or not impregnated, coated, covered or laminated"
+ },
+ {
+  "s_no": 352,
+  "hsn": "5604",
+  "description": "Rubber thread and cord, textile covered; textile yarn, and strip and the like of heading 5404 or 5405, impregnated, coated, covered or sheathed with rubber or plastics"
+ },
+ {
+  "s_no": 353,
+  "hsn": "5605",
+  "description": "Metallised yarn, whether or not gimped, being textile yarn, or strip or the like of heading 5404 or 5405, combined with metal in the form of thread, strip or powder or covered with metal, including real zari thread (gold) and silver thread combined with textile thread, imitation zari thread or yarn known by any name in trade parlance"
+ },
+ {
+  "s_no": 354,
+  "hsn": "5606",
+  "description": "Gimped yarn, and strip and the like of heading 5404 or 5405, gimped (other than those of heading 5605 and gimped horsehair yarn); chenille yarn (including flock chenille yarn); loop wale-yarn"
+ },
+ {
+  "s_no": 355,
+  "hsn": "5607",
+  "description": "Twine, cordage, ropes and cables, whether or not plaited or braided and whether or not impregnated, coated, covered or sheathed with rubber or plastics including jute twine, coir cordage or ropes"
+ },
+ {
+  "s_no": 356,
+  "hsn": "5608",
+  "description": "Knotted netting of twine, cordage or rope; made up fishing nets and other made up nets, of textile materials"
+ },
+ {
+  "s_no": 357,
+  "hsn": "5609",
+  "description": "Articles of yarn, strip or the like of heading 5404 or 5405, twine, cordage, rope or cables, not elsewhere specified or included, products of coir"
+ },
+ {
+  "s_no": 358,
+  "hsn": "5701",
+  "description": "Carpets and other textile floor coverings, knotted, whether or not made up"
+ },
+ {
+  "s_no": 359,
+  "hsn": "5702",
+  "description": "Carpets and other textile floor coverings, woven, not tufted or flocked, whether or not made up, including ―Kelem‖, ―Schumacks‖, ―Karamanie‖ and similar hand-woven rugs"
+ },
+ {
+  "s_no": 360,
+  "hsn": "5703",
+  "description": "Carpets and other textile floor coverings (including Turf), tufted, whether or not made up"
+ },
+ {
+  "s_no": 361,
+  "hsn": "5704",
+  "description": "Carpets and other textile floor coverings, of felt, not tufted or flocked, whether or not made up"
+ },
+ {
+  "s_no": 362,
+  "hsn": "5705",
+  "description": "Other carpets and other textile floor coverings, whether or not made up; such as Mats and mattings including Bath Mats, where cotton predominates by weight, of Handloom, Cotton Rugs of handloom"
+ },
+ {
+  "s_no": 363,
+  "hsn": "5702, 5703, 5705",
+  "description": "Coir mats, matting, floor covering and handloom durries"
+ },
+ {
+  "s_no": 364,
+  "hsn": "5801",
+  "description": "All goods"
+ },
+ {
+  "s_no": 365,
+  "hsn": "5802",
+  "description": "Terry towelling and similar woven terry fabrics, other than narrow fabrics of heading 5806; tufted textile fabrics, other than products of heading 5703"
+ },
+ {
+  "s_no": 366,
+  "hsn": "5803",
+  "description": "Gauze, other than narrow fabrics of heading 5806"
+ },
+ {
+  "s_no": 367,
+  "hsn": "5804",
+  "description": "Tulles and other net fabrics, not including woven, knitted or crocheted fabrics; lace in the piece, in strips or in motifs, other than fabrics of headings 6002 to 6006"
+ },
+ {
+  "s_no": 368,
+  "hsn": "5805",
+  "description": "Hand-woven tapestries of the type Gobelins, Flanders, Aubusson, Beauvais and the like, and needle-worked tapestries (for example, petit point, cross stitch), whether or not made up"
+ }
+]
