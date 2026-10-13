@@ -1,0 +1,19 @@
+# Render blueprint: New > Blueprint > pick this repository.
+# The free plan has no persistent disk, so the demo data is reloaded on every restart.
+services:
+  - type: web
+    name: onehr-payroll-manager
+    runtime: node
+    plan: free
+    buildCommand: npm install --include=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "22"
+      - key: SEED_DEMO
+        value: "true"
+      - key: GEMINI_API_KEY
+        sync: false

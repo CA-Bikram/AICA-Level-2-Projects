@@ -1,0 +1,6 @@
+{
+  "name": "OneHR Payroll Manager",
+  "description": "Indian Payroll & Attendance Management System with statutory PF, ESIC, PT, and TDS calculations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
