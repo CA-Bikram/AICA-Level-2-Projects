@@ -1,0 +1,20 @@
+{
+  "seller": {
+    "trade_name": "Sample Traders (Demo)",
+    "address": "12, Park Street\nKolkata - 700016, West Bengal",
+    "mobile": "9800000000",
+    "email": "demo@sampletraders.example",
+    "gstin": "19ABCDE1234F1Z5",
+    "state": "West Bengal (19)",
+    "logo": "",
+    "bank_name": "Demo Bank",
+    "bank_account_name": "Sample Traders (Demo)",
+    "bank_account_no": "000011112222",
+    "bank_ifsc": "DEMO0000001",
+    "bank_branch": "Park Street",
+    "upi_id": "",
+    "declaration": "We declare that this invoice shows the actual price of the goods/services described and that all particulars are true and correct.",
+    "terms": "Goods once sold will not be taken back.\nPayment due within 30 days.",
+    "invoice_prefix": "INV-"
+  }
+}

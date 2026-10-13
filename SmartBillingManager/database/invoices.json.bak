@@ -1,0 +1,406 @@
+{
+  "invoices": [
+    {
+      "invoice_no": "SAMPLE-001",
+      "date": "2026-07-23",
+      "customer": {
+        "name": "Rahul Enterprises",
+        "address": "45 MG Road\nKolkata - 700001",
+        "mobile": "9830011111",
+        "gstin": "19AAACR5055K1Z5"
+      },
+      "interstate": false,
+      "round_off_enabled": true,
+      "items": [
+        {
+          "name": "Steel Rod 12mm TMT",
+          "hsn": "7214",
+          "qty": 25.5,
+          "rate": 62.75,
+          "gst_pct": 18.0,
+          "amount": 1600.13,
+          "gst_amount": 288.02,
+          "total": 1888.15
+        },
+        {
+          "name": "Cement Bag 50kg",
+          "hsn": "2523",
+          "qty": 40.0,
+          "rate": 385.0,
+          "gst_pct": 28.0,
+          "amount": 15400.0,
+          "gst_amount": 4312.0,
+          "total": 19712.0
+        },
+        {
+          "name": "Labour Charges",
+          "hsn": "9954",
+          "qty": 1.0,
+          "rate": 2000.0,
+          "gst_pct": 18.0,
+          "amount": 2000.0,
+          "gst_amount": 360.0,
+          "total": 2360.0
+        }
+      ],
+      "receipts": [
+        {
+          "date": "2026-08-07",
+          "mode": "UPI",
+          "note": "UTR 402511",
+          "amount": 10000
+        }
+      ],
+      "subtotal": 19000.13,
+      "total_gst": 4960.02,
+      "cgst": 2480.01,
+      "sgst": 2480.01,
+      "igst": 0.0,
+      "round_off": -0.15,
+      "grand_total": 23960.0,
+      "tax_summary": [
+        {
+          "gst_pct": 18.0,
+          "taxable": 3600.13,
+          "cgst": 324.01,
+          "sgst": 324.01,
+          "igst": 0.0,
+          "total_gst": 648.02
+        },
+        {
+          "gst_pct": 28.0,
+          "taxable": 15400.0,
+          "cgst": 2156.0,
+          "sgst": 2156.0,
+          "igst": 0.0,
+          "total_gst": 4312.0
+        }
+      ],
+      "received_amount": 10000.0,
+      "outstanding_amount": 13960.0,
+      "payment_status": "Partly Paid",
+      "last_receipt_date": "2026-08-07",
+      "updated_at": "2026-10-06 18:22:34",
+      "id": "d7366542947a4ce9bec26e090535c870",
+      "created_at": "2026-10-06 18:22:34"
+    },
+    {
+      "invoice_no": "SAMPLE-002",
+      "date": "2026-08-17",
+      "customer": {
+        "name": "Mehta Stores",
+        "address": "8 Linking Road\nMumbai - 400050",
+        "mobile": "9820022222",
+        "gstin": "27AABCM1234D1Z6"
+      },
+      "interstate": true,
+      "round_off_enabled": true,
+      "items": [
+        {
+          "name": "LED Bulb 9W",
+          "hsn": "8539",
+          "qty": 200.0,
+          "rate": 68.0,
+          "gst_pct": 18.0,
+          "amount": 13600.0,
+          "gst_amount": 2448.0,
+          "total": 16048.0
+        },
+        {
+          "name": "Extension Board 4 Socket",
+          "hsn": "8536",
+          "qty": 50.0,
+          "rate": 245.0,
+          "gst_pct": 18.0,
+          "amount": 12250.0,
+          "gst_amount": 2205.0,
+          "total": 14455.0
+        }
+      ],
+      "receipts": [
+        {
+          "date": "2026-08-22",
+          "mode": "Bank Transfer",
+          "note": "NEFT N123456",
+          "amount": 30503.0
+        }
+      ],
+      "subtotal": 25850.0,
+      "total_gst": 4653.0,
+      "cgst": 0.0,
+      "sgst": 0.0,
+      "igst": 4653.0,
+      "round_off": 0.0,
+      "grand_total": 30503.0,
+      "tax_summary": [
+        {
+          "gst_pct": 18.0,
+          "taxable": 25850.0,
+          "cgst": 0.0,
+          "sgst": 0.0,
+          "igst": 4653.0,
+          "total_gst": 4653.0
+        }
+      ],
+      "received_amount": 30503.0,
+      "outstanding_amount": 0.0,
+      "payment_status": "Paid",
+      "last_receipt_date": "2026-08-22",
+      "updated_at": "2026-10-06 18:22:34",
+      "id": "87a2027345dc46778334692973e66854",
+      "created_at": "2026-10-06 18:22:34"
+    },
+    {
+      "invoice_no": "SAMPLE-003",
+      "date": "2026-09-01",
+      "customer": {
+        "name": "Anita Sharma",
+        "address": "Flat 3B, Lake View Apartments\nKolkata - 700029",
+        "mobile": "9831033333",
+        "gstin": ""
+      },
+      "interstate": false,
+      "round_off_enabled": true,
+      "items": [
+        {
+          "name": "Basmati Rice 25kg",
+          "hsn": "1006",
+          "qty": 4.0,
+          "rate": 2150.0,
+          "gst_pct": 5.0,
+          "amount": 8600.0,
+          "gst_amount": 430.0,
+          "total": 9030.0
+        },
+        {
+          "name": "Refined Oil 15L Tin",
+          "hsn": "1512",
+          "qty": 2.0,
+          "rate": 1890.0,
+          "gst_pct": 5.0,
+          "amount": 3780.0,
+          "gst_amount": 189.0,
+          "total": 3969.0
+        },
+        {
+          "name": "Packing Charges",
+          "hsn": "",
+          "qty": 1.0,
+          "rate": 150.0,
+          "gst_pct": 18.0,
+          "amount": 150.0,
+          "gst_amount": 27.0,
+          "total": 177.0
+        }
+      ],
+      "receipts": [],
+      "subtotal": 12530.0,
+      "total_gst": 646.0,
+      "cgst": 323.0,
+      "sgst": 323.0,
+      "igst": 0.0,
+      "round_off": 0.0,
+      "grand_total": 13176.0,
+      "tax_summary": [
+        {
+          "gst_pct": 5.0,
+          "taxable": 12380.0,
+          "cgst": 309.5,
+          "sgst": 309.5,
+          "igst": 0.0,
+          "total_gst": 619.0
+        },
+        {
+          "gst_pct": 18.0,
+          "taxable": 150.0,
+          "cgst": 13.5,
+          "sgst": 13.5,
+          "igst": 0.0,
+          "total_gst": 27.0
+        }
+      ],
+      "received_amount": 0.0,
+      "outstanding_amount": 13176.0,
+      "payment_status": "Unpaid",
+      "last_receipt_date": "",
+      "updated_at": "2026-10-06 18:22:34",
+      "id": "5b70943af3e64b608b7c8a39c23db252",
+      "created_at": "2026-10-06 18:22:34"
+    },
+    {
+      "invoice_no": "SAMPLE-004",
+      "date": "2026-09-16",
+      "customer": {
+        "name": "Sunrise Hotel Pvt Ltd",
+        "address": "NH-16, Bypass Road\nBhubaneswar - 751010",
+        "mobile": "9437044444",
+        "gstin": "21AAECS9876P1Z3"
+      },
+      "interstate": true,
+      "round_off_enabled": true,
+      "items": [
+        {
+          "name": "Bed Sheet Double",
+          "hsn": "6302",
+          "qty": 60.0,
+          "rate": 540.0,
+          "gst_pct": 5.0,
+          "amount": 32400.0,
+          "gst_amount": 1620.0,
+          "total": 34020.0
+        },
+        {
+          "name": "Bath Towel",
+          "hsn": "6302",
+          "qty": 120.0,
+          "rate": 185.0,
+          "gst_pct": 5.0,
+          "amount": 22200.0,
+          "gst_amount": 1110.0,
+          "total": 23310.0
+        },
+        {
+          "name": "Room Freshener 250ml",
+          "hsn": "3307",
+          "qty": 48.0,
+          "rate": 142.5,
+          "gst_pct": 18.0,
+          "amount": 6840.0,
+          "gst_amount": 1231.2,
+          "total": 8071.2
+        }
+      ],
+      "receipts": [
+        {
+          "date": "2026-09-21",
+          "mode": "Cheque",
+          "note": "Chq 004512",
+          "amount": 20000
+        },
+        {
+          "date": "2026-10-01",
+          "mode": "Bank Transfer",
+          "note": "RTGS R778899",
+          "amount": 15000
+        }
+      ],
+      "subtotal": 61440.0,
+      "total_gst": 3961.2,
+      "cgst": 0.0,
+      "sgst": 0.0,
+      "igst": 3961.2,
+      "round_off": -0.2,
+      "grand_total": 65401.0,
+      "tax_summary": [
+        {
+          "gst_pct": 5.0,
+          "taxable": 54600.0,
+          "cgst": 0.0,
+          "sgst": 0.0,
+          "igst": 2730.0,
+          "total_gst": 2730.0
+        },
+        {
+          "gst_pct": 18.0,
+          "taxable": 6840.0,
+          "cgst": 0.0,
+          "sgst": 0.0,
+          "igst": 1231.2,
+          "total_gst": 1231.2
+        }
+      ],
+      "received_amount": 35000.0,
+      "outstanding_amount": 30401.0,
+      "payment_status": "Partly Paid",
+      "last_receipt_date": "2026-10-01",
+      "updated_at": "2026-10-06 18:22:34",
+      "id": "16127bf1829d475aa8deef5e12c79a64",
+      "created_at": "2026-10-06 18:22:34"
+    },
+    {
+      "invoice_no": "SAMPLE-005",
+      "date": "2026-09-28",
+      "customer": {
+        "name": "Gupta Medical Hall",
+        "address": "22 College Street\nKolkata - 700073",
+        "mobile": "9903055555",
+        "gstin": "19AAGFG4321H1Z8"
+      },
+      "interstate": false,
+      "round_off_enabled": false,
+      "items": [
+        {
+          "name": "Digital Thermometer",
+          "hsn": "9025",
+          "qty": 15.0,
+          "rate": 132.2,
+          "gst_pct": 12.0,
+          "amount": 1983.0,
+          "gst_amount": 237.96,
+          "total": 2220.96
+        },
+        {
+          "name": "Hand Sanitizer 500ml",
+          "hsn": "3808",
+          "qty": 36.0,
+          "rate": 88.5,
+          "gst_pct": 18.0,
+          "amount": 3186.0,
+          "gst_amount": 573.48,
+          "total": 3759.48
+        },
+        {
+          "name": "Surgical Mask Box",
+          "hsn": "6307",
+          "qty": 20.0,
+          "rate": 95.75,
+          "gst_pct": 5.0,
+          "amount": 1915.0,
+          "gst_amount": 95.75,
+          "total": 2010.75
+        }
+      ],
+      "receipts": [],
+      "subtotal": 7084.0,
+      "total_gst": 907.19,
+      "cgst": 453.6,
+      "sgst": 453.59,
+      "igst": 0.0,
+      "round_off": 0.0,
+      "grand_total": 7991.19,
+      "tax_summary": [
+        {
+          "gst_pct": 5.0,
+          "taxable": 1915.0,
+          "cgst": 47.88,
+          "sgst": 47.87,
+          "igst": 0.0,
+          "total_gst": 95.75
+        },
+        {
+          "gst_pct": 12.0,
+          "taxable": 1983.0,
+          "cgst": 118.98,
+          "sgst": 118.98,
+          "igst": 0.0,
+          "total_gst": 237.96
+        },
+        {
+          "gst_pct": 18.0,
+          "taxable": 3186.0,
+          "cgst": 286.74,
+          "sgst": 286.74,
+          "igst": 0.0,
+          "total_gst": 573.48
+        }
+      ],
+      "received_amount": 0.0,
+      "outstanding_amount": 7991.19,
+      "payment_status": "Unpaid",
+      "last_receipt_date": "",
+      "updated_at": "2026-10-06 18:22:34",
+      "id": "c83a30e9de6b431a8622002cd95b0f51",
+      "created_at": "2026-10-06 18:22:34"
+    }
+  ]
+}
