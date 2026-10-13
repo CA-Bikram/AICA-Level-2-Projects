@@ -1,0 +1,222 @@
+SOURCE: Notification No. 9/2025-Central Tax (Rate) dated 17.09.2025, Schedule I (CGST 2.5% => total GST 5%). Chunk 3/6.
+---
+   174.      2513                            Pumice stone; emery; natural corundum, natural garnet and other
+                                             natural abrasives, whether or not heat-treated
+   175.      2514                            Slate, whether or not roughly trimmed or merely cut, by sawing or
+                                             otherwise, into blocks or slabs of a rectangular (including square)
+                                             shape
+   176.      2515 [Except 2515 12 20, 2515   Ecaussine and other calcareous monumental or building stone (other
+             12 90] or 6802                  than marble and travertine), alabaster, other than mirror polished
+                                             stone which is ready to use
+   177.      2515 11 00                      Marble and travertine, crude or roughly trimmed
+   178.      2515 12 10                      Marble and travertine blocks
+   179.      2516 [Except 2516 11 00,        Porphyry, basalt, sandstone and other monumental or building stone,
+             25161200]                       whether or not roughly trimmed or merely cut, by sawing or
+
+84                       THE GAZETTE OF INDIA : EXTRAORDINARY                              [PART II—SEC. 3(i)]
+
+                                           otherwise, into blocks or slabs of a rectangular (including square)
+                                           shape
+     180.   2516 11 00                     Granite crude or roughly trimmed
+     181.   2516                           Granite blocks
+     182.   2517                           Pebbles, gravel, broken or crushed stone, of a kind commonly used
+                                           for concrete aggregates, for road metalling or for railway or other
+                                           ballast, shingle and flint, whether or not heat-treated; macadam of
+                                           slag, dross or similar industrial waste, whether or not incorporating
+                                           the materials cited in the first part of the heading; tarred macadam;
+                                           granules, chippings and powder, of stones heading 2515 or 2516
+                                           whether or not heat-treated
+     183.   2518                           Dolomite, whether or not calcined or sintered, including dolomite
+                                           roughly trimmed or merely cut, by sawing or otherwise, into
+                                           blocks or slabs of a rectangular (including square) shape
+     184.   2519                           Natural magnesium carbonate (magnesite); fused magnesia; dead-
+                                           burned (sintered) magnesia, whether or not containing small
+                                           quantities of other oxides added before sintering; other magnesium
+                                           oxide, whether or not pure
+     185.   2520                           Gypsum; anhydrite; plasters (consisting of calcined gypsum or
+                                           calcium sulphate) whether or not coloured, with or without small
+                                           quantities of accelerators or retarders
+     186.   2521                           Limestone flux; limestone and other calcareous stone, of a kind used
+                                           for the manufacture of lime or cement.
+     187.   2522                           Quicklime, slaked lime and hydraulic lime, other than calcium oxide
+                                           and hydroxide of heading 2825
+     188.   2524                           Asbestos
+     189.   2525                           Mica, including splitting; mica waste.
+     190.   2526                           Natural steatite, whether or not roughly trimmed or merely cut, by
+                                           sawing or otherwise, into blocks or slabs of a rectangular (including
+                                           square) shape; talc.
+     191.   2528                           Natural borates and concentrates thereof (whether or not calcined),
+                                           but not including borates separated from natural brine; natural boric
+                                           acid containing not more than 85% of H3BO3 (calculated on dry
+                                           weight)
+     192.   2529                           Feldspar; leucite, nepheline and nepheline syenite; fluorspar
+     193.   2530                           Mineral substances not elsewhere specified or included
+     194.   2611                           Tungsten ores and concentrates
+     195.   2612                           Uranium or thorium ores and concentrates
+     196.   2613                           Molybdenum ores and concentrates
+     197.   2614                           Titanium ores and concentrates
+     198.   2615                           Niobium, tantalum, vanadium or zirconium ores and concentrates
+     199.   2616                           Precious metal ores and concentrates
+     200.   2617                           Other ores and concentrates
+     201.   2618                           Granulated slag (slag sand) from the manufacture of iron or steel
+     202.   2619                           Linz-Donawitz (LD) Slag
+     203.   2621                           Fly Ash
+     204.   27                             Bio-gas
+     205.   2704                           Coke and semi coke of coal, of lignite or of peat, whether or not
+                                           agglomerated; retort carbon
+     206.   2705                           Coal gas, water gas, producer gas and similar gases, other than
+                                           petroleum gases and other gaseous hydrocarbons
+     207.   2710                           (a) Kerosene oil PDS, (b) The following bunker fuels for use in ships
+                                           or vessels, namely,
+                                           i. IFO 180 CST
+                                           ii. IFO 380 CST
+                                           iii. Marine Fuel 0.5% (FO)
+     208.   2711 12 00, 2711 13 00, 2711   Liquefied Propane and Butane mixture, Liquefied Propane,
+            19 10                          Liquefied Butane and Liquefied Petroleum Gases (LPG) for supply
+                                           to non-domestic exempted category (NDEC) customers by the Indian
+                                           Oil Corporation Limited, Hindustan Petroleum Corporation Limited
+                                           or Bharat Petroleum Corporation Limited
+
+[भाग II—खण्ड 3(i)]                         भारत का राजपत्र : ऄसाधारण                                            85
+
+   209.      2711 12 00 2711 13 00, 2711       Liquefied Propane and Butane mixture, Liquefied Propane,
+             19 10                             Liquefied Butane and Liquefied Petroleum Gases (LPG) for supply
+                                               to household domestic consumers
+   210.      28                                Thorium oxalate, Enriched KBF4 (enriched potassium fluroborate),
+                                               Enriched elemental boron, Nuclear fuel
+   211.      28                                Anaesthetics, Potassium Iodate, Iodine, Steam
+   212.      2804 40 10                        Medical grade oxygen
+   213.      2805 11                           Nuclear grade sodium
+   214.      2807                              Sulphuric Acid
+   215.      2808                              Nitric acid
+   216.      2809                              Fertilizer grade phosphoric acid
+   217.      2814                              Ammonia
+   218.      2845                              Heavy water and other nuclear fuels
+   219.      2847                              Medicinal grade hydrogen peroxide
+   220.      2853                              Compressed air
+   221.      28 or 38                          Micronutrients, which are covered under serial number 1(g) of
+                                               Schedule 1, Part (A) of the Fertilizer Control Order, 1985 and are
+                                               manufactured by the manufacturers which are registered under
+                                               the Fertilizer Control Order, 1985
+   222.       29 or 3808 93                    Gibberellic acid
+   223.      2906 11 10                        Natural Menthol
+   224.      2906 11 10, 30, 3301              Following goods from Natural Menthol namely:-
+                                                         a. Menthol and menthol crystals,
+                                                         b. Peppermint (Mentha Oil),
+                                                         c. Fractionated / de-terpenated mentha oil (DTMO)
+                                                         d. De-mentholised oil (DMO),
+                                                         e. Spearmint oil
+                                                         f. Mentha piperita oil
+   225.      30                                Insulin, Cyclosporin, Desferrioxamine injection or deferiprone, Oral
+                                               re-hydration salts
+   226.      30 or any Chapter                 All Drugs and medicines including their salts and esters and
+                                               diagnostic test kits; formulations manufactured from bulk drugs
+                                               [other than those specified at nil at S. No. 113 of notification No.
+                                               10/2025-Central Tax (Rate) dated 17th September, 2025]
+   227.      30                                Diagnostic kits for detection of all types of hepatitis
+   228.      30                                Medicaments (including veterinary medicaments) used in bio-chemic
+                                               systems
+   229.      30                                Medicaments (including those used in Ayurvedic, Unani, Siddha,
+                                               Homeopathic or Bio-chemic systems), manufactured exclusively in
+                                               accordance with the formulae described in the authoritative books
+                                               specified in the First Schedule to the Drugs and Cosmetics Act, 1940
+                                               (23 of 1940) or Homeopathic Pharmacopoeia of India or the United
+                                               States of America or the United Kingdom or the German
+                                               Homeopathic Pharmacopoeia, as the case may be, and sold under the
+                                               name as specified in such books or pharmacopoeia
+   230.      3001                              Glands and other organs for organo-therapeutic uses, dried, whether
+                                               or not powdered; extracts of glands or other organs or of their
+                                               secretions for organo-therapeutic uses; heparin and its salts; other
+                                               human or animal substances prepared for therapeutic or prophylactic
+                                               uses, not elsewhere specified or included
+   231.      3002                              Animal blood prepared for therapeutic, prophylactic or diagnostic
+                                               uses; antisera and other blood fractions and modified immunological
+                                               products, whether or not obtained by means of biotechnological
+                                               processes; toxins, cultures of micro-organisms (excluding yeasts) and
+                                               similar products; cell cultures whether or not modified
+   232.      3002, 3006                        Animal or Human Blood Vaccines
+   233.      3003                              Medicaments (excluding goods of heading 3002, 3005 or 3006)
+                                               consisting of two or more constituents which have been mixed
+                                               together for therapeutic or prophylactic uses, not put up in measured
+                                               doses or in forms or packings for retail sale, including Ayurvedic,
+                                               Unani, Siddha, homoeopathic or Bio-chemic systems medicaments
+
+86                       THE GAZETTE OF INDIA : EXTRAORDINARY                            [PART II—SEC. 3(i)]
+
+     234.   3004                      Medicaments (excluding goods of heading 3002, 3005 or 3006)
+                                      consisting of mixed or unmixed products for therapeutic or
+                                      prophylactic uses, put up in measured doses (including those in the
+                                      form of transdermal administration systems) or in forms or packings
+                                      for retail sale, including Ayurvedic, Unani, homoeopathic siddha or
+                                      Bio-chemic systems medicaments, put up for retail sale
+     235.   3005                      Wadding, gauze, bandages and similar articles (for example,
+                                      dressings, adhesive plasters, poultices), impregnated or coated with
+                                      pharmaceutical substances or put up in forms or packings for retail
+                                      sale for medical, surgical, dental or veterinary purposes
+     236.   3006                      Pharmaceutical goods specified in Note 4 to this Chapter i.e. Sterile
+                                      surgical catgut, similar sterile suture materials (including sterile
+                                      absorbable surgical or dental yarns) and sterile tissue adhesives for
+                                      surgical wound closure; sterile laminaria and sterile laminaria tents;
+                                      sterile absorbable surgical or dental haemostatics; sterile surgical or
+                                      dental adhesion barriers, whether or not absorbable; Waste
+                                      pharmaceuticals (other than contraceptives); Ostomy appliances
+                                      including pouch or flange, stoma adhesive paste, barrier cream,
+                                      irrigator kit, sleeves, belt, micro-pore tapes
+     237.   3101                      All goods i.e. animal or vegetable fertilisers or organic fertilisers pre-
+                                      packaged and labelled
+     238.   3102                      Mineral or chemical fertilisers, nitrogenous, other than those which
+                                      are clearly not to be used as fertilizers
+     239.   3103                      Mineral or chemical fertilisers, phosphatic, other than those which
+                                      are clearly not to be used as fertilizers
+     240.   3104                      Mineral or chemical fertilisers, potassic, other than those which are
+                                      clearly not to be used as fertilizers
+     241.   3105                      Mineral or chemical fertilisers containing two or three of the
+                                      fertilising elements nitrogen, phosphorus and potassium; other
+                                      fertilisers; goods of this Chapter in tablets or similar forms or in
+                                      packages of a gross weight not exceeding 10 kg; other than those
+                                      which are clearly not to be used as fertilizers
+     242.   32                        Wattle extract, quebracho extract, chestnut extract
+     243.   3202                      Enzymatic preparations for pre-tanning
+     244.   3304                      Talcum powder, Face powder
+     245.   3305                      Hair oil, shampoo
+     246.   3306                      Toothpaste
+     247.   3306 10 10                Tooth powder
+     248.   3306 20 00                Yarn used to clean between the teeth (Dental floss)
+     249.   3307                      Shaving cream, shaving lotion, aftershave lotion
+     250.   3307 41 00                Agarbatti, lobhan, dhoop batti, dhoop, sambraani
+     251.   3401                      Toilet Soap (other than industrial soap) in the form of bars, cakes,
+                                      moulded pieces or shapes
+     252.   3402                      Sulphonated castor oil, fish oil or sperm oil
+     253.   3406                      Candles, tapers and the like
+     254.   3503                      Gelatin (including gelatin in rectangular (including square) sheets,
+                                      whether or not surface-worked or coloured) and gelatin derivatives;
+                                      isinglass; other glues of animal origin, excluding casein glues of
+                                      heading 3501
+     255.   3505                      Dextrins and other modified starches (for example, pregelatinised or
+                                      esterified starches); glues based on starches, or on dextrins or other
+                                      modified starches
+     256.   3605 00 10                All goods
+     257.   3701                      Photographic plates and film for x-ray for medical use
+     258.   3705                      Photographic plates and films, exposed and developed, other than
+                                      cinematographic film
+     259.   3706                      Photographic plates and films, exposed and developed, whether or
+                                      not incorporating sound track or consisting only of sound track, other
+                                      than feature films
+     260.   3808                      The following Bio-pesticides, namely -
+                                      1 Bacillus thuringiensis var. israelensis
+
+[भाग II—खण्ड 3(i)]        भारत का राजपत्र : ऄसाधारण                                               87
+
+                              2 Bacillus thuringiensis var. kurstaki
+                              3 Bacillus thuringiensis var. galleriae
+                              4 Bacillus sphaericus
+                              5 Trichoderma viride
+                              6 Trichoderma harzianum
+                              7 Pseudomonas fluoresens
+                              8 Beauveriabassiana
+                              9 NPV of Helicoverpaarmigera
+                              10 NPV of Spodopteralitura
+                              11 Neem based pesticides
+                              12 Cymbopogan
+   261.      3816             Dolomite ramming mix
+   262.      3818             Silicon wafers

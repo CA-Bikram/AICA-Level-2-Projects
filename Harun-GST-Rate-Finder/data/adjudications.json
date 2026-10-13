@@ -1,0 +1,13 @@
+{
+  "_doc": "Resolutions for rows where the two model lanes disagreed. Each names the winning text and the gazette line that proves it (source/nn-09-layout.txt). Written by a human/stronger-model reviewer; the pipeline never lets a model resolve its own dispute.",
+  "I:99": {
+    "hsn": "1522",
+    "description": "Degras, residues resulting from the treatment of fatty substances or animal or vegetable waxes",
+    "evidence": "source/nn-09-layout.txt line 284: 'Degras, residues ...' (mistral dropped the 's')"
+  },
+  "I:497": {
+    "hsn": "9503",
+    "description": "Toys like tricycles, scooters, pedal cars etc. (including parts and accessories thereof) [other than electronic toys]",
+    "evidence": "source/nn-09-layout.txt line 1192: 'pedal cars etc.' (laguna wrote 'pedal car')"
+  }
+}

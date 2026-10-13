@@ -1,0 +1,448 @@
+[
+ {
+  "s_no": 174,
+  "hsn": "2513",
+  "description": "Pumice stone; emery; natural corundum, natural garnet and other natural abrasives, whether or not heat-treated"
+ },
+ {
+  "s_no": 175,
+  "hsn": "2514",
+  "description": "Slate, whether or not roughly trimmed or merely cut, by sawing or otherwise, into blocks or slabs of a rectangular (including square) shape"
+ },
+ {
+  "s_no": 176,
+  "hsn": "2515 [Except 2515 12 20, 2515 12 90] or 6802",
+  "description": "Ecaussine and other calcareous monumental or building stone (other than marble and travertine), alabaster, other than mirror polished stone which is ready to use"
+ },
+ {
+  "s_no": 177,
+  "hsn": "2515 11 00",
+  "description": "Marble and travertine, crude or roughly trimmed"
+ },
+ {
+  "s_no": 178,
+  "hsn": "2515 12 10",
+  "description": "Marble and travertine blocks"
+ },
+ {
+  "s_no": 179,
+  "hsn": "2516 [Except 2516 11 00, 25161200]",
+  "description": "Porphyry, basalt, sandstone and other monumental or building stone, whether or not roughly trimmed or merely cut, by sawing or otherwise, into blocks or slabs of a rectangular (including square) shape"
+ },
+ {
+  "s_no": 180,
+  "hsn": "2516 11 00",
+  "description": "Granite crude or roughly trimmed"
+ },
+ {
+  "s_no": 181,
+  "hsn": "2516",
+  "description": "Granite blocks"
+ },
+ {
+  "s_no": 182,
+  "hsn": "2517",
+  "description": "Pebbles, gravel, broken or crushed stone, of a kind commonly used for concrete aggregates, for road metalling or for railway or other ballast, shingle and flint, whether or not heat-treated; macadam of slag, dross or similar industrial waste, whether or not incorporating the materials cited in the first part of the heading; tarred macadam; granules, chippings and powder, of stones heading 2515 or 2516 whether or not heat-treated"
+ },
+ {
+  "s_no": 183,
+  "hsn": "2518",
+  "description": "Dolomite, whether or not calcined or sintered, including dolomite roughly trimmed or merely cut, by sawing or otherwise, into blocks or slabs of a rectangular (including square) shape"
+ },
+ {
+  "s_no": 184,
+  "hsn": "2519",
+  "description": "Natural magnesium carbonate (magnesite); fused magnesia; dead-burned (sintered) magnesia, whether or not containing small quantities of other oxides added before sintering; other magnesium oxide, whether or not pure"
+ },
+ {
+  "s_no": 185,
+  "hsn": "2520",
+  "description": "Gypsum; anhydrite; plasters (consisting of calcined gypsum or calcium sulphate) whether or not coloured, with or without small quantities of accelerators or retarders"
+ },
+ {
+  "s_no": 186,
+  "hsn": "2521",
+  "description": "Limestone flux; limestone and other calcareous stone, of a kind used for the manufacture of lime or cement."
+ },
+ {
+  "s_no": 187,
+  "hsn": "2522",
+  "description": "Quicklime, slaked lime and hydraulic lime, other than calcium oxide and hydroxide of heading 2825"
+ },
+ {
+  "s_no": 188,
+  "hsn": "2524",
+  "description": "Asbestos"
+ },
+ {
+  "s_no": 189,
+  "hsn": "2525",
+  "description": "Mica, including splitting; mica waste."
+ },
+ {
+  "s_no": 190,
+  "hsn": "2526",
+  "description": "Natural steatite, whether or not roughly trimmed or merely cut, by sawing or otherwise, into blocks or slabs of a rectangular (including square) shape; talc."
+ },
+ {
+  "s_no": 191,
+  "hsn": "2528",
+  "description": "Natural borates and concentrates thereof (whether or not calcined), but not including borates separated from natural brine; natural boric acid containing not more than 85% of H3BO3 (calculated on dry weight)"
+ },
+ {
+  "s_no": 192,
+  "hsn": "2529",
+  "description": "Feldspar; leucite, nepheline and nepheline syenite; fluorspar"
+ },
+ {
+  "s_no": 193,
+  "hsn": "2530",
+  "description": "Mineral substances not elsewhere specified or included"
+ },
+ {
+  "s_no": 194,
+  "hsn": "2611",
+  "description": "Tungsten ores and concentrates"
+ },
+ {
+  "s_no": 195,
+  "hsn": "2612",
+  "description": "Uranium or thorium ores and concentrates"
+ },
+ {
+  "s_no": 196,
+  "hsn": "2613",
+  "description": "Molybdenum ores and concentrates"
+ },
+ {
+  "s_no": 197,
+  "hsn": "2614",
+  "description": "Titanium ores and concentrates"
+ },
+ {
+  "s_no": 198,
+  "hsn": "2615",
+  "description": "Niobium, tantalum, vanadium or zirconium ores and concentrates"
+ },
+ {
+  "s_no": 199,
+  "hsn": "2616",
+  "description": "Precious metal ores and concentrates"
+ },
+ {
+  "s_no": 200,
+  "hsn": "2617",
+  "description": "Other ores and concentrates"
+ },
+ {
+  "s_no": 201,
+  "hsn": "2618",
+  "description": "Granulated slag (slag sand) from the manufacture of iron or steel"
+ },
+ {
+  "s_no": 202,
+  "hsn": "2619",
+  "description": "Linz-Donawitz (LD) Slag"
+ },
+ {
+  "s_no": 203,
+  "hsn": "2621",
+  "description": "Fly Ash"
+ },
+ {
+  "s_no": 204,
+  "hsn": "27",
+  "description": "Bio-gas"
+ },
+ {
+  "s_no": 205,
+  "hsn": "2704",
+  "description": "Coke and semi coke of coal, of lignite or of peat, whether or not agglomerated; retort carbon"
+ },
+ {
+  "s_no": 206,
+  "hsn": "2705",
+  "description": "Coal gas, water gas, producer gas and similar gases, other than petroleum gases and other gaseous hydrocarbons"
+ },
+ {
+  "s_no": 207,
+  "hsn": "2710",
+  "description": "(a) Kerosene oil PDS, (b) The following bunker fuels for use in ships or vessels, namely, i. IFO 180 CST ii. IFO 380 CST iii. Marine Fuel 0.5% (FO)"
+ },
+ {
+  "s_no": 208,
+  "hsn": "2711 12 00, 2711 13 00, 2711 19 10",
+  "description": "Liquefied Propane and Butane mixture, Liquefied Propane, Liquefied Butane and Liquefied Petroleum Gases (LPG) for supply to non-domestic exempted category (NDEC) customers by the Indian Oil Corporation Limited, Hindustan Petroleum Corporation Limited or Bharat Petroleum Corporation Limited"
+ },
+ {
+  "s_no": 209,
+  "hsn": "2711 12 00 2711 13 00, 2711 19 10",
+  "description": "Liquefied Propane and Butane mixture, Liquefied Propane, Liquefied Butane and Liquefied Petroleum Gases (LPG) for supply to household domestic consumers"
+ },
+ {
+  "s_no": 210,
+  "hsn": "28",
+  "description": "Thorium oxalate, Enriched KBF4 (enriched potassium fluroborate), Enriched elemental boron, Nuclear fuel"
+ },
+ {
+  "s_no": 211,
+  "hsn": "28",
+  "description": "Anaesthetics, Potassium Iodate, Iodine, Steam"
+ },
+ {
+  "s_no": 212,
+  "hsn": "2804 40 10",
+  "description": "Medical grade oxygen"
+ },
+ {
+  "s_no": 213,
+  "hsn": "2805 11",
+  "description": "Nuclear grade sodium"
+ },
+ {
+  "s_no": 214,
+  "hsn": "2807",
+  "description": "Sulphuric Acid"
+ },
+ {
+  "s_no": 215,
+  "hsn": "2808",
+  "description": "Nitric acid"
+ },
+ {
+  "s_no": 216,
+  "hsn": "2809",
+  "description": "Fertilizer grade phosphoric acid"
+ },
+ {
+  "s_no": 217,
+  "hsn": "2814",
+  "description": "Ammonia"
+ },
+ {
+  "s_no": 218,
+  "hsn": "2845",
+  "description": "Heavy water and other nuclear fuels"
+ },
+ {
+  "s_no": 219,
+  "hsn": "2847",
+  "description": "Medicinal grade hydrogen peroxide"
+ },
+ {
+  "s_no": 220,
+  "hsn": "2853",
+  "description": "Compressed air"
+ },
+ {
+  "s_no": 221,
+  "hsn": "28 or 38",
+  "description": "Micronutrients, which are covered under serial number 1(g) of Schedule 1, Part (A) of the Fertilizer Control Order, 1985 and are manufactured by the manufacturers which are registered under the Fertilizer Control Order, 1985"
+ },
+ {
+  "s_no": 222,
+  "hsn": "29 or 3808 93",
+  "description": "Gibberellic acid"
+ },
+ {
+  "s_no": 223,
+  "hsn": "2906 11 10",
+  "description": "Natural Menthol"
+ },
+ {
+  "s_no": 224,
+  "hsn": "2906 11 10, 30, 3301",
+  "description": "Following goods from Natural Menthol namely:- a. Menthol and menthol crystals, b. Peppermint (Mentha Oil), c. Fractionated / de-terpenated mentha oil (DTMO) d. De-mentholised oil (DMO), e. Spearmint oil f. Mentha piperita oil"
+ },
+ {
+  "s_no": 225,
+  "hsn": "30",
+  "description": "Insulin, Cyclosporin, Desferrioxamine injection or deferiprone, Oral re-hydration salts"
+ },
+ {
+  "s_no": 226,
+  "hsn": "30 or any Chapter",
+  "description": "All Drugs and medicines including their salts and esters and diagnostic test kits; formulations manufactured from bulk drugs [other than those specified at nil at S. No. 113 of notification No. 10/2025-Central Tax (Rate) dated 17th September, 2025]"
+ },
+ {
+  "s_no": 227,
+  "hsn": "30",
+  "description": "Diagnostic kits for detection of all types of hepatitis"
+ },
+ {
+  "s_no": 228,
+  "hsn": "30",
+  "description": "Medicaments (including veterinary medicaments) used in bio-chemic systems"
+ },
+ {
+  "s_no": 229,
+  "hsn": "30",
+  "description": "Medicaments (including those used in Ayurvedic, Unani, Siddha, Homeopathic or Bio-chemic systems), manufactured exclusively in accordance with the formulae described in the authoritative books specified in the First Schedule to the Drugs and Cosmetics Act, 1940 (23 of 1940) or Homeopathic Pharmacopoeia of India or the United States of America or the United Kingdom or the German Homeopathic Pharmacopoeia, as the case may be, and sold under the name as specified in such books or pharmacopoeia"
+ },
+ {
+  "s_no": 230,
+  "hsn": "3001",
+  "description": "Glands and other organs for organo-therapeutic uses, dried, whether or not powdered; extracts of glands or other organs or of their secretions for organo-therapeutic uses; heparin and its salts; other human or animal substances prepared for therapeutic or prophylactic uses, not elsewhere specified or included"
+ },
+ {
+  "s_no": 231,
+  "hsn": "3002",
+  "description": "Animal blood prepared for therapeutic, prophylactic or diagnostic uses; antisera and other blood fractions and modified immunological products, whether or not obtained by means of biotechnological processes; toxins, cultures of micro-organisms (excluding yeasts) and similar products; cell cultures whether or not modified"
+ },
+ {
+  "s_no": 232,
+  "hsn": "3002, 3006",
+  "description": "Animal or Human Blood Vaccines"
+ },
+ {
+  "s_no": 233,
+  "hsn": "3003",
+  "description": "Medicaments (excluding goods of heading 3002, 3005 or 3006) consisting of two or more constituents which have been mixed together for therapeutic or prophylactic uses, not put up in measured doses or in forms or packings for retail sale, including Ayurvedic, Unani, Siddha, homoeopathic or Bio-chemic systems medicaments"
+ },
+ {
+  "s_no": 234,
+  "hsn": "3004",
+  "description": "Medicaments (excluding goods of heading 3002, 3005 or 3006) consisting of mixed or unmixed products for therapeutic or prophylactic uses, put up in measured doses (including those in the form of transdermal administration systems) or in forms or packings for retail sale, including Ayurvedic, Unani, homoeopathic siddha or Bio-chemic systems medicaments, put up for retail sale"
+ },
+ {
+  "s_no": 235,
+  "hsn": "3005",
+  "description": "Wadding, gauze, bandages and similar articles (for example, dressings, adhesive plasters, poultices), impregnated or coated with pharmaceutical substances or put up in forms or packings for retail sale for medical, surgical, dental or veterinary purposes"
+ },
+ {
+  "s_no": 236,
+  "hsn": "3006",
+  "description": "Pharmaceutical goods specified in Note 4 to this Chapter i.e. Sterile surgical catgut, similar sterile suture materials (including sterile absorbable surgical or dental yarns) and sterile tissue adhesives for surgical wound closure; sterile laminaria and sterile laminaria tents; sterile absorbable surgical or dental haemostatics; sterile surgical or dental adhesion barriers, whether or not absorbable; Waste pharmaceuticals (other than contraceptives); Ostomy appliances including pouch or flange, stoma adhesive paste, barrier cream, irrigator kit, sleeves, belt, micro-pore tapes"
+ },
+ {
+  "s_no": 237,
+  "hsn": "3101",
+  "description": "All goods i.e. animal or vegetable fertilisers or organic fertilisers pre-packaged and labelled"
+ },
+ {
+  "s_no": 238,
+  "hsn": "3102",
+  "description": "Mineral or chemical fertilisers, nitrogenous, other than those which are clearly not to be used as fertilizers"
+ },
+ {
+  "s_no": 239,
+  "hsn": "3103",
+  "description": "Mineral or chemical fertilisers, phosphatic, other than those which are clearly not to be used as fertilizers"
+ },
+ {
+  "s_no": 240,
+  "hsn": "3104",
+  "description": "Mineral or chemical fertilisers, potassic, other than those which are clearly not to be used as fertilizers"
+ },
+ {
+  "s_no": 241,
+  "hsn": "3105",
+  "description": "Mineral or chemical fertilisers containing two or three of the fertilising elements nitrogen, phosphorus and potassium; other fertilisers; goods of this Chapter in tablets or similar forms or in packages of a gross weight not exceeding 10 kg; other than those which are clearly not to be used as fertilizers"
+ },
+ {
+  "s_no": 242,
+  "hsn": "32",
+  "description": "Wattle extract, quebracho extract, chestnut extract"
+ },
+ {
+  "s_no": 243,
+  "hsn": "3202",
+  "description": "Enzymatic preparations for pre-tanning"
+ },
+ {
+  "s_no": 244,
+  "hsn": "3304",
+  "description": "Talcum powder, Face powder"
+ },
+ {
+  "s_no": 245,
+  "hsn": "3305",
+  "description": "Hair oil, shampoo"
+ },
+ {
+  "s_no": 246,
+  "hsn": "3306",
+  "description": "Toothpaste"
+ },
+ {
+  "s_no": 247,
+  "hsn": "3306 10 10",
+  "description": "Tooth powder"
+ },
+ {
+  "s_no": 248,
+  "hsn": "3306 20 00",
+  "description": "Yarn used to clean between the teeth (Dental floss)"
+ },
+ {
+  "s_no": 249,
+  "hsn": "3307",
+  "description": "Shaving cream, shaving lotion, aftershave lotion"
+ },
+ {
+  "s_no": 250,
+  "hsn": "3307 41 00",
+  "description": "Agarbatti, lobhan, dhoop batti, dhoop, sambraani"
+ },
+ {
+  "s_no": 251,
+  "hsn": "3401",
+  "description": "Toilet Soap (other than industrial soap) in the form of bars, cakes, moulded pieces or shapes"
+ },
+ {
+  "s_no": 252,
+  "hsn": "3402",
+  "description": "Sulphonated castor oil, fish oil or sperm oil"
+ },
+ {
+  "s_no": 253,
+  "hsn": "3406",
+  "description": "Candles, tapers and the like"
+ },
+ {
+  "s_no": 254,
+  "hsn": "3503",
+  "description": "Gelatin (including gelatin in rectangular (including square) sheets, whether or not surface-worked or coloured) and gelatin derivatives; isinglass; other glues of animal origin, excluding casein glues of heading 3501"
+ },
+ {
+  "s_no": 255,
+  "hsn": "3505",
+  "description": "Dextrins and other modified starches (for example, pregelatinised or esterified starches); glues based on starches, or on dextrins or other modified starches"
+ },
+ {
+  "s_no": 256,
+  "hsn": "3605 00 10",
+  "description": "All goods"
+ },
+ {
+  "s_no": 257,
+  "hsn": "3701",
+  "description": "Photographic plates and film for x-ray for medical use"
+ },
+ {
+  "s_no": 258,
+  "hsn": "3705",
+  "description": "Photographic plates and films, exposed and developed, other than cinematographic film"
+ },
+ {
+  "s_no": 259,
+  "hsn": "3706",
+  "description": "Photographic plates and films, exposed and developed, whether or not incorporating sound track or consisting only of sound track, other than feature films"
+ },
+ {
+  "s_no": 260,
+  "hsn": "3808",
+  "description": "The following Bio-pesticides, namely - 1 Bacillus thuringiensis var. israelensis 2 Bacillus thuringiensis var. kurstaki 3 Bacillus thuringiensis var. galleriae 4 Bacillus sphaericus 5 Trichoderma viride 6 Trichoderma harzianum 7 Pseudomonas fluoresens 8 Beauveriabassiana 9 NPV of Helicoverpaarmigera 10 NPV of Spodopteralitura 11 Neem based pesticides 12 Cymbopogan",
+  "truncated": true
+ },
+ {
+  "s_no": 261,
+  "hsn": "3816",
+  "description": "Dolomite ramming mix"
+ },
+ {
+  "s_no": 262,
+  "hsn": "3818",
+  "description": "Silicon wafers"
+ }
+]

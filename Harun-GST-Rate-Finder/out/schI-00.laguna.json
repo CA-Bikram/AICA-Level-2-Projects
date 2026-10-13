@@ -1,0 +1,462 @@
+[
+ {
+  "s_no": 1,
+  "hsn": "0101 21 00, 0101 29",
+  "description": "Live horses"
+ },
+ {
+  "s_no": 2,
+  "hsn": "0202, 0203, 0204, 0205, 0206, 0207, 0208, 0209, 0210",
+  "description": "All goods, other than fresh or chilled, pre-packaged and labelled"
+ },
+ {
+  "s_no": 3,
+  "hsn": "0303, 0304, 0305, 0306, 0307, 0308, 0309",
+  "description": "All goods, other than fresh or chilled, pre-packaged and labelled"
+ },
+ {
+  "s_no": 4,
+  "hsn": "0402",
+  "description": "Milk and cream, concentrated or containing added sugar or other sweetening matter, including condensed milk"
+ },
+ {
+  "s_no": 5,
+  "hsn": "0403",
+  "description": "Yoghurt; Cream, kephir and other fermented or acidified milk and cream, whether or not concentrated or containing added sugar or other sweetening matter or flavored or containing added fruit, nuts or cocoa; Pre-packaged and labelled Curd, Lassi and Butter milk"
+ },
+ {
+  "s_no": 6,
+  "hsn": "0404",
+  "description": "Whey, whether or not concentrated or containing added sugar or other sweetening matter; products consisting of natural milk constituents, whether or not containing added sugar or other sweetening matter, not elsewhere specified or included"
+ },
+ {
+  "s_no": 7,
+  "hsn": "0405",
+  "description": "Butter and other fats and oils derived from milk, including ghee; dairy spreads"
+ },
+ {
+  "s_no": 8,
+  "hsn": "0406",
+  "description": "Cheese, other than chena or paneer"
+ },
+ {
+  "s_no": 9,
+  "hsn": "0408",
+  "description": "Birds' eggs, not in shell, and egg yolks, fresh, dried, cooked by steaming or by boiling in water, moulded, frozen or otherwise preserved, whether or not containing added sugar or other sweetening matter."
+ },
+ {
+  "s_no": 10,
+  "hsn": "0409",
+  "description": "Natural honey, pre-packaged and labelled"
+ },
+ {
+  "s_no": 11,
+  "hsn": "0410",
+  "description": "Insects and other edible products of animal origin, not elsewhere specified or included"
+ },
+ {
+  "s_no": 12,
+  "hsn": "0502",
+  "description": "Pigs', hogs' or boars' bristles and hair; badger hair and other brush making hair; waste of such bristles or hair."
+ },
+ {
+  "s_no": 13,
+  "hsn": "0504",
+  "description": "All goods, other than fresh or chilled, pre-packaged and labelled"
+ },
+ {
+  "s_no": 14,
+  "hsn": "0505",
+  "description": "Skins and other parts of birds, with their feathers or down, feathers and parts of feathers (whether or not with trimmed edges) and down, not further worked than cleaned, disinfected or treated for preservation; powder and waste of feathers or parts of feathers"
+ },
+ {
+  "s_no": 15,
+  "hsn": "0507 (Except 050790)",
+  "description": "Ivory, tortoise-shell, whalebone and whalebone hair, horns, unworked or simply prepared but not cut to shape; powder and waste of these products."
+ },
+ {
+  "s_no": 16,
+  "hsn": "0508",
+  "description": "Coral and similar materials, unworked or simply prepared but not otherwise worked; shells of molluscs, crustaceans or echinoderms and cuttle-bone, unworked or simply prepared but not cut to shape, powder and waste thereof."
+ },
+ {
+  "s_no": 17,
+  "hsn": "0510",
+  "description": "Ambergris, castoreum, civet and musk; cantharides; bile, whether or not dried; glands and other animal products used in the preparation of pharmaceutical products, fresh, chilled, frozen or otherwise provisionally preserved."
+ },
+ {
+  "s_no": 18,
+  "hsn": "0511",
+  "description": "Animal products not elsewhere specified or included; dead animals of Chapter 1 or 3, unfit for human consumption, other than semen including frozen semen."
+ },
+ {
+  "s_no": 19,
+  "hsn": "07",
+  "description": "Herb, bark, dry plant, dry root, commonly known as jaribooti and dry flower"
+ },
+ {
+  "s_no": 20,
+  "hsn": "0713",
+  "description": "Dried leguminous vegetables, shelled, whether or not skinned or split pre-packaged and labelled; Guar gum refined split"
+ },
+ {
+  "s_no": 21,
+  "hsn": "0714",
+  "description": "Manioc, arrowroot, salep, Jerusalem artichokes, sweet potatoes and similar roots and tubers with high starch or inulin content, frozen, whether or not sliced or in the form of pellets, pre-packaged and labelled"
+ },
+ {
+  "s_no": 22,
+  "hsn": "0801",
+  "description": "Cashew nuts, whether or not shelled or peeled, desiccated coconuts; Brazil nuts, dried, whether or not Shelled or Peeled"
+ },
+ {
+  "s_no": 23,
+  "hsn": "0802",
+  "description": "Dried areca nuts, whether or not shelled or peeled; Other nuts, dried, whether or not shelled or peeled, such as Almonds, Hazelnuts or filberts (Corylus spp.), Chestnuts (Castanea spp.), Pistachios, Macadamia nuts, Kola nuts (Cola spp.), Pine nuts, chestnuts (singhada), Walnuts, whether or not shelled"
+ },
+ {
+  "s_no": 24,
+  "hsn": "0802, 0813",
+  "description": "Chestnuts (singhada), dried whether or not shelled or peeled"
+ },
+ {
+  "s_no": 25,
+  "hsn": "08",
+  "description": "Dried makhana, whether or not shelled or peeled pre-packaged and labelled"
+ },
+ {
+  "s_no": 26,
+  "hsn": "0804",
+  "description": "Dates (soft or hard), figs, pineapples, avocados, guavas, mangoes and mangosteens, dried"
+ },
+ {
+  "s_no": 27,
+  "hsn": "0805",
+  "description": "Citrus fruit, such as Oranges, Mandarins (including tangerines and satsumas); clementines, wilkings and similar citrus hybrids, Grapefruit, including pomelos, Lemons (Citrus limon, Citrus limonum) and limes (Citrus aurantifolia, Citrus latifolia), dried"
+ },
+ {
+  "s_no": 28,
+  "hsn": "0806",
+  "description": "Grapes, dried, and raisins"
+ },
+ {
+  "s_no": 29,
+  "hsn": "0811",
+  "description": "Fruit and nuts, uncooked or cooked by steaming or boiling in water, frozen, whether or not containing added sugar or other sweetening matter"
+ },
+ {
+  "s_no": 30,
+  "hsn": "0812",
+  "description": "Fruit and nuts, provisionally preserved (for example, by sulphur dioxide gas, in brine, in sulphur water or in other preservative solutions), but unsuitable in that state for immediate consumption"
+ },
+ {
+  "s_no": 31,
+  "hsn": "0813",
+  "description": "Fruit, dried, other than that of headings 0801 to 0806; mixtures of nuts or dried fruits of Chapter 8 [other than dried tamarind]"
+ },
+ {
+  "s_no": 32,
+  "hsn": "0814",
+  "description": "Peel of citrus fruit or melons (including watermelons), frozen, dried or provisionally preserved in brine, in sulphur water or in other preservative solutions"
+ },
+ {
+  "s_no": 33,
+  "hsn": "0901",
+  "description": "Coffee roasted, whether or not decaffeinated; coffee husks and skins; coffee substitutes containing coffee in any proportion [other than coffee beans not roasted]"
+ },
+ {
+  "s_no": 34,
+  "hsn": "0902",
+  "description": "Tea, whether or not flavoured [other than unprocessed green leaves of tea]"
+ },
+ {
+  "s_no": 35,
+  "hsn": "0903",
+  "description": "Maté"
+ },
+ {
+  "s_no": 36,
+  "hsn": "0904",
+  "description": "Pepper of the genus Piper; dried or crushed or ground fruits of the genus Capsicum or of the genus Pimenta"
+ },
+ {
+  "s_no": 37,
+  "hsn": "0905",
+  "description": "Vanilla"
+ },
+ {
+  "s_no": 38,
+  "hsn": "0906",
+  "description": "Cinnamon and cinnamon-tree flowers"
+ },
+ {
+  "s_no": 39,
+  "hsn": "0907",
+  "description": "Cloves (whole fruit, cloves and stems)"
+ },
+ {
+  "s_no": 40,
+  "hsn": "0908",
+  "description": "Nutmeg, mace and cardamoms"
+ },
+ {
+  "s_no": 41,
+  "hsn": "0909",
+  "description": "Seeds of anise, badian, fennel, coriander, cumin or caraway; juniper berries [other than of seed quality]"
+ },
+ {
+  "s_no": 42,
+  "hsn": "0910 [other than 0910 11 10, 0910 30 10]",
+  "description": "Ginger other than fresh ginger, saffron, turmeric (curcuma) other than fresh turmeric, thyme, bay leaves, curry and other spices"
+ },
+ {
+  "s_no": 43,
+  "hsn": "1001",
+  "description": "Wheat and meslin, pre-packaged and labelled"
+ },
+ {
+  "s_no": 44,
+  "hsn": "1002",
+  "description": "Rye, pre-packaged and labelled"
+ },
+ {
+  "s_no": 45,
+  "hsn": "1003",
+  "description": "Barley, pre-packaged and labelled"
+ },
+ {
+  "s_no": 46,
+  "hsn": "1004",
+  "description": "Oats, pre-packaged and labelled"
+ },
+ {
+  "s_no": 47,
+  "hsn": "1005",
+  "description": "Maize (corn), pre-packaged and labelled"
+ },
+ {
+  "s_no": 48,
+  "hsn": "1006",
+  "description": "Rice, pre-packaged and labelled"
+ },
+ {
+  "s_no": 49,
+  "hsn": "1007",
+  "description": "Grain sorghum, pre-packaged and labelled"
+ },
+ {
+  "s_no": 50,
+  "hsn": "1008",
+  "description": "Buckwheat, millet and canary seed; other cereals such as Jawar, Bajra, Ragi, pre-packaged and labelled"
+ },
+ {
+  "s_no": 51,
+  "hsn": "1101",
+  "description": "Wheat or meslin flour, pre-packaged and labelled"
+ },
+ {
+  "s_no": 52,
+  "hsn": "1102",
+  "description": "Cereal flours other than of wheat or meslin i.e. maize (corn) flour, Rye flour, etc., pre-packaged and labelled"
+ },
+ {
+  "s_no": 53,
+  "hsn": "1103",
+  "description": "Cereal groats, meal and pellets, including suji and dalia, pre-packaged and labelled"
+ },
+ {
+  "s_no": 54,
+  "hsn": "1104",
+  "description": "Cereal grains otherwise worked (for example, rolled, flaked, pearled, sliced or kibbled), except rice of heading 1006; germ of cereals, whole, rolled, flaked or ground (other than hulled cereal grains)"
+ },
+ {
+  "s_no": 55,
+  "hsn": "1105",
+  "description": "Flour, meal, powder, flakes, granules and pellets of potatoes, pre-packaged and labelled"
+ },
+ {
+  "s_no": 56,
+  "hsn": "1106",
+  "description": "Flour, meal and powder of the dried leguminous vegetables of heading 0713 (pulses) [other than guar meal (HS 1106 10 10) and guar gum refined split ( HS 0713)], of sago or of roots or tubers of heading 0714 or of the products of Chapter 8, pre-packaged and labelled"
+ },
+ {
+  "s_no": 57,
+  "hsn": "1107",
+  "description": "Malt, whether or not roasted"
+ },
+ {
+  "s_no": 58,
+  "hsn": "1108",
+  "description": "Starches; inulin"
+ },
+ {
+  "s_no": 59,
+  "hsn": "1109 00 00",
+  "description": "Wheat gluten, whether or not dried"
+ },
+ {
+  "s_no": 60,
+  "hsn": "12",
+  "description": "All goods other than of seed quality"
+ },
+ {
+  "s_no": 61,
+  "hsn": "1201",
+  "description": "Soya beans, whether or not broken other than of seed quality."
+ },
+ {
+  "s_no": 62,
+  "hsn": "1202",
+  "description": "Ground-nuts, not roasted or otherwise cooked, whether or not shelled or broken other than of seed quality."
+ },
+ {
+  "s_no": 63,
+  "hsn": "1203",
+  "description": "Copra"
+ },
+ {
+  "s_no": 64,
+  "hsn": "1204",
+  "description": "Linseed, whether or not broken other than of seed quality."
+ },
+ {
+  "s_no": 65,
+  "hsn": "1205",
+  "description": "Rape or colza seeds, whether or not broken other than of seed quality."
+ },
+ {
+  "s_no": 66,
+  "hsn": "1206",
+  "description": "Sunflower seeds, whether or not broken other than of seed quality"
+ },
+ {
+  "s_no": 67,
+  "hsn": "1207",
+  "description": "Other oil seeds and oleaginous fruits (i.e. Palm nuts and kernels, cotton seeds, Castor oil seeds, Sesamum seeds, Mustard seeds, Safflower (Carthamus tinctorius) seeds, Melon seeds, Poppy seeds, Ajams, Mango kernel, Niger seed, Kokam) whether or not broken, other than of seed quality"
+ },
+ {
+  "s_no": 68,
+  "hsn": "1208",
+  "description": "Flour and meals of oil seeds or oleaginous fruits, other than those of mustard"
+ },
+ {
+  "s_no": 69,
+  "hsn": "1209",
+  "description": "Tamarind seeds meant for any use other than sowing"
+ },
+ {
+  "s_no": 70,
+  "hsn": "1210 20 00",
+  "description": "Hop cones, ground, powdered or in the form of pellets; lupulin"
+ },
+ {
+  "s_no": 71,
+  "hsn": "1211",
+  "description": "Plants and parts of plants (including seeds and fruits), of a kind used primarily in perfumery, in pharmacy or for insecticidal, fungicidal or similar purpose, frozen or dried, whether or not cut, crushed or powdered"
+ },
+ {
+  "s_no": 72,
+  "hsn": "1212",
+  "description": "Locust beans, seaweeds and other algae, sugar beet and sugar cane, frozen or dried, whether or not ground; fruit stones and kernels and other vegetable products (including unroasted chicory roots of the variety Cichorium intybus sativum) of a kind used primarily for human consumption, not elsewhere specified or included"
+ },
+ {
+  "s_no": 73,
+  "hsn": "1301",
+  "description": "Natural gums, resins, gum-resins and oleoresins (for example, balsams) [other than lac and shellac]; Compounded asafoetida commonly known as heeng"
+ },
+ {
+  "s_no": 74,
+  "hsn": "1302",
+  "description": "Vegetable saps and extracts; pectic substances, pectinates and pectates; agar-agar and other mucilages and thickeners, whether or not modified, derived from vegetable products including tamarind kernel powder"
+ },
+ {
+  "s_no": 75,
+  "hsn": "1401",
+  "description": "Vegetable materials of a kind used primarily for plaiting (for example, bamboos, rattans, reeds, rushes, osier, raffia, cleaned, bleached or dyed cereal straw, and lime bark)"
+ },
+ {
+  "s_no": 76,
+  "hsn": "1404 [other than 1404 90 40, 1404 90 60]",
+  "description": "Vegetable products not elsewhere specified or included such as, Cotton linters, Soap nuts, Hard seeds, pips, hulls and nuts, of a kind used primarily for carving, Rudraksha seeds, bidi wrapper leaves(tendu), Indian katha [other than betel leaves, coconut shell unworked]"
+ },
+ {
+  "s_no": 77,
+  "hsn": "1404 or 3305",
+  "description": "Mehendi paste in cones"
+ },
+ {
+  "s_no": 78,
+  "hsn": "1501",
+  "description": "Pig fats (including lard) and poultry fat, other than that of heading 0209 or 1503"
+ },
+ {
+  "s_no": 79,
+  "hsn": "1502",
+  "description": "Fats of bovine animals, sheep or goats, other than those of heading 1503"
+ },
+ {
+  "s_no": 80,
+  "hsn": "1503",
+  "description": "Lard stearin, lard oil, oleo stearin, oleo-oil and tallow oil, not emulsified or mixed or otherwise prepared"
+ },
+ {
+  "s_no": 81,
+  "hsn": "1504",
+  "description": "Fats and oils and their fractions, of fish or marine mammals, whether or not refined, but not chemically modified"
+ },
+ {
+  "s_no": 82,
+  "hsn": "1505",
+  "description": "Wool grease and fatty substances derived therefrom (including lanolin)"
+ },
+ {
+  "s_no": 83,
+  "hsn": "1506",
+  "description": "Other animal fats and oils and their fractions, whether or not refined, but not chemically modified"
+ },
+ {
+  "s_no": 84,
+  "hsn": "1507",
+  "description": "Soya-bean oil and its fractions, whether or not refined, but not chemically modified"
+ },
+ {
+  "s_no": 85,
+  "hsn": "1508",
+  "description": "Ground-nut oil and its fractions, whether or not refined, but not chemically modified"
+ },
+ {
+  "s_no": 86,
+  "hsn": "1509",
+  "description": "Olive oil and its fractions, whether or not refined, but not chemically modified"
+ },
+ {
+  "s_no": 87,
+  "hsn": "1510",
+  "description": "Other oils and their fractions, obtained solely from olives, whether or not refined, but not chemically modified, including blends of these oils or fractions with oils or fractions of heading 1509"
+ },
+ {
+  "s_no": 88,
+  "hsn": "1511",
+  "description": "Palm oil and its fractions, whether or not refined, but not chemically modified."
+ },
+ {
+  "s_no": 89,
+  "hsn": "1512",
+  "description": "Sunflower-seed, safflower or cotton-seed oil and fractions thereof, whether or not refined, but not chemically modified"
+ },
+ {
+  "s_no": 90,
+  "hsn": "1513",
+  "description": "Coconut (copra), palm kernel or babassu oil and fractions thereof, whether or not refined, but not chemically modified"
+ },
+ {
+  "s_no": 91,
+  "hsn": "1514",
+  "description": "Rape, colza or mustard oil and fractions thereof, whether or not refined, but not chemically modified"
+ },
+ {
+  "s_no": 92,
+  "hsn": "1515",
+  "description": "Other fixed vegetable or microbial fats and oils (including jojoba oil) and their fractions, whether or not refined, but not chemically modified"
+ }
+]
