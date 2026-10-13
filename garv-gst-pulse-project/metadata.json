@@ -1,0 +1,6 @@
+{
+  "name": "GST Pulse - Practitioner Newsletter Automation",
+  "description": "Automated GST newsletter generator, TaxTMI intelligence tracker, Google Drive storage, and client email broadcaster for GST practitioners.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

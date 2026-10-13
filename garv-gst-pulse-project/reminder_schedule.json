@@ -1,0 +1,226 @@
+{
+  "token": "permanent-google-drive-session",
+  "targetEmail": "anshumadocuments@gmail.com",
+  "reminderTime": "10:00",
+  "lastSentDate": null,
+  "registeredAt": "2026-10-05T07:23:51.099Z",
+  "lastError": "NO_GMAIL_APP_PASSWORD: Email compiled with latest data, but requires a 16-character Google App Password to reach your Gmail inbox.",
+  "profile": {
+    "practitionerName": "GARV & Associates",
+    "firmName": "GARV & Associates",
+    "designation": "Chartered Accountants",
+    "enrollmentNo": "Building Trust Since 1949",
+    "email": "info@garvca.com",
+    "phone": "+91 33 4040 4743/ 44",
+    "officeAddress": "27A Hazra Road, Kolkata 700029",
+    "websiteOrPortal": "www.garvca.com",
+    "touchpoints": [
+      {
+        "city": "KOLKATA (HQ)",
+        "address": "27A Hazra Road, Kolkata 700029"
+      },
+      {
+        "city": "DELHI",
+        "address": "Barakhamba Road, Connaught Place, New Delhi – 110 001"
+      },
+      {
+        "city": "MUMBAI",
+        "address": "Khatau Building, 1st Floor, 8/10 Alkesh Dinesh Modi Marg, Fort, Mumbai – 400 023"
+      },
+      {
+        "city": "BENGALURU",
+        "address": "Dassappa Reddy Complex, Unit 12 Balagere, Bengaluru – 560 087"
+      },
+      {
+        "city": "CHENNAI",
+        "address": "Vimalachal, Unit A 1103, 1088, Poonamallee High Road, Vepery, Chennai – 600 007"
+      },
+      {
+        "city": "ASSAM",
+        "address": "K C C Road, 2nd Floor, Chatribari, Guwahati – 781 008"
+      }
+    ]
+  },
+  "newsletter": {
+    "id": "gst-newsletter-1791185026228",
+    "title": "Garv GST Pulse",
+    "subtitle": "Landmark Precedents • Statutory Notifications & Circulars • Compliance Due Dates",
+    "editionMonth": "October 2026",
+    "volumeNo": "Vol. I / Issue 08",
+    "generatedDate": "6 October 2026",
+    "badgeText": "Official Client Guidance",
+    "editorialHeading": "Executive Tax Editorial & Practitioner's Desk",
+    "editorialNote": "We present this edition of Garv GST Pulse for October 2026, delivering essential indirect tax intelligence, judicial jurisprudence, and statutory compliance updates. On the judicial front, this edition spotlights landmark precedents, notably authoritative guidance from GSTAT / Tribunal on Assessment & Notice (S.73/74), and the binding tribunal mandate that summary Form DRC-01 cannot substitute a substantive statutory Show Cause Notice under Section 73. On the regulatory canvas, the Central Board and GST Council Secretariat have issued pivotal directives including institutional transit data-sharing between CGST and State Mining Authorities under Instruction No. 01/2026-GST alongside streamlined GSTAT single-bench appeal procedures for multi-state DGGI inquiries under Circular No. 256/02/2026-GST. Corporate leadership, CFOs, and tax heads are advised to align internal enterprise systems with these evolving benchmarks and review the compliance calendar to ensure seamless statutory adherence.",
+    "casesHeading": "Landmark Judicial Precedents & Case Laws",
+    "caseLaws": [
+      {
+        "id": "live-tmi-case-1791300077388-0",
+        "title": "Company Law | Private Individuals Cannot Bypass SFIO Complaint Requirement: Supreme Court",
+        "citation": "2026 (9) TMI 980 - SUPREME COURT",
+        "tmiReference": "TMI-GST-2026-980",
+        "date": "6 October 2026",
+        "court": "Supreme Court of India",
+        "stateOrBench": "Principal Bench, New Delhi",
+        "keyIssue": "Challenge regarding Company Law | Private Individuals Cannot Bypass SFIO Complaint Requirement under Section 212(6), Section 448, Section 447: The Supreme Court, however, expressly preserved the Union of India’s statutory remedy under the second proviso to Section 212(6) of the Companies Act, 2013 .",
+        "rulingSummary": "In the judgment under review, the Supreme Court examined whether an offence under Section 448, which makes a person giving a materially false statement or knowingly omitting a material fact liable under Section 447, constitutes an “offence covered under Section 447” for purposes of Section 212(6).",
+        "practitionerTakeaway": "Taxpayers can rely on this authoritative judicial precedent to contest arbitrary departmental notices and establish statutory procedural compliance.",
+        "sourceUrl": "https://taxguru.in/company-law/private-individuals-cannot-bypass-sfio-complaint-requirement-supreme-court.html",
+        "selectedForNewsletter": true,
+        "isRealTimeScraped": true,
+        "sectionsInvolved": "Section 212(6), Section 448, Section 447",
+        "fullAnalysis": "Summary: The Supreme Court dismissed the Union of India’s review petition seeking reconsideration of its earlier judgment concerning the maintainability of private complaints for offences under Sections 448 and 451 of the Companies Act, 2013. The Court noted that the complaints in the case had been filed by private individuals and held that this furnished no ground for reconsideration of the judgment under review. The Supreme Court, however, expressly preserved the Union of India’s statutory remedy under the second proviso to Section 212(6) of the Companies Act, 2013 . It clarified that the Central Government remains at liberty to authorise, through a general or special written order, any officer of the Central Government to institute the complaint in addition to the Director of the Serious Fraud Investigation Office (SFIO) . The judgment under review had arisen from criminal proceedings initiated following a dispute concerning the management and control of Shreemukh Namitha Homes Private Limited. Private complainants alleged that the accused directors had illegally convened an extraordinary general meeting, appointed third parties as directors and uploaded fabricated resolutions and statutory filings with the Ministry of Corporate Affairs. The Special Court took cognizance of offences under Sections 448 and 451 of the Companies Act along with offences under the IPC. In the judgment under review, the Supreme Court examined whether an offence under Section 448, which makes a person giving a materially false statement or knowingly omitting a material fact liable under Section 447, constitutes an “offence covered under Section 447” for purposes of Section 212(6). The Court held that Section 448 could not be read independently of Section 447 because Section 448 specifies the ingredients of the offence while Section 447 provides the punishment for fraud. Consequently, an offence under Section 448 falls within the expression “offence covered under Section 447” appearing in Section 212(6)."
+      },
+      {
+        "id": "live-tmi-case-1791300077393-1",
+        "title": "Revenue Cannot Reduce Export Refund Using Historical ITC Reversal: GSTAT Ranchi",
+        "citation": "2026 (9) TMI 987 - GSTAT",
+        "tmiReference": "TMI-GST-2026-987",
+        "date": "6 October 2026",
+        "court": "GST Appellate Tribunal (GSTAT)",
+        "stateOrBench": "Principal Bench",
+        "keyIssue": "Challenge regarding Revenue Cannot Reduce Export Refund Using Historical ITC Reversal under Rule 89(4): 22. The above findings of the adjudicating authority and the first appellate authority have demonstrated that the refund is sanctioned strictly within the framework of Rule 89(4) of the CGST Rules.",
+        "rulingSummary": "Summary: GST Appellate Tribunal (GSTAT), Ranchi dismissed Revenue’s appeal and upheld refund of ₹35,84,057 of accumulated Compensation Cess arising from zero-rated exports without payment of tax. The Tribunal held that while determining “Net ITC” under Rule 89(4) of the CGST Rules , an ITC reversal reflected during the refund period cannot automatically be deducted where the underlying credit pertains to an earlier tax period.",
+        "practitionerTakeaway": "ITC cannot be denied mechanically for supplier non-filing without departmental verification; taxpayers should invoke Circular No. 183/15/2022-GST protocols.",
+        "sourceUrl": "https://taxguru.in/goods-and-service-tax/revenue-cannot-reduce-export-refund-historical-itc-reversal-gstat-ranchi.html",
+        "selectedForNewsletter": true,
+        "isRealTimeScraped": true,
+        "sectionsInvolved": "Rule 89(4)",
+        "fullAnalysis": "Summary: GST Appellate Tribunal (GSTAT), Ranchi dismissed Revenue’s appeal and upheld refund of ₹35,84,057 of accumulated Compensation Cess arising from zero-rated exports without payment of tax. The Tribunal held that while determining “Net ITC” under Rule 89(4) of the CGST Rules , an ITC reversal reflected during the refund period cannot automatically be deducted where the underlying credit pertains to an earlier tax period. In the present case, the ₹2 crore reversal made in September 2022 related to earlier periods and had no nexus with ITC availed during the refund period from July 2022 to March 2023. The Tribunal noted that the respondent had availed Net ITC of Cess of ₹2,19,41,356 during the relevant period and the refund of ₹35,84,057 had been verified and sanctioned by the adjudicating authority and subsequently upheld by the First Appellate Authority. It rejected Revenue’s reliance on paragraph 43(c) of Circular No. 125/44/2019-GST, holding that the Circular cannot be interpreted to add words to Rule 89(4) or override the statutory prescription. Relying on Supreme Court authorities concerning the legal effect of departmental circulars, the Tribunal reiterated that circulars may bind departmental authorities but cannot override statutory provisions or operate to the detriment of an assessee. Accordingly, it found no infirmity in the First Appellate Authority’s order and dismissed Revenue’s appeal. gstat-pramod&#8211;702774 FULL TEXT OF THE ORDER OF GST APPELLATE TRIBUNAL The present appeal has been filed by the appellant (Revenue) under Section 112(3) of the Central Goods and Services Tax Act, hereinafter (referred to as the “CGST Act”), challenging Order-in-Appeal No. 464/CGST/RAN/2025 dated 11.09.2025, on the ground that the Appellate Authority has incorrectly upheld the order passed by the adjudicating authority and allowed the refund of GST amounting to Rs. 35,84,057/- in respect of ITC (Cess) accumulated on account of zero-rated supplies, i.e., export of goods without payment of tax, during the period from July 2022 to March 2023 in violation of paragraph 43(c) of CBIC Circular No. 125/44/2019-GST dated 18.11.2019."
+      },
+      {
+        "id": "live-tmi-case-1791300077404-2",
+        "title": "GSTAT Agra Upholds GST Penalty for Expired E-Way Bill With Different Vehicle Number",
+        "citation": "2026 (9) TMI 994 - GSTAT",
+        "tmiReference": "TMI-GST-2026-994",
+        "date": "6 October 2026",
+        "court": "GST Appellate Tribunal (GSTAT)",
+        "stateOrBench": "Principal Bench",
+        "keyIssue": "Challenge regarding GSTAT Agra Upholds GST Penalty for Expired E-Way Bill With Different Vehicle Number under Section 129: The appellant contended that the non-updation of vehicle details in Part-B of the e-way bill and its expiry were merely procedural and technical lapses having no revenue implication.",
+        "rulingSummary": "Referring to Circular No. 64/38/2018-GST , the Tribunal held that the concession for errors in one or two digits/characters of a vehicle number cannot be extended to substitution of an entirely different vehicle without updating Part-B. It also relied upon Union of India Vs Dharmendra Textile Processors , Jhansi Enterprises and B.M.",
+        "practitionerTakeaway": "Taxpayers can rely on this authoritative judicial precedent to contest arbitrary departmental notices and establish statutory procedural compliance.",
+        "sourceUrl": "https://taxguru.in/goods-and-service-tax/gstat-agra-upholds-gst-penalty-expired-bill-vehicle-number.html",
+        "selectedForNewsletter": true,
+        "isRealTimeScraped": true,
+        "sectionsInvolved": "Section 129",
+        "fullAnalysis": "Summary: GST Appellate Tribunal (GSTAT), Agra dismissed the second appeal of M/s Anand Enterprises and upheld the penalty imposed under Section 129 of the CGST/UPGST Act where goods were being transported under an expired e-way bill that also mentioned a vehicle registration number entirely different from the vehicle actually carrying the goods. The consignment of electrical equipment valued at Rs. 11,48,469/- was dispatched from Alwar to Agra under invoice dated 30.07.2022 and e-way bill dated 31.07.2022. When the vehicle was intercepted on 03.08.2022, the e-way bill had expired and the vehicle number appearing therein did not correspond with the vehicle actually transporting the goods. The appellant contended that the non-updation of vehicle details in Part-B of the e-way bill and its expiry were merely procedural and technical lapses having no revenue implication. It was argued that the vehicle had been changed by the transporter and the transporter inadvertently failed to update the vehicle particulars. The appellant further contended that proceedings under Section 129 could not be sustained in the absence of an intention to evade tax. GSTAT noted that the e-way bill showed the Alwar-to-Agra distance as 167 kilometres, whereas the appellant claimed that the goods had first been taken to Gurgaon for transshipment even though Gurgaon was around 250 kilometres away from the destination. The Tribunal also observed that no reply to the show-cause notice or relevant material demonstrating bona fide circumstances had been furnished within the stipulated period. Further, the registration number appearing in the expired e-way bill was entirely different from that of the vehicle in which the goods were actually found. Referring to Circular No. 64/38/2018-GST , the Tribunal held that the concession for errors in one or two digits/characters of a vehicle number cannot be extended to substitution of an entirely different vehicle without updating Part-B. It also relied upon Union of India Vs Dharmendra Textile Processors , Jhansi Enterprises and B.M. Computers while considering the statutory penalty provisions and the rebuttable presumption arising from non-compliance with the e-way bill requirements."
+      }
+    ],
+    "regulatoryHeading": "Key CBIC Notifications, Circulars & Advisories",
+    "regulatoryUpdates": [
+      {
+        "id": "live-tmi-reg-1791300077390-8",
+        "number": "57th GST Council Meeting Rescheduled...",
+        "title": "57th GST Council Meeting Rescheduled to 8 October 2026 at Bharat Mandapam",
+        "date": "6 October 2026",
+        "type": "Advisory",
+        "brief": "GOODS AND SERVICES TAX COUNCIL 5th Floor, Tower-II, Jeevan Bharti Building, Connaught Circus, New Delhi &#8211; 110001 Tel: +91-11-23762656, Fax: +91-11-23738814 Email: [email&#160;protected] , Web: www.gstcouncil.gov.in.",
+        "impactOnTaxpayers": "Corporate finance and insurance advisory teams should model cash flows for prospective zero-rating of health insurance premiums and prepare for upcoming tax slab revisions.",
+        "impactOnClients": "Corporate finance and insurance advisory teams should model cash flows for prospective zero-rating of health insurance premiums and prepare for upcoming tax slab revisions.",
+        "sourceUrl": "https://taxguru.in/goods-and-service-tax/57th-gst-council-meeting-rescheduled-8-october-2026-bharat-mandapam.html",
+        "selectedForNewsletter": true,
+        "isRealTimeScraped": true,
+        "issuingAuthority": "CBIC / GST Policy Wing",
+        "effectiveDate": "6 October 2026",
+        "fullAnalysis": "GOODS AND SERVICES TAX COUNCIL 5th Floor, Tower-II, Jeevan Bharti Building, Connaught Circus, New Delhi &#8211; 110001 Tel: +91-11-23762656, Fax: +91-11-23738814 Email: [email&#160;protected] , Web: www.gstcouncil.gov.in Subject &#8211; Rescheduling of the 57 th Meeting of the GST Council &#8211; reg. Ref: O.M. bearing F. No. 1392/57/GSTCM/GSTC/2026 dated 06.09.2026 The undersigned is directed to refer to the above subject and to convey that on account of unavoidable circumstances, the 57 th Meeting of the GST Council is rescheduled as under:"
+      },
+      {
+        "id": "cbic-inst-01-2026",
+        "number": "Instruction No. 01/2026-GST",
+        "title": "Coordination between CGST Formations & State Mining Authorities to Curb Mineral Transit Evasion",
+        "date": "3 August 2026",
+        "type": "Instruction",
+        "brief": "Issued pursuant to a Comptroller and Auditor General (CAG) Performance Audit detecting revenue leakage in mineral supply chains. CBIC mandates CGST field formations to establish institutional coordination and monthly electronic data exchange with State Mining Departments. Directs zonal Chief Commissioners to track mineral transit passes (e-Ravanna), royalty payments, and weighbridge logs to detect turnover suppression, illegal mining, and circular fake billing syndicates.",
+        "impactOnTaxpayers": "Mining, cement, steel, and infrastructure companies must conduct immediate cross-reconciliation between state mineral transit passes and outward e-way bills to forestall departmental scrutiny and search actions.",
+        "impactOnClients": "Mining, cement, steel, and infrastructure companies must conduct immediate cross-reconciliation between state mineral transit passes and outward e-way bills to forestall departmental scrutiny and search actions.",
+        "sourceUrl": "https://taxguru.in/category/goods-and-service-tax/circulars/",
+        "issuingAuthority": "CBIC GST Policy Wing, Ministry of Finance",
+        "effectiveDate": "3 August 2026",
+        "selectedForNewsletter": true,
+        "isRealTimeScraped": true
+      },
+      {
+        "id": "cbic-circ-256-2026",
+        "number": "Circular No. 256/02/2026-GST",
+        "title": "Appeals Before GSTAT Against Orders of Common Adjudicating Authority (CAA) in DGGI Matters",
+        "date": "25 July 2026",
+        "type": "Circular",
+        "brief": "Clarifies the appellate procedure before the Goods and Services Tax Appellate Tribunal (GSTAT) for composite orders passed by Common Adjudicating Authorities (CAA) in multi-jurisdictional DGGI investigations. Confirms that such appeals lie before the GSTAT Bench having territorial jurisdiction over the lead noticee, eliminating the requirement to file piecemeal appeals across multiple state registries.",
+        "impactOnTaxpayers": "Practitioners representing corporate groups with multi-jurisdictional DGGI show-cause notices can now file unified appeals before the designated bench, substantially reducing filing duplication and litigation overhead.",
+        "impactOnClients": "Practitioners representing corporate groups with multi-jurisdictional DGGI show-cause notices can now file unified appeals before the designated bench, substantially reducing filing duplication and litigation overhead.",
+        "sourceUrl": "https://taxguru.in/category/goods-and-service-tax/circulars/",
+        "issuingAuthority": "Central Board of Indirect Taxes and Customs (CBIC)",
+        "effectiveDate": "25 July 2026",
+        "selectedForNewsletter": true,
+        "isRealTimeScraped": true
+      }
+    ],
+    "calendarHeading": "Statutory Compliance Calendar",
+    "dueDates": [
+      {
+        "form": "GSTR-7",
+        "description": "Monthly return for Tax Deducted at Source (TDS)",
+        "period": "September 2026",
+        "dueDate": "10th October 2026",
+        "applicability": "Govt departments & entities liable to deduct TDS"
+      },
+      {
+        "form": "GSTR-8",
+        "description": "Monthly statement for Tax Collected at Source (TCS)",
+        "period": "September 2026",
+        "dueDate": "10th October 2026",
+        "applicability": "E-commerce Operators collecting TCS"
+      },
+      {
+        "form": "GSTR-1",
+        "description": "Details of outward supplies (Monthly filers)",
+        "period": "September 2026",
+        "dueDate": "11th October 2026",
+        "applicability": "Taxpayers with TO > ₹5 Cr or non-QRMP opted"
+      },
+      {
+        "form": "IFF (QRMP)",
+        "description": "Invoice Furnishing Facility (Optional)",
+        "period": "September 2026 (M3)",
+        "dueDate": "13th October 2026",
+        "applicability": "Quarterly filers wanting to pass B2B ITC"
+      },
+      {
+        "form": "GSTR-3B",
+        "description": "Summary return & Tax Payment (Monthly filers)",
+        "period": "September 2026",
+        "dueDate": "20th October 2026",
+        "applicability": "All taxpayers exceeding ₹5 Cr turnover"
+      },
+      {
+        "form": "GSTR-3B (QRMP)",
+        "description": "Quarterly summary return & settlement",
+        "period": "July - Sept 2026",
+        "dueDate": "22nd / 24th Oct 2026",
+        "applicability": "QRMP taxpayers based on State Group A / B"
+      },
+      {
+        "form": "PMT-06",
+        "description": "Monthly GST Challan Payment for QRMP scheme",
+        "period": "October 2026",
+        "dueDate": "25th October 2026",
+        "applicability": "QRMP filers using 35% Fixed or Self-assessment method"
+      }
+    ],
+    "checklistHeading": "Practitioner's Action Checklist for Taxpayers",
+    "clientActionPoints": [
+      "IMS Reconciliation: Taxpayers' accounting teams must log into GST Portal to action vendor invoices on the Invoice Management System before 14th of the month.",
+      "Section 128A Amnesty: Review all pending SCNs for FY 2017-18 to 2019-20 under Section 73. Taxpayers can discharge tax liability without interest or penalty.",
+      "Safari Retreats ITC Check: Taxpayers incurring capital expenditure on commercial spaces and leased premises should audit eligible ITC under the Hon'ble Supreme Court ruling.",
+      "Corporate Guarantee Compliance: Taxpayers executing parental / group corporate guarantees must benchmark 1% annual fee under Rule 28(2).",
+      "Rule 86A Verification: Taxpayers should audit Electronic Credit Ledger balances to ensure no arbitrary credit freezing remains active beyond the 12-month limit."
+    ],
+    "disclaimerHeading": "Statutory Confidentiality & Legal Disclaimer",
+    "disclaimerText": "Disclaimer: This newsletter is compiled for confidential internal circulation only for general informational guidance. It does not constitute formal tax opinion or substitute for specific professional advice on individual transactions. While all care is taken to verify citations and official notifications, taxpayers must consult our office before taking operational tax positions.",
+    "footerNote": "Monthly GST Intelligence & Jurisprudence Bulletin",
+    "confidentialBanner": "CONFIDENTIAL INTERNAL CIRCULATION ONLY",
+    "verificationStatus": "DRAFT"
+  },
+  "pendingCatchup": true,
+  "lastMessageId": "cloud-delivery-1791300077410-ped9k",
+  "lastSentTimestamp": "2026-10-06T15:21:17.410Z"
+}

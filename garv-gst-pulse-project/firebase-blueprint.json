@@ -1,0 +1,81 @@
+{
+  "entities": {
+    "ReminderConfig": {
+      "title": "ReminderConfig",
+      "description": "Practitioner automated 10:00 AM daily review reminder settings and state",
+      "type": "object",
+      "properties": {
+        "reminderTime": {
+          "type": "string",
+          "description": "Daily scheduled dispatch time in 24-hr format (e.g. 10:00)"
+        },
+        "targetEmail": {
+          "type": "string",
+          "description": "Target practitioner inbox email (e.g. anshumadocuments@gmail.com)"
+        },
+        "enabled": {
+          "type": "boolean",
+          "description": "Whether automated daily 10 AM dispatch is active"
+        },
+        "lastSentDate": {
+          "type": "string",
+          "description": "Date string of last successful daily reminder dispatch (YYYY-MM-DD)"
+        },
+        "googleConnectedEmail": {
+          "type": "string",
+          "description": "Email address of permanently connected Google Workspace account"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "ISO timestamp of last update"
+        }
+      },
+      "required": ["reminderTime", "targetEmail", "enabled"]
+    },
+    "ClientRecipient": {
+      "title": "ClientRecipient",
+      "description": "Client email recipient for newsletter PDF broadcast",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "clientName": { "type": "string" },
+        "tradeName": { "type": "string" },
+        "gstin": { "type": "string" },
+        "email": { "type": "string" },
+        "category": { "type": "string" },
+        "active": { "type": "boolean" },
+        "lastSentAt": { "type": "string" }
+      },
+      "required": ["clientName", "email", "active"]
+    },
+    "DispatchLog": {
+      "title": "DispatchLog",
+      "description": "Audit record of newsletter broadcast execution",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "newsletterId": { "type": "string" },
+        "editionMonth": { "type": "string" },
+        "dispatchedAt": { "type": "string" },
+        "recipientsCount": { "type": "number" },
+        "successCount": { "type": "number" },
+        "failureCount": { "type": "number" }
+      },
+      "required": ["editionMonth", "dispatchedAt"]
+    }
+  },
+  "firestore": {
+    "/reminderConfigs/{configId}": {
+      "schema": "ReminderConfig",
+      "description": "Global practitioner reminder scheduler configuration"
+    },
+    "/clients/{clientId}": {
+      "schema": "ClientRecipient",
+      "description": "Verified client recipients directory"
+    },
+    "/dispatchLogs/{logId}": {
+      "schema": "DispatchLog",
+      "description": "Dispatch history logs"
+    }
+  }
+}
