@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TDS Challan Extractor &amp; SAP Reconciliation — Standalone Tool</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- SheetJS (XLSX) CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <!-- PDF.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script>
+    if (window.pdfjsLib) {
+      window.pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    }
+  </script>
+  <style>
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .tab-active-challan { background-color: #2563eb; color: #ffffff; }
+    .tab-active-sap { background-color: #059669; color: #ffffff; }
+    .tab-active-recon { background-color: #4f46e5; color: #ffffff; }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-900 min-h-screen flex flex-col antialiased">
+
+  <!-- Top Navigation Header -->
+  <header class="bg-slate-900 border-b border-slate-800 text-white sticky top-0 z-40 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Brand -->
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center shadow-md text-white font-black text-lg">
+            ₹
+          </div>
+          <div>
+            <div class="flex items-center space-x-2">
+              <h1 class="font-bold text-base sm:text-lg tracking-tight text-white">
+                TDS Challan Extractor &amp; SAP Reconciler
+              </h1>
+              <span class="text-[10px] uppercase font-bold tracking-widest px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+                Offline Standalone Edition
+              </span>
+            </div>
+            <p class="text-[11px] text-slate-400 hidden sm:block">
+              ITNS 281 Receipts • Financial Reconciliation • Excel Export
+            </p>
+          </div>
+        </div>
+
+        <!-- Workflow Tabs -->
+        <div class="flex items-center space-x-1 bg-slate-800/80 p-1 rounded-xl border border-slate-700/60 text-xs">
+          <button id="tab-btn-challans" onclick="switchTab('challans')" class="px-3.5 py-1.5 rounded-lg font-semibold transition-all flex items-center space-x-1.5 tab-active-challan">
+            <span>1. TDS Challans</span>
+            <span id="badge-challans-count" class="text-[10px] px-1.5 py-0.2 rounded-full font-mono bg-blue-800 text-white ml-1">1</span>
+          </button>
+          <button id="tab-btn-sap" onclick="switchTab('sap')" class="px-3.5 py-1.5 rounded-lg font-semibold text-slate-300 hover:text-white transition-all flex items-center space-x-1.5">
+            <span>2. SAP Payments</span>
+            <span id="badge-sap-count" class="text-[10px] px-1.5 py-0.2 rounded-full font-mono bg-slate-700 text-slate-300 ml-1">1</span>
+          </button>
+          <button id="tab-btn-recon" onclick="switchTab('recon')" class="px-3.5 py-1.5 rounded-lg font-semibold text-slate-300 hover:text-white transition-all flex items-center space-x-1.5">
+            <span>3. Reconciliation</span>
+            <span id="badge-recon-indicator" class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          </button>
+        </div>
+
+        <!-- Actions -->
+        <div class="flex items-center space-x-2">
+          <button onclick="loadSampleData()" class="px-3 py-1.5 bg-blue-600/30 hover:bg-blue-600/50 text-blue-300 hover:text-white text-xs font-semibold rounded-lg border border-blue-500/40 transition-colors flex items-center space-x-1.5">
+            <span>✨ Load Demo</span>
+          </button>
+          <button onclick="openResetModal()" class="px-2.5 py-1.5 text-xs font-semibold text-rose-300 hover:text-white bg-rose-950/40 hover:bg-rose-900/60 border border-rose-800/60 hover:border-rose-700 rounded-lg transition-colors flex items-center space-x-1">
+            <span>🔄 Reset All Data</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 space-y-6">
+
+    <!-- Toast Notification Box -->
+    <div id="toast" class="hidden fixed bottom-6 right-6 z-50 px-4 py-3 rounded-xl shadow-lg border text-xs font-semibold flex items-center space-x-2 transition-all"></div>
+
+    <!-- TAB 1: TDS CHALLANS -->
+    <section id="panel-challans" class="space-y-6">
+      <!-- Upload & Quick Action Bar -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <!-- Drag & Drop Zone -->
+        <div id="drop-zone" class="lg:col-span-2 border-2 border-dashed border-slate-300 hover:border-blue-500 bg-white hover:bg-slate-50/80 rounded-2xl p-7 text-center cursor-pointer transition-all flex flex-col items-center justify-center min-h-[190px] relative">
+          <input type="file" id="challan-file-input" multiple accept=".pdf,image/png,image/jpeg,image/webp,.txt" class="hidden" />
+          <div class="p-3.5 bg-blue-50 text-blue-600 rounded-2xl mb-3 shadow-sm border border-blue-100 text-2xl">
+            📄
+          </div>
+          <h3 class="text-base font-semibold text-slate-800">
+            Upload TDS Challan Receipts (Form ITNS 281)
+          </h3>
+          <p class="text-xs text-slate-500 max-w-md mt-1">
+            Drag &amp; drop PDF receipts, scanned challans, or plain text. Client-side extraction extracts Challan No, BSR, Dates, and full Tax Breakup.
+          </p>
+          <div class="flex items-center space-x-3 mt-3 text-[11px] text-slate-400">
+            <span class="flex items-center space-x-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+              <span>100% Private (Runs Locally In Your Browser)</span>
+            </span>
+            <span>•</span>
+            <span>Zero Server Upload Required</span>
+          </div>
+          <div id="challan-spinner" class="hidden absolute inset-0 bg-white/90 backdrop-blur-xs flex flex-col items-center justify-center p-4 z-10">
+            <div class="w-7 h-7 border-2 border-blue-600 border-t-transparent rounded-full animate-spin mb-2"></div>
+            <p class="text-xs font-semibold text-slate-800">Extracting Challan Details...</p>
+          </div>
+        </div>
+
+        <!-- Quick Info Box -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm flex flex-col justify-between space-y-4">
+          <div>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-indigo-700">Quick Testing Sample</h4>
+            <p class="text-xs text-slate-500 mt-1">
+              Pre-loaded with sample ITNS 281 receipt matching Challan 32094 (₹51,36,878).
+            </p>
+          </div>
+          <div class="space-y-2">
+            <button onclick="loadExactSampleReceipt()" class="w-full text-left p-3 bg-gradient-to-r from-blue-50 to-indigo-50 hover:from-blue-100 border border-blue-200 rounded-xl transition-colors">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-semibold text-slate-900">Sample Challan (₹51,36,878)</span>
+                <span class="text-[10px] px-1.5 py-0.5 bg-blue-200 text-blue-900 rounded font-mono">ITNS 281</span>
+              </div>
+              <p class="text-[11px] text-slate-500 mt-0.5 font-mono">Challan: 32094 | BSR: 6390009 | 94C</p>
+            </button>
+          </div>
+          <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span>Total Challans: <strong id="summary-challans-count" class="text-slate-800">1</strong></span>
+            <span>Total: <strong id="summary-challans-total" class="text-slate-800">₹51,36,878</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Challan Summary Table -->
+      <div class="bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden">
+        <div class="p-4 sm:p-5 border-b border-slate-200 bg-slate-50/50 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div>
+            <div class="flex items-center space-x-2">
+              <h3 class="font-bold text-slate-900 text-base">Extracted TDS Challan Summary Table</h3>
+              <span id="table-challans-badge" class="px-2 py-0.5 bg-blue-100 text-blue-800 rounded-md text-xs font-semibold">1 Challan</span>
+            </div>
+            <p class="text-xs text-slate-500 mt-0.5">
+              Challan number | BSR code | Date of payment | Tax | Surcharge | Cess | Interest | Penalty | Fee 234E | Total
+            </p>
+          </div>
+          <div class="flex items-center space-x-2">
+            <button onclick="addManualChallanRow()" class="px-3 py-1.5 text-xs font-semibold text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg transition-colors">
+              + Add Row
+            </button>
+            <button onclick="exportChallanExcel()" class="px-4 py-1.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-lg shadow-sm transition-colors flex items-center space-x-1.5">
+              <span>📥 Export Excel</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs text-slate-700 border-collapse">
+            <thead>
+              <tr class="bg-slate-100 border-b border-slate-300 text-slate-800 font-semibold uppercase tracking-wider text-[11px]">
+                <th class="p-3 border-r border-slate-200">#</th>
+                <th class="p-3 border-r border-slate-200">Challan No</th>
+                <th class="p-3 border-r border-slate-200">BSR Code</th>
+                <th class="p-3 border-r border-slate-200">Payment Date</th>
+                <th class="p-3 border-r border-slate-200 text-right">Tax (₹)</th>
+                <th class="p-3 border-r border-slate-200 text-right">Surcharge (₹)</th>
+                <th class="p-3 border-r border-slate-200 text-right">Cess (₹)</th>
+                <th class="p-3 border-r border-slate-200 text-right">Interest (₹)</th>
+                <th class="p-3 border-r border-slate-200 text-right">Penalty (₹)</th>
+                <th class="p-3 border-r border-slate-200 text-right">Total (₹)</th>
+                <th class="p-3 text-center">Action</th>
+              </tr>
+            </thead>
+            <tbody id="challans-tbody" class="divide-y divide-slate-200">
+              <!-- Rendered dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: SAP PAYMENTS -->
+    <section id="panel-sap" class="hidden space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <!-- SAP Drop Zone -->
+        <div id="sap-drop-zone" class="lg:col-span-2 border-2 border-dashed border-slate-300 hover:border-emerald-500 bg-white hover:bg-slate-50/80 rounded-2xl p-7 text-center cursor-pointer transition-all flex flex-col items-center justify-center min-h-[190px]">
+          <input type="file" id="sap-file-input" accept=".xlsx,.xls,.csv" class="hidden" />
+          <div class="p-3.5 bg-emerald-50 text-emerald-600 rounded-2xl mb-3 shadow-sm border border-emerald-100 text-2xl">
+            📊
+          </div>
+          <h3 class="text-base font-semibold text-slate-800">
+            Upload SAP Payment Excel / CSV File
+          </h3>
+          <p class="text-xs text-slate-500 max-w-md mt-1">
+            Accepts standard SAP ERP reports (FBL1N, FBL3N, J1INCHLN, F110). Auto-maps Challan No, BSR, and Payment amounts.
+          </p>
+        </div>
+
+        <!-- Template download -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm flex flex-col justify-between space-y-4">
+          <div>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-700">SAP Template &amp; Sample</h4>
+            <p class="text-xs text-slate-500 mt-1">
+              Download formatted SAP Excel template or reload sample payment lines.
+            </p>
+          </div>
+          <div class="space-y-2">
+            <button onclick="downloadSapTemplate()" class="w-full text-left p-3 bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-xl transition-colors">
+              <span class="text-xs font-semibold text-slate-800">📥 Download SAP Excel Template</span>
+              <p class="text-[11px] text-slate-500 mt-0.5">Pre-configured with standard headers</p>
+            </button>
+            <button onclick="loadSampleSap()" class="w-full text-left p-3 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 rounded-xl transition-colors">
+              <span class="text-xs font-semibold text-emerald-900">✨ Load Sample SAP Payment</span>
+              <p class="text-[11px] text-emerald-700 mt-0.5">Voucher 1900045210 (₹51,36,878)</p>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- SAP Table -->
+      <div class="bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden">
+        <div class="p-4 sm:p-5 border-b border-slate-200 bg-slate-50/50 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div class="flex items-center space-x-2">
+            <h3 class="font-bold text-slate-900 text-base">SAP ERP Payment Records</h3>
+            <span id="table-sap-badge" class="px-2 py-0.5 bg-emerald-100 text-emerald-800 rounded-md text-xs font-semibold">1 Record</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <button onclick="addManualSapRow()" class="px-3 py-1.5 text-xs font-semibold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 rounded-lg transition-colors">
+              + Add SAP Entry
+            </button>
+            <button onclick="switchTab('recon')" class="px-4 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold rounded-lg shadow-sm transition-colors flex items-center space-x-1.5">
+              <span>Run Reconciliation →</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs text-slate-700 border-collapse">
+            <thead>
+              <tr class="bg-slate-100 border-b border-slate-300 text-slate-800 font-semibold uppercase tracking-wider text-[11px]">
+                <th class="p-3 border-r border-slate-200">SAP Doc No</th>
+                <th class="p-3 border-r border-slate-200">Challan No</th>
+                <th class="p-3 border-r border-slate-200">BSR Code</th>
+                <th class="p-3 border-r border-slate-200">Payment Date</th>
+                <th class="p-3 border-r border-slate-200 text-right">Tax (₹)</th>
+                <th class="p-3 border-r border-slate-200 text-right">Total Amount (₹)</th>
+                <th class="p-3 border-r border-slate-200">Section</th>
+                <th class="p-3 text-center">Action</th>
+              </tr>
+            </thead>
+            <tbody id="sap-tbody" class="divide-y divide-slate-200">
+              <!-- Rendered dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: RECONCILIATION -->
+    <section id="panel-recon" class="hidden space-y-6">
+      <!-- KPI Stats Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Challan Total -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm">
+          <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Total Deposited (Challan)</span>
+          <p id="recon-kpi-challan" class="text-2xl font-black text-slate-900 mt-2 font-mono">₹51,36,878</p>
+          <p id="recon-kpi-challan-sub" class="text-xs text-slate-500 mt-1">1 ITNS 281 Challan</p>
+        </div>
+
+        <!-- SAP Total -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm">
+          <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Total Booked (SAP ERP)</span>
+          <p id="recon-kpi-sap" class="text-2xl font-black text-slate-900 mt-2 font-mono">₹51,36,878</p>
+          <p id="recon-kpi-sap-sub" class="text-xs text-slate-500 mt-1">1 SAP Voucher</p>
+        </div>
+
+        <!-- Net Variance / Gap -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm">
+          <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Net Gap / Variance</span>
+          <p id="recon-kpi-gap" class="text-2xl font-black text-emerald-600 mt-2 font-mono">₹0</p>
+          <p id="recon-kpi-gap-sub" class="text-xs text-emerald-600 font-semibold mt-1">Zero Discrepancy</p>
+        </div>
+
+        <!-- Match Rate -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Status</span>
+            <span id="recon-kpi-rate-badge" class="px-2 py-0.5 text-[10px] font-bold rounded-md bg-emerald-100 text-emerald-800">
+              100% Reconciled
+            </span>
+          </div>
+          <p id="recon-kpi-rate" class="text-2xl font-black text-slate-900 mt-2 font-mono">1 / 1</p>
+          <p class="text-xs text-emerald-600 font-semibold mt-1">All Records Reconciled</p>
+        </div>
+      </div>
+
+      <!-- Reconciliation Table -->
+      <div class="bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden">
+        <div class="p-4 sm:p-5 border-b border-slate-200 bg-slate-50/50 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div>
+            <h3 class="font-bold text-slate-900 text-base">Reconciliation &amp; Financial Gap Analysis</h3>
+            <p class="text-xs text-slate-500 mt-0.5">
+              Matches by Challan No and Amount. If amounts match, shows as <strong>Reconciled</strong> in a single consolidated row with ₹0 variance.
+            </p>
+          </div>
+          <button onclick="exportReconciliationExcel()" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold rounded-xl shadow-sm transition-colors flex items-center space-x-1.5">
+            <span>📥 Export Reconciliation Audit Report (Excel)</span>
+          </button>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs text-slate-700 border-collapse">
+            <thead>
+              <tr class="bg-slate-100 border-b border-slate-300 text-slate-800 font-semibold uppercase tracking-wider text-[11px]">
+                <th class="p-3 border-r border-slate-200">Status</th>
+                <th class="p-3 border-r border-slate-200">Challan No</th>
+                <th class="p-3 border-r border-slate-200">BSR Code</th>
+                <th class="p-3 border-r border-slate-200 text-right">Challan Total (₹)</th>
+                <th class="p-3 border-r border-slate-200 text-right">SAP Total (₹)</th>
+                <th class="p-3 border-r border-slate-200 text-right">Gap / Variance (₹)</th>
+                <th class="p-3 border-r border-slate-200">Challan Date</th>
+                <th class="p-3 border-r border-slate-200">SAP Doc / Date</th>
+                <th class="p-3">Audit Remarks</th>
+              </tr>
+            </thead>
+            <tbody id="recon-tbody" class="divide-y divide-slate-200">
+              <!-- Rendered dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Reset Confirmation Modal -->
+  <div id="reset-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-xs">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-200">
+      <div class="flex items-start space-x-3.5">
+        <div class="p-3 rounded-xl bg-rose-100 text-rose-600 text-xl">
+          🗑️
+        </div>
+        <div class="space-y-1.5 flex-1">
+          <h3 class="text-base font-bold text-slate-900">Reset All Data?</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Are you sure you want to delete all extracted TDS Challan records and SAP payment entries? The reconciliation tables will be cleared. This action cannot be undone.
+          </p>
+        </div>
+      </div>
+      <div class="mt-6 flex items-center justify-end space-x-2.5 pt-4 border-t border-slate-100">
+        <button onclick="closeResetModal()" class="px-4 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-100 rounded-xl transition-colors">
+          Cancel
+        </button>
+        <button onclick="confirmResetAll()" class="px-4 py-2 text-xs font-bold text-white bg-rose-600 hover:bg-rose-700 rounded-xl shadow-sm transition-all">
+          Yes, Reset All Data
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts: Logic & Engine -->
+  <script>
+    // --- Initial State (Pre-loaded with sample prompt data) ---
+    let state = {
+      challans: [
+        {
+          id: 'ch-sample-1',
+          challanNumber: '32094',
+          bsrCode: '6390009',
+          dateOfPayment: '04-Dec-2025',
+          tax: 5136878,
+          surcharge: 0,
+          cess: 0,
+          interest: 0,
+          penalty: 0,
+          fee234E: 0,
+          total: 5136878,
+          tan: 'MELC05986B',
+          companyName: 'XYZ INDIA PRIVATE LIMITED',
+          majorHead: 'Corporation Tax (0020)',
+          minorHead: 'TDS/TCS Payable by Taxpayer (200)',
+          natureOfPayment: '94C',
+          cin: '25120400315977ICIC',
+          bankName: 'ICICI Bank',
+          bankRefNumber: '2054735633',
+        }
+      ],
+      sapRecords: [
+        {
+          id: 'sap-sample-1',
+          documentNumber: '1900045210',
+          challanNumber: '32094',
+          bsrCode: '6390009',
+          paymentDate: '04/12/2025',
+          taxAmount: 5136878,
+          totalAmount: 5136878,
+          vendorName: 'ICICI Bank TDS Electronic Clearing',
+          sectionCode: '194C'
+        }
+      ],
+      activeTab: 'challans'
+    };
+
+    function formatINR(val) {
+      if (typeof val !== 'number' || isNaN(val)) return '₹0';
+      return '₹' + val.toLocaleString('en-IN');
+    }
+
+    function cleanNumber(val) {
+      if (typeof val === 'number') return isNaN(val) ? 0 : val;
+      if (!val) return 0;
+      const cleaned = String(val)
+        .replace(/[₹\s,`'"]/g, '')
+        .replace(/Rs\.?/gi, '')
+        .replace(/[^0-9.-]/g, '');
+      const parsed = parseFloat(cleaned);
+      return isNaN(parsed) ? 0 : parsed;
+    }
+
+    function parseIndianWordsToNumber(text) {
+      if (!text) return 0;
+      const match =
+        text.match(/(?:Rupees|Rs\.?|INR)\s+([A-Za-z\s]+?)(?:\s+Only|\n|$)/i) ||
+        text.match(/Total\s*\(\s*In\s*Words\s*\)\s*([A-Za-z\s]+?)(?:\s+Only|\n|$)/i) ||
+        text.match(/Amount\s*\(\s*in\s*words\s*\)\s*[:.-]?\s*([A-Za-z\s]+?)(?:\s+Only|\n|$)/i);
+      if (!match) return 0;
+      const words = match[1].toLowerCase().replace(/[^a-z\s]/g, ' ').split(/\s+/).filter(Boolean);
+      const units = {
+        zero: 0, one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9,
+        ten: 10, eleven: 11, twelve: 12, thirteen: 13, fourteen: 14, fifteen: 15, sixteen: 16,
+        seventeen: 17, eighteen: 18, nineteen: 19, twenty: 20, thirty: 30, forty: 40, fifty: 50,
+        sixty: 60, seventy: 70, eighty: 80, ninety: 90
+      };
+      let total = 0, current = 0;
+      for (const w of words) {
+        if (units[w] !== undefined) {
+          current += units[w];
+        } else if (w === 'hundred') {
+          current = (current || 1) * 100;
+        } else if (w === 'thousand') {
+          total += (current || 1) * 1000;
+          current = 0;
+        } else if (w === 'lakh' || w === 'lakhs' || w === 'lacs' || w === 'lac') {
+          total += (current || 1) * 100000;
+          current = 0;
+        } else if (w === 'crore' || w === 'crores') {
+          total += (current || 1) * 10000000;
+          current = 0;
+        }
+      }
+      return total + current;
+    }
+
+    function parseChallanText(text, fileName) {
+      const cleanStr = (text || '').replace(/\r/g, ' ');
+      const ch = {
+        id: 'ch-' + Date.now() + '-' + Math.floor(Math.random() * 1000),
+        challanNumber: '00000',
+        bsrCode: '0000000',
+        dateOfPayment: new Date().toLocaleDateString('en-GB'),
+        tax: 0, surcharge: 0, cess: 0, interest: 0, penalty: 0, fee234E: 0, total: 0,
+        sourceFileName: fileName || 'Challan.pdf'
+      };
+
+      const challanNoMatch = cleanStr.match(/(?:Challan\s*No(?:\.|umber)?)\s*[:.-]?\s*([0-9]{4,7})/i);
+      if (challanNoMatch) ch.challanNumber = challanNoMatch[1].trim();
+
+      const bsrMatch = cleanStr.match(/(?:BSR\s*(?:code|no)?)\s*[:.-]?\s*([0-9]{7})/i);
+      if (bsrMatch) ch.bsrCode = bsrMatch[1].trim();
+
+      const tenderDateMatch = cleanStr.match(/(?:Tender\s*Date|Date\s*of\s*Deposit|Payment\s*Date)\s*[:.-]?\s*([0-9]{1,2}[-/.][0-9A-Za-z]{2,3}[-/.][0-9]{2,4})/i);
+      if (tenderDateMatch) ch.dateOfPayment = tenderDateMatch[1].trim();
+
+      const headerAmountMatch = cleanStr.match(/Amount\s*(?:\(in\s*Rs\.?\))?\s*[:.-]?\s*[₹Rs.\s]*([0-9,]+(?:\.[0-9]{2})?)/i);
+      const headerAmt = headerAmountMatch ? cleanNumber(headerAmountMatch[1]) : 0;
+
+      const taxMatch = cleanStr.match(/(?:A\s+Tax|\bTax\b)\s*[:.-]?\s*[₹Rs.\s]*([0-9,]+(?:\.[0-9]{2})?)/i);
+      if (taxMatch) ch.tax = cleanNumber(taxMatch[1]);
+
+      const surchargeMatch = cleanStr.match(/(?:B\s+Surcharge|Surcharge)\s*[:.-]?\s*[₹Rs.\s]*([0-9,]+(?:\.[0-9]{2})?)/i);
+      if (surchargeMatch) ch.surcharge = cleanNumber(surchargeMatch[1]);
+
+      const cessMatch = cleanStr.match(/(?:C\s+Cess|Cess)\s*[:.-]?\s*[₹Rs.\s]*([0-9,]+(?:\.[0-9]{2})?)/i);
+      if (cessMatch) ch.cess = cleanNumber(cessMatch[1]);
+
+      const interestMatch = cleanStr.match(/(?:D\s+Interest|Interest)\s*[:.-]?\s*[₹Rs.\s]*([0-9,]+(?:\.[0-9]{2})?)/i);
+      if (interestMatch) ch.interest = cleanNumber(interestMatch[1]);
+
+      const penaltyMatch = cleanStr.match(/(?:E\s+Penalty|Penalty)\s*[:.-]?\s*[₹Rs.\s]*([0-9,]+(?:\.[0-9]{2})?)/i);
+      if (penaltyMatch) ch.penalty = cleanNumber(penaltyMatch[1]);
+
+      const totalMatch = cleanStr.match(/Total\s*(?:\([A-F+]+\)|\(Amount\s*in\s*₹\)|\(in\s*₹\)|Amount)?\s*[:.-]?\s*[₹Rs.\s]*([0-9,]+(?:\.[0-9]{2})?)/i);
+      if (totalMatch) ch.total = cleanNumber(totalMatch[1]);
+
+      const wordsAmount = parseIndianWordsToNumber(cleanStr);
+      const best = ch.total || headerAmt || ch.tax || wordsAmount;
+      if (!ch.total && best > 0) ch.total = best;
+      if (!ch.tax && best > 0) ch.tax = best;
+
+      return ch;
+    }
+
+    // --- Tab Switching ---
+    function switchTab(tab) {
+      state.activeTab = tab;
+      document.getElementById('panel-challans').classList.add('hidden');
+      document.getElementById('panel-sap').classList.add('hidden');
+      document.getElementById('panel-recon').classList.add('hidden');
+
+      document.getElementById('tab-btn-challans').className = 'px-3.5 py-1.5 rounded-lg font-semibold text-slate-300 hover:text-white transition-all flex items-center space-x-1.5';
+      document.getElementById('tab-btn-sap').className = 'px-3.5 py-1.5 rounded-lg font-semibold text-slate-300 hover:text-white transition-all flex items-center space-x-1.5';
+      document.getElementById('tab-btn-recon').className = 'px-3.5 py-1.5 rounded-lg font-semibold text-slate-300 hover:text-white transition-all flex items-center space-x-1.5';
+
+      if (tab === 'challans') {
+        document.getElementById('panel-challans').classList.remove('hidden');
+        document.getElementById('tab-btn-challans').className = 'px-3.5 py-1.5 rounded-lg font-semibold transition-all flex items-center space-x-1.5 tab-active-challan';
+      } else if (tab === 'sap') {
+        document.getElementById('panel-sap').classList.remove('hidden');
+        document.getElementById('tab-btn-sap').className = 'px-3.5 py-1.5 rounded-lg font-semibold transition-all flex items-center space-x-1.5 tab-active-sap';
+      } else if (tab === 'recon') {
+        document.getElementById('panel-recon').classList.remove('hidden');
+        document.getElementById('tab-btn-recon').className = 'px-3.5 py-1.5 rounded-lg font-semibold transition-all flex items-center space-x-1.5 tab-active-recon';
+        renderReconciliation();
+      }
+    }
+
+    function showToast(msg, isError) {
+      const el = document.getElementById('toast');
+      el.textContent = msg;
+      el.className = isError
+        ? 'fixed bottom-6 right-6 z-50 px-4 py-3 rounded-xl shadow-lg border text-xs font-semibold bg-rose-600 text-white border-rose-700 flex items-center'
+        : 'fixed bottom-6 right-6 z-50 px-4 py-3 rounded-xl shadow-lg border text-xs font-semibold bg-slate-900 text-white border-slate-700 flex items-center';
+      el.classList.remove('hidden');
+      setTimeout(() => el.classList.add('hidden'), 4000);
+    }
+
+    // --- Render Tables ---
+    function renderChallansTable() {
+      const tbody = document.getElementById('challans-tbody');
+      tbody.innerHTML = '';
+      let sum = 0;
+      state.challans.forEach((ch, idx) => {
+        sum += (ch.total || 0);
+        const tr = document.createElement('tr');
+        tr.className = 'hover:bg-slate-50 transition-colors font-mono text-xs';
+        tr.innerHTML = `
+          <td class="p-3 border-r border-slate-200 text-slate-400">${idx + 1}</td>
+          <td class="p-3 border-r border-slate-200 font-bold text-slate-900">${ch.challanNumber || '-'}</td>
+          <td class="p-3 border-r border-slate-200 text-slate-700">${ch.bsrCode || '-'}</td>
+          <td class="p-3 border-r border-slate-200">${ch.dateOfPayment || '-'}</td>
+          <td class="p-3 border-r border-slate-200 text-right">${(ch.tax || 0).toLocaleString('en-IN')}</td>
+          <td class="p-3 border-r border-slate-200 text-right">${(ch.surcharge || 0).toLocaleString('en-IN')}</td>
+          <td class="p-3 border-r border-slate-200 text-right">${(ch.cess || 0).toLocaleString('en-IN')}</td>
+          <td class="p-3 border-r border-slate-200 text-right">${(ch.interest || 0).toLocaleString('en-IN')}</td>
+          <td class="p-3 border-r border-slate-200 text-right">${(ch.penalty || 0).toLocaleString('en-IN')}</td>
+          <td class="p-3 border-r border-slate-200 text-right font-bold text-blue-700">${(ch.total || 0).toLocaleString('en-IN')}</td>
+          <td class="p-3 text-center">
+            <button onclick="deleteChallanRow('${ch.id}')" class="text-rose-600 hover:text-rose-800 p-1">🗑️</button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      document.getElementById('badge-challans-count').textContent = state.challans.length;
+      document.getElementById('table-challans-badge').textContent = state.challans.length + (state.challans.length === 1 ? ' Challan' : ' Challans');
+      document.getElementById('summary-challans-count').textContent = state.challans.length;
+      document.getElementById('summary-challans-total').textContent = formatINR(sum);
+    }
+
+    function renderSapTable() {
+      const tbody = document.getElementById('sap-tbody');
+      tbody.innerHTML = '';
+      state.sapRecords.forEach((sap) => {
+        const tr = document.createElement('tr');
+        tr.className = 'hover:bg-slate-50 transition-colors font-mono text-xs';
+        tr.innerHTML = `
+          <td class="p-3 border-r border-slate-200 font-bold text-slate-900">${sap.documentNumber || '-'}</td>
+          <td class="p-3 border-r border-slate-200">${sap.challanNumber || '-'}</td>
+          <td class="p-3 border-r border-slate-200 text-slate-700">${sap.bsrCode || '-'}</td>
+          <td class="p-3 border-r border-slate-200">${sap.paymentDate || '-'}</td>
+          <td class="p-3 border-r border-slate-200 text-right">${(sap.taxAmount || 0).toLocaleString('en-IN')}</td>
+          <td class="p-3 border-r border-slate-200 text-right font-bold text-emerald-700">${(sap.totalAmount || 0).toLocaleString('en-IN')}</td>
+          <td class="p-3 border-r border-slate-200">${sap.sectionCode || '-'}</td>
+          <td class="p-3 text-center">
+            <button onclick="deleteSapRow('${sap.id}')" class="text-rose-600 hover:text-rose-800 p-1">🗑️</button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      document.getElementById('badge-sap-count').textContent = state.sapRecords.length;
+      document.getElementById('table-sap-badge').textContent = state.sapRecords.length + (state.sapRecords.length === 1 ? ' Record' : ' Records');
+    }
+
+    // --- RECONCILIATION ENGINE ---
+    // If amounts match, shows as Reconciled in a single consolidated row!
+    function performReconciliation() {
+      const items = [];
+      const usedChallan = new Set();
+      const usedSap = new Set();
+
+      function norm(s) { return (s || '').trim().toLowerCase().replace(/^0+/, ''); }
+
+      // 1. Pass: Exact Challan No + Amount Match
+      for (const ch of state.challans) {
+        if (usedChallan.has(ch.id)) continue;
+        const chNo = norm(ch.challanNumber);
+        const chTotal = ch.total || ch.tax || 0;
+        if (!chNo || chNo === '0') continue;
+
+        const matchedSap = state.sapRecords.find(s => {
+          if (usedSap.has(s.id)) return false;
+          const sChNo = norm(s.challanNumber);
+          const sTotal = s.totalAmount || s.taxAmount || 0;
+          return sChNo === chNo && Math.abs(chTotal - sTotal) <= 1.0;
+        });
+
+        if (matchedSap) {
+          usedChallan.add(ch.id);
+          usedSap.add(matchedSap.id);
+          items.push({
+            status: 'RECONCILED',
+            challanNumber: ch.challanNumber,
+            bsrCode: ch.bsrCode || matchedSap.bsrCode,
+            challanTotal: chTotal,
+            sapTotal: matchedSap.totalAmount || matchedSap.taxAmount || 0,
+            gap: 0,
+            challanDate: ch.dateOfPayment,
+            sapRef: matchedSap.documentNumber + ' (' + (matchedSap.paymentDate || '') + ')',
+            remarks: 'Reconciled: Challan No and Amount match to the rupee.'
+          });
+        }
+      }
+
+      // 2. Pass: Exact AMOUNT Match (Even if Challan No is different / unentered in SAP)
+      for (const ch of state.challans) {
+        if (usedChallan.has(ch.id)) continue;
+        const chTotal = ch.total || ch.tax || 0;
+        if (chTotal <= 0) continue;
+
+        const matchedSap = state.sapRecords.find(s => {
+          if (usedSap.has(s.id)) return false;
+          const sTotal = s.totalAmount || s.taxAmount || 0;
+          return Math.abs(chTotal - sTotal) <= 1.0 || Math.abs((ch.tax || 0) - sTotal) <= 1.0;
+        });
+
+        if (matchedSap) {
+          usedChallan.add(ch.id);
+          usedSap.add(matchedSap.id);
+          items.push({
+            status: 'RECONCILED',
+            challanNumber: ch.challanNumber,
+            bsrCode: ch.bsrCode || matchedSap.bsrCode,
+            challanTotal: chTotal,
+            sapTotal: matchedSap.totalAmount || matchedSap.taxAmount || 0,
+            gap: 0,
+            challanDate: ch.dateOfPayment,
+            sapRef: matchedSap.documentNumber + ' (' + (matchedSap.paymentDate || '') + ')',
+            remarks: 'Reconciled by Amount: Exact match of ₹' + chTotal.toLocaleString('en-IN') + ' with SAP Doc ' + matchedSap.documentNumber
+          });
+        }
+      }
+
+      // 3. Pass: Challan Number Match with Amount Gap
+      for (const ch of state.challans) {
+        if (usedChallan.has(ch.id)) continue;
+        const chNo = norm(ch.challanNumber);
+        if (!chNo || chNo === '0') continue;
+
+        const matchedSap = state.sapRecords.find(s => {
+          if (usedSap.has(s.id)) return false;
+          return norm(s.challanNumber) === chNo;
+        });
+
+        if (matchedSap) {
+          usedChallan.add(ch.id);
+          usedSap.add(matchedSap.id);
+          const chTotal = ch.total || ch.tax || 0;
+          const sTotal = matchedSap.totalAmount || matchedSap.taxAmount || 0;
+          const gap = chTotal - sTotal;
+          items.push({
+            status: 'AMOUNT_GAP',
+            challanNumber: ch.challanNumber,
+            bsrCode: ch.bsrCode,
+            challanTotal: chTotal,
+            sapTotal: sTotal,
+            gap: Math.round(gap * 100) / 100,
+            challanDate: ch.dateOfPayment,
+            sapRef: matchedSap.documentNumber + ' (' + (matchedSap.paymentDate || '') + ')',
+            remarks: gap > 0 ? 'Excess deposit of ₹' + Math.abs(gap).toLocaleString('en-IN') : 'Shortfall of ₹' + Math.abs(gap).toLocaleString('en-IN')
+          });
+        }
+      }
+
+      // 4. Pass: Unmatched Challans (Missing in SAP)
+      for (const ch of state.challans) {
+        if (!usedChallan.has(ch.id)) {
+          items.push({
+            status: 'MISSING_IN_SAP',
+            challanNumber: ch.challanNumber,
+            bsrCode: ch.bsrCode,
+            challanTotal: ch.total,
+            sapTotal: null,
+            gap: ch.total,
+            challanDate: ch.dateOfPayment,
+            sapRef: '-',
+            remarks: 'Challan receipt exists, but no corresponding entry found in SAP ERP.'
+          });
+        }
+      }
+
+      // 5. Pass: Unmatched SAP Payments (Missing in Challan)
+      for (const sap of state.sapRecords) {
+        if (!usedSap.has(sap.id)) {
+          items.push({
+            status: 'MISSING_IN_CHALLAN',
+            challanNumber: sap.challanNumber || 'NOT DEPOSITED',
+            bsrCode: sap.bsrCode || '-',
+            challanTotal: null,
+            sapTotal: sap.totalAmount,
+            gap: -sap.totalAmount,
+            challanDate: '-',
+            sapRef: sap.documentNumber + ' (' + (sap.paymentDate || '') + ')',
+            remarks: 'Payment of ₹' + sap.totalAmount.toLocaleString('en-IN') + ' booked in SAP, but no Challan receipt uploaded.'
+          });
+        }
+      }
+
+      return items;
+    }
+
+    function renderReconciliation() {
+      const items = performReconciliation();
+      const tbody = document.getElementById('recon-tbody');
+      tbody.innerHTML = '';
+
+      let chSum = state.challans.reduce((s, c) => s + (c.total || 0), 0);
+      let sapSum = state.sapRecords.reduce((s, r) => s + (r.totalAmount || 0), 0);
+      let netGap = chSum - sapSum;
+      let reconciledCount = items.filter(i => i.status === 'RECONCILED').length;
+
+      document.getElementById('recon-kpi-challan').textContent = formatINR(chSum);
+      document.getElementById('recon-kpi-challan-sub').textContent = state.challans.length + ' ITNS 281 Challan(s)';
+      document.getElementById('recon-kpi-sap').textContent = formatINR(sapSum);
+      document.getElementById('recon-kpi-sap-sub').textContent = state.sapRecords.length + ' SAP Voucher(s)';
+
+      const gapEl = document.getElementById('recon-kpi-gap');
+      const gapSub = document.getElementById('recon-kpi-gap-sub');
+      if (Math.abs(netGap) <= 1) {
+        gapEl.textContent = '₹0';
+        gapEl.className = 'text-2xl font-black text-emerald-600 mt-2 font-mono';
+        gapSub.textContent = 'Zero Discrepancy';
+        gapSub.className = 'text-xs text-emerald-600 font-semibold mt-1';
+      } else {
+        gapEl.textContent = (netGap > 0 ? '+' : '') + formatINR(netGap);
+        gapEl.className = 'text-2xl font-black text-rose-600 mt-2 font-mono';
+        gapSub.textContent = 'Variance Detected';
+        gapSub.className = 'text-xs text-rose-600 font-semibold mt-1';
+      }
+
+      const rateEl = document.getElementById('recon-kpi-rate');
+      rateEl.textContent = reconciledCount + ' / ' + items.length;
+      const ratePct = items.length > 0 ? Math.round((reconciledCount / items.length) * 100) : 0;
+      document.getElementById('recon-kpi-rate-badge').textContent = ratePct + '% Reconciled';
+
+      items.forEach(item => {
+        const tr = document.createElement('tr');
+        tr.className = 'hover:bg-slate-50 transition-colors font-mono text-xs';
+
+        let badge = '';
+        if (item.status === 'RECONCILED') {
+          badge = '<span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">✅ Reconciled</span>';
+        } else if (item.status === 'AMOUNT_GAP') {
+          badge = '<span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-rose-100 text-rose-800">⚠️ Amount Gap</span>';
+        } else if (item.status === 'MISSING_IN_SAP') {
+          badge = '<span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-blue-100 text-blue-800">ℹ️ Missing in SAP</span>';
+        } else if (item.status === 'MISSING_IN_CHALLAN') {
+          badge = '<span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-purple-100 text-purple-800">🚨 Missing Challan</span>';
+        }
+
+        tr.innerHTML = `
+          <td class="p-3 border-r border-slate-200 font-sans">${badge}</td>
+          <td class="p-3 border-r border-slate-200 font-bold text-slate-900">${item.challanNumber || '-'}</td>
+          <td class="p-3 border-r border-slate-200 text-slate-700">${item.bsrCode || '-'}</td>
+          <td class="p-3 border-r border-slate-200 text-right">${item.challanTotal !== null ? item.challanTotal.toLocaleString('en-IN') : '-'}</td>
+          <td class="p-3 border-r border-slate-200 text-right">${item.sapTotal !== null ? item.sapTotal.toLocaleString('en-IN') : '-'}</td>
+          <td class="p-3 border-r border-slate-200 text-right font-bold ${item.gap === 0 ? 'text-emerald-700 bg-emerald-50/50' : 'text-rose-700 bg-rose-50/50'}">
+            ${item.gap === 0 ? '₹0' : (item.gap > 0 ? '+' : '') + item.gap.toLocaleString('en-IN')}
+          </td>
+          <td class="p-3 border-r border-slate-200">${item.challanDate || '-'}</td>
+          <td class="p-3 border-r border-slate-200">${item.sapRef || '-'}</td>
+          <td class="p-3 text-slate-600 font-sans">${item.remarks}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    // --- Reset Confirmation Logic ---
+    function openResetModal() {
+      document.getElementById('reset-modal').classList.remove('hidden');
+    }
+    function closeResetModal() {
+      document.getElementById('reset-modal').classList.add('hidden');
+    }
+    function confirmResetAll() {
+      state.challans = [];
+      state.sapRecords = [];
+      closeResetModal();
+      renderChallansTable();
+      renderSapTable();
+      switchTab('challans');
+      showToast('All data has been reset successfully.');
+    }
+
+    // --- Load Demo Data ---
+    function loadSampleData() {
+      state.challans = [
+        {
+          id: 'ch-sample-1',
+          challanNumber: '32094',
+          bsrCode: '6390009',
+          dateOfPayment: '04-Dec-2025',
+          tax: 5136878,
+          surcharge: 0,
+          cess: 0,
+          interest: 0,
+          penalty: 0,
+          fee234E: 0,
+          total: 5136878,
+          tan: 'MELC05986B',
+          companyName: 'XYZ INDIA PRIVATE LIMITED'
+        }
+      ];
+      state.sapRecords = [
+        {
+          id: 'sap-sample-1',
+          documentNumber: '1900045210',
+          challanNumber: '32094',
+          bsrCode: '6390009',
+          paymentDate: '04/12/2025',
+          taxAmount: 5136878,
+          totalAmount: 5136878,
+          vendorName: 'ICICI Bank TDS Electronic Clearing',
+          sectionCode: '194C'
+        }
+      ];
+      renderChallansTable();
+      renderSapTable();
+      switchTab('recon');
+      showToast('Loaded demo dataset (₹51,36,878 matching).');
+    }
+
+    function loadExactSampleReceipt() {
+      state.challans = [
+        {
+          id: 'ch-sample-1',
+          challanNumber: '32094',
+          bsrCode: '6390009',
+          dateOfPayment: '04-Dec-2025',
+          tax: 5136878,
+          surcharge: 0,
+          cess: 0,
+          interest: 0,
+          penalty: 0,
+          fee234E: 0,
+          total: 5136878,
+          tan: 'MELC05986B',
+          companyName: 'XYZ INDIA PRIVATE LIMITED'
+        }
+      ];
+      renderChallansTable();
+      showToast('Loaded sample Challan (Challan 32094, ₹51,36,878).');
+    }
+
+    function loadSampleSap() {
+      state.sapRecords = [
+        {
+          id: 'sap-sample-1',
+          documentNumber: '1900045210',
+          challanNumber: '32094',
+          bsrCode: '6390009',
+          paymentDate: '04/12/2025',
+          taxAmount: 5136878,
+          totalAmount: 5136878,
+          vendorName: 'ICICI Bank TDS Electronic Clearing',
+          sectionCode: '194C'
+        }
+      ];
+      renderSapTable();
+      showToast('Loaded sample SAP payment record.');
+    }
+
+    function deleteChallanRow(id) {
+      state.challans = state.challans.filter(c => c.id !== id);
+      renderChallansTable();
+    }
+
+    function deleteSapRow(id) {
+      state.sapRecords = state.sapRecords.filter(s => s.id !== id);
+      renderSapTable();
+    }
+
+    function addManualChallanRow() {
+      state.challans.unshift({
+        id: 'ch-' + Date.now(),
+        challanNumber: '10001',
+        bsrCode: '0000000',
+        dateOfPayment: new Date().toLocaleDateString('en-GB'),
+        tax: 0, surcharge: 0, cess: 0, interest: 0, penalty: 0, fee234E: 0, total: 0
+      });
+      renderChallansTable();
+      showToast('Added manual challan row.');
+    }
+
+    function addManualSapRow() {
+      state.sapRecords.unshift({
+        id: 'sap-' + Date.now(),
+        documentNumber: '19000' + Math.floor(10000 + Math.random() * 90000),
+        challanNumber: '10001',
+        bsrCode: '0000000',
+        paymentDate: new Date().toLocaleDateString('en-GB'),
+        taxAmount: 0,
+        totalAmount: 0,
+        vendorName: 'Manual Entry',
+        sectionCode: '194C'
+      });
+      renderSapTable();
+      showToast('Added manual SAP row.');
+    }
+
+    // --- PDF / File Extraction ---
+    async function handleChallanFiles(files) {
+      document.getElementById('challan-spinner').classList.remove('hidden');
+      for (const file of files) {
+        try {
+          if (file.type === 'application/pdf' || file.name.endsWith('.pdf')) {
+            const arrayBuffer = await file.arrayBuffer();
+            const pdf = await window.pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+            let fullText = '';
+            for (let i = 1; i <= pdf.numPages; i++) {
+              const page = await pdf.getPage(i);
+              const textContent = await page.getTextContent();
+              fullText += ' ' + textContent.items.map(item => item.str).join(' ');
+            }
+            const parsed = parseChallanText(fullText, file.name);
+            state.challans.unshift(parsed);
+          } else if (file.type.startsWith('text/') || file.name.endsWith('.txt')) {
+            const text = await file.text();
+            const parsed = parseChallanText(text, file.name);
+            state.challans.unshift(parsed);
+          } else {
+            showToast('For scanned images, please paste text or use PDF format.', true);
+          }
+        } catch (e) {
+          console.error(e);
+          showToast('Failed to parse ' + file.name + ': ' + e.message, true);
+        }
+      }
+      document.getElementById('challan-spinner').classList.add('hidden');
+      renderChallansTable();
+      showToast('Successfully extracted ' + files.length + ' challan(s)!');
+    }
+
+    // --- SAP File Upload (Excel / CSV) ---
+    async function handleSapFile(file) {
+      if (!file) return;
+      try {
+        const buffer = await file.arrayBuffer();
+        const wb = XLSX.read(buffer, { type: 'array' });
+        const ws = wb.Sheets[wb.SheetNames[0]];
+        const data = XLSX.utils.sheet_to_json(ws, { defval: '' });
+
+        const newRecords = [];
+        data.forEach(row => {
+          function getV(keys) {
+            for (const k of keys) {
+              for (const rowKey of Object.keys(row)) {
+                if (rowKey.trim().toLowerCase() === k.toLowerCase()) return row[rowKey];
+              }
+            }
+            return '';
+          }
+          const totalAmt = cleanNumber(getV(['Total Amount', 'Total', 'Amount', 'Gross Amount', 'Payment Amount']));
+          const taxAmt = cleanNumber(getV(['Tax Amount', 'Tax', 'TDS', 'TDS Amount'])) || totalAmt;
+          if (totalAmt > 0 || taxAmt > 0) {
+            newRecords.push({
+              id: 'sap-' + Date.now() + '-' + Math.floor(Math.random() * 1000),
+              documentNumber: String(getV(['Document Number', 'Doc No', 'Doc', 'Voucher', 'Ref']) || ('19000' + Math.floor(10000 + Math.random() * 90000))),
+              challanNumber: String(getV(['Challan Number', 'Challan No', 'Challan', 'Reference']) || '').trim(),
+              bsrCode: String(getV(['BSR Code', 'BSR', 'BSR No']) || '').trim(),
+              paymentDate: String(getV(['Payment Date', 'Posting Date', 'Date']) || new Date().toLocaleDateString('en-GB')),
+              taxAmount: taxAmt,
+              totalAmount: totalAmt || taxAmt,
+              vendorName: String(getV(['Vendor Name', 'Vendor', 'Name', 'Description']) || 'SAP Booking'),
+              sectionCode: String(getV(['Section Code', 'Section', 'Tax Code']) || '194C')
+            });
+          }
+        });
+
+        if (newRecords.length > 0) {
+          state.sapRecords = newRecords;
+          renderSapTable();
+          showToast('Imported ' + newRecords.length + ' SAP payment records!');
+        } else {
+          showToast('No payment lines recognized in file.', true);
+        }
+      } catch (err) {
+        console.error(err);
+        showToast('Error reading SAP file: ' + err.message, true);
+      }
+    }
+
+    // --- Excel Exports ---
+    function exportChallanExcel() {
+      const headers = ['Challan number', 'BSR code', 'Date of payment', 'Tax', 'Surcharge', 'Cess', 'Interest', 'Penalty', 'Total'];
+      const rows = state.challans.map(c => [
+        c.challanNumber || '',
+        c.bsrCode || '',
+        c.dateOfPayment || '',
+        c.tax || 0,
+        c.surcharge || 0,
+        c.cess || 0,
+        c.interest || 0,
+        c.penalty || 0,
+        c.total || 0
+      ]);
+      const wb = XLSX.utils.book_new();
+      const ws = XLSX.utils.aoa_to_sheet([headers, ...rows]);
+      XLSX.utils.book_append_sheet(wb, ws, 'Challan Summary');
+      XLSX.writeFile(wb, 'TDS_Challan_Summary_' + new Date().toISOString().substring(0, 10) + '.xlsx');
+      showToast('Exported Challan Summary Excel.');
+    }
+
+    function exportReconciliationExcel() {
+      const items = performReconciliation();
+      const headers = ['Status', 'Challan No', 'BSR Code', 'Challan Total (₹)', 'SAP Total (₹)', 'Gap / Variance (₹)', 'Challan Date', 'SAP Ref', 'Audit Remarks'];
+      const rows = items.map(i => [
+        i.status,
+        i.challanNumber || '',
+        i.bsrCode || '',
+        i.challanTotal !== null ? i.challanTotal : '',
+        i.sapTotal !== null ? i.sapTotal : '',
+        i.gap,
+        i.challanDate || '',
+        i.sapRef || '',
+        i.remarks || ''
+      ]);
+      const wb = XLSX.utils.book_new();
+      const ws = XLSX.utils.aoa_to_sheet([headers, ...rows]);
+      XLSX.utils.book_append_sheet(wb, ws, 'Reconciliation Gaps');
+      XLSX.writeFile(wb, 'TDS_SAP_Reconciliation_' + new Date().toISOString().substring(0, 10) + '.xlsx');
+      showToast('Exported Reconciliation Audit Report.');
+    }
+
+    function downloadSapTemplate() {
+      const headers = ['Document Number', 'Challan Number', 'BSR Code', 'Payment Date', 'Tax Amount', 'Total Amount', 'Vendor Name', 'Section Code'];
+      const sample = ['1900045210', '32094', '6390009', '04/12/2025', 5136878, 5136878, 'ICICI TDS Electronic Clearing', '194C'];
+      const wb = XLSX.utils.book_new();
+      const ws = XLSX.utils.aoa_to_sheet([headers, sample]);
+      XLSX.utils.book_append_sheet(wb, ws, 'SAP Payments');
+      XLSX.writeFile(wb, 'SAP_Payment_Template.xlsx');
+      showToast('Downloaded SAP Template.');
+    }
+
+    // --- Drag & Drop Setup ---
+    window.addEventListener('DOMContentLoaded', () => {
+      renderChallansTable();
+      renderSapTable();
+
+      const dropZone = document.getElementById('drop-zone');
+      const fileInput = document.getElementById('challan-file-input');
+      dropZone.onclick = () => fileInput.click();
+      fileInput.onchange = (e) => { if (e.target.files) handleChallanFiles(e.target.files); };
+      dropZone.ondragover = (e) => { e.preventDefault(); dropZone.classList.add('border-blue-500', 'bg-blue-50'); };
+      dropZone.ondragleave = () => { dropZone.classList.remove('border-blue-500', 'bg-blue-50'); };
+      dropZone.ondrop = (e) => {
+        e.preventDefault();
+        dropZone.classList.remove('border-blue-500', 'bg-blue-50');
+        if (e.dataTransfer.files) handleChallanFiles(e.dataTransfer.files);
+      };
+
+      const sapDropZone = document.getElementById('sap-drop-zone');
+      const sapFileInput = document.getElementById('sap-file-input');
+      sapDropZone.onclick = () => sapFileInput.click();
+      sapFileInput.onchange = (e) => { if (e.target.files[0]) handleSapFile(e.target.files[0]); };
+      sapDropZone.ondragover = (e) => { e.preventDefault(); sapDropZone.classList.add('border-emerald-500', 'bg-emerald-50'); };
+      sapDropZone.ondragleave = () => { sapDropZone.classList.remove('border-emerald-500', 'bg-emerald-50'); };
+      sapDropZone.ondrop = (e) => {
+        e.preventDefault();
+        sapDropZone.classList.remove('border-emerald-500', 'bg-emerald-50');
+        if (e.dataTransfer.files[0]) handleSapFile(e.dataTransfer.files[0]);
+      };
+    });
+  </script>
+</body>
+</html>
