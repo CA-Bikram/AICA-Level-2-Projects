@@ -1,0 +1,1 @@
+{"name":"taskally","version":"1.0.0","bin":"server.js","main":"server.js","pkg":{"assets":["public/**/*"],"targets":["node20-win-x64"]}}

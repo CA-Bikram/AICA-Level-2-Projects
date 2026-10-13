@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TaskAlly</title>
+<style>
+:root{--bg:#f4f0ff;--card:#fff;--tx:#1f1b3a;--mut:#6b6690;--bd:#e4defa;--p:#7c3aed;--pk:#ec4899;--pend:#f59e0b;--prog:#3b82f6;--done:#10b981;--blk:#ef4444;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15112b;--card:#221c40;--tx:#f1eeff;--mut:#a9a3d0;--bd:#3a3260}}
+:root[data-theme="dark"]{--bg:#15112b;--card:#221c40;--tx:#f1eeff;--mut:#a9a3d0;--bd:#3a3260}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{background:linear-gradient(120deg,#7c3aed,#ec4899 60%,#f59e0b);color:#fff;padding:18px 20px}
+.brand{display:flex;align-items:center;gap:12px;max-width:1100px;margin:auto;flex-wrap:wrap}
+.logo{width:46px;height:46px;border-radius:14px;background:rgba(255,255,255,.22);display:grid;place-items:center;font-weight:800;font-size:15px;letter-spacing:1px}
+h1{margin:0;font-size:22px}.sub{font-size:12px;opacity:.9}
+nav{display:flex;gap:6px;margin-left:auto;flex-wrap:wrap}
+nav button{background:rgba(255,255,255,.18);color:#fff;border:0;padding:8px 14px;border-radius:999px;cursor:pointer;font-weight:600}
+nav button.on{background:#fff;color:var(--p)}
+main{max-width:1100px;margin:auto;padding:18px 16px 40px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:16px;margin-bottom:16px;box-shadow:0 4px 14px rgba(124,58,237,.07)}
+.card h2{margin:0 0 10px;font-size:17px}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+input,select,textarea{background:var(--bg);color:var(--tx);border:1px solid var(--bd);border-radius:10px;padding:9px 11px;font:inherit;min-width:0}
+input.grow{flex:1;min-width:180px}
+.btn{background:linear-gradient(120deg,var(--p),var(--pk));color:#fff;border:0;border-radius:10px;padding:9px 16px;font-weight:700;cursor:pointer}
+.btn.ghost{background:var(--bg);color:var(--tx);border:1px solid var(--bd);font-weight:600;padding:6px 10px;font-size:13px}
+.task{display:flex;gap:10px;align-items:center;padding:10px 12px;border:1px solid var(--bd);border-left:5px solid var(--pend);border-radius:12px;margin-top:8px;flex-wrap:wrap}
+.task .t{flex:1;min-width:160px;font-weight:600}.task small{color:var(--mut);display:block;font-weight:400}
+.st-Pending{border-left-color:var(--pend)}.st-InProgress{border-left-color:var(--prog)}.st-Completed{border-left-color:var(--done)}.st-Blocked{border-left-color:var(--blk)}
+.st-Completed .t{text-decoration:line-through;opacity:.7}
+.empty{color:var(--mut);text-align:center;padding:18px;border:2px dashed var(--bd);border-radius:12px;margin-top:8px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:16px}
+.kpi{border-radius:16px;padding:14px;color:#fff;font-weight:600}.kpi b{display:block;font-size:30px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px}
+.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--mut);margin-top:8px}
+.bar{display:flex;height:16px;border-radius:8px;overflow:hidden;background:var(--bg)}
+.mrow{margin:10px 0;font-size:13px}.mrow .top{display:flex;justify-content:space-between;margin-bottom:4px}
+.trend{display:flex;align-items:flex-end;gap:10px;height:170px;padding-top:8px}
+.tcol{flex:1;display:flex;flex-direction:column;align-items:center;height:100%;justify-content:flex-end;font-size:11px;color:var(--mut)}
+.tbars{display:flex;gap:3px;align-items:flex-end;flex:1;width:100%;justify-content:center}
+.tbars i{width:38%;border-radius:5px 5px 0 0;min-height:2px}
+.chip{display:inline-block;padding:2px 9px;border-radius:999px;color:#fff;font-size:12px;font-weight:700}
+.tblwrap{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:8px;border-bottom:1px solid var(--bd);white-space:nowrap}
+.warn{background:#fee2e2;color:#7f1d1d;padding:10px 14px;border-radius:12px;margin-bottom:14px}
+.hide{display:none}.notice{background:#dcfce7;color:#14532d;padding:10px 14px;border-radius:12px;margin-bottom:14px}.notice a{color:#065f46;font-weight:700}.cmt{margin:4px 0 0 14px;padding:8px 12px;border-radius:10px;background:linear-gradient(120deg,#ede9fe,#fce7f3);color:#3b0764;font-size:13px}
+</style></head><body>
+<header><div class="brand"><div class="logo">TA</div><div><h1>TaskAlly</h1><div class="sub">Daily to-do &amp; status tracker for the team</div></div>
+<nav><button data-v="my" class="on">My Tasks</button><button data-v="admin">Admin Dashboard</button><button data-v="team">Team</button></nav></div></header>
+<main>
+<div id="warn" class="warn hide"></div>
+<div id="notice" class="notice hide"></div>
+<section id="v-my"></section><section id="v-admin" class="hide"></section><section id="v-team" class="hide"></section>
+</main>
+<script>
+window.TA_DB=(function(){
+  const st={members:[],tasks:[],comments:[]},subs={members:[],tasks:[],comments:[]};let last=null,down=false,timer=null;
+  const snap=c=>({docs:st[c].map(d=>({id:d.id,exists:true,data:()=>{const r={...d};delete r.id;return r}}))});
+  async function pull(){try{const r=await fetch("/api/state",{cache:"no-store"});const t=await r.text();down=false;if(t===last)return;last=t;const j=JSON.parse(t);for(const c in st){st[c]=j[c]||[];subs[c].forEach(f=>f.cb(snap(c)))}}
+    catch(e){if(!down){down=true;for(const c in subs)subs[c].forEach(f=>f.er&&f.er({message:"Cannot reach the TaskAlly server. Make sure the host PC is on and TaskAlly is running."}))}}}
+  async function call(m,url,b){const r=await fetch("/api/"+url,{method:m,headers:{"Content-Type":"application/json"},body:b?JSON.stringify(b):undefined});if(!r.ok)throw new Error("Save failed");const j=await r.json();last=null;await pull();return j}
+  return{collection:c=>({onSnapshot(cb,er){const f={cb,er};subs[c].push(f);if(!timer){timer=setInterval(pull,2500)}last=null;pull();return()=>{subs[c]=subs[c].filter(x=>x!==f)}},add:o=>call("POST",c,o)}),
+    doc:p=>({update:o=>call("PATCH",p,o),delete:()=>call("DELETE",p)})}
+})();
+</script>
+<script>
+const ST=["Pending","In Progress","Completed","Blocked"],SC={"Pending":"#f59e0b","In Progress":"#3b82f6","Completed":"#10b981","Blocked":"#ef4444"},sk=s=>s.replace(" ","");
+const PAL=["#7c3aed","#ec4899","#06b6d4","#f59e0b","#10b981","#3b82f6","#ef4444","#8b5cf6"];
+let db=null,members=[],tasks=[],comments=[],cTask=null,editMem=null,view="my",me="",range="7",fmem="all";
+try{me=localStorage.getItem("atm_me")||""}catch(e){}
+const $=id=>document.getElementById(id);
+const iso=d=>{const x=new Date(d);return x.getFullYear()+"-"+String(x.getMonth()+1).padStart(2,"0")+"-"+String(x.getDate()).padStart(2,"0")};
+const today=()=>iso(new Date()),yest=()=>{const d=new Date();d.setDate(d.getDate()-1);return iso(d)};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const mem=id=>members.find(m=>m.id===id);
+const nice=d=>new Date(d+"T00:00").toLocaleDateString(undefined,{day:"numeric",month:"short"});
+const okMail=e=>/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test((e||"").trim());
+function notice(h){const n=$("notice");n.innerHTML=h;n.classList.toggle("hide",!h)}
+function mailLink(m,t,text,author){const sub=`TaskAlly: New comment on your task - ${t.title}`,body=`Hi ${m.name},\n\n${author} has commented on your task "${t.title}" (${nice(t.date)}, status: ${t.status}):\n\n${text}\n\nRegards,\nTaskAlly`;return `mailto:${m.email}?subject=${encodeURIComponent(sub)}&body=${encodeURIComponent(body)}`}
+function cmts(id){const c=comments.filter(x=>x.taskId===id);return c.map(x=>`<div class="cmt">💬 <b>${esc(x.author||"Admin")}</b> · ${nice(iso(x.at))}: ${esc(x.text)}</div>`).join("")}
+function warn(t){const w=$("warn");w.textContent=t;w.classList.toggle("hide",!t)}
+async function init(){
+  render();
+  db=window.TA_DB
+  if(!db){warn("Cannot reach the TaskAlly server.");return}
+  db.collection("members").onSnapshot(s=>{members=s.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>(a.name||"").localeCompare(b.name||""));render()},e=>warn("Members: "+e.message));
+  db.collection("comments").onSnapshot(s=>{comments=s.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>a.at-b.at);render()},e=>warn("Comments: "+e.message));
+  db.collection("tasks").onSnapshot(s=>{tasks=s.docs.map(d=>({id:d.id,...d.data()}));render()},e=>warn("Tasks: "+e.message));
+}
+async function w(fn){if(!db){warn("Database not connected.");return}try{await fn();warn("")}catch(e){warn("Could not save: "+(e.message||e.code)+" (you may need Contributor access to this app)")}}
+function go(v){view=v;document.querySelectorAll("nav button").forEach(b=>b.classList.toggle("on",b.dataset.v===v));["my","admin","team"].forEach(x=>$("v-"+x).classList.toggle("hide",x!==v));render()}
+document.querySelector("nav").onclick=e=>{if(e.target.dataset.v)go(e.target.dataset.v)};
+function taskRow(t,opts={}){
+  const m=mem(t.memberId);
+  return `<div class="task st-${sk(t.status)}"><div class="t">${esc(t.title)}<small>${opts.who&&m?esc(m.name)+" · ":""}${nice(t.date)}${t.est?" · ⏱ "+t.est+"h":""}${t.note?" · "+esc(t.note):""}</small></div>
+  <select data-act="st" data-id="${t.id}">${ST.map(s=>`<option ${s===t.status?"selected":""}>${s}</option>`).join("")}</select>
+  ${opts.carry&&t.status!=="Completed"?`<button class="btn ghost" data-act="carry" data-id="${t.id}">Move to today</button>`:""}
+  <button class="btn ghost" data-act="note" data-id="${t.id}">Note</button>
+  <button class="btn ghost" data-act="del" data-id="${t.id}">✕</button></div>${cmts(t.id)}`}
+function renderMy(){
+  const mine=tasks.filter(t=>t.memberId===me);
+  const y=mine.filter(t=>t.date===yest()),td=mine.filter(t=>t.date===today());
+  const older=mine.filter(t=>t.date<yest()&&t.status!=="Completed").sort((a,b)=>a.date<b.date?1:-1);
+  $("v-my").innerHTML=`<div class="card"><h2>👤 Who are you?</h2><div class="row">
+  <select id="meSel"><option value="">Select your name…</option>${members.map(m=>`<option value="${m.id}" ${m.id===me?"selected":""}>${esc(m.name)}</option>`).join("")}</select>
+  <span style="color:var(--mut)">or</span><input id="newName" placeholder="Add your name"><input id="newEmail" type="email" placeholder="Your email id"><button class="btn" id="addMem">Join team</button></div>
+  ${me&&mem(me)&&!mem(me).email?`<div class="row" style="margin-top:10px"><b>📧 Add your email to receive admin comments:</b><input id="meEmail" type="email" placeholder="you@example.com"><button class="btn" id="saveEmail">Save email</button></div>`:""}</div>`+
+  (!me?`<div class="empty">Select or add your name to see and update your tasks.</div>`:`
+  <div class="card"><h2>🕘 Yesterday's work — update status (${nice(yest())})</h2>
+  ${y.length?y.map(t=>taskRow(t,{carry:1})).join(""):`<div class="empty">No tasks were logged for yesterday.</div>`}
+  ${older.length?`<h2 style="margin-top:16px">⚠️ Older unfinished tasks</h2>`+older.map(t=>taskRow(t,{carry:1})).join(""):""}</div>
+  <div class="card"><h2>📝 Today's to-do list (${nice(today())})</h2>
+  <div class="row"><input class="grow" id="nt" placeholder="e.g. GST return filing – client name"><input type="number" id="ne" min="0.25" step="0.25" placeholder="Est. time (hrs)" style="width:130px"><input type="date" id="nd" value="${today()}"><button class="btn" id="addT">Add task</button></div>
+  ${td.length?td.map(t=>taskRow(t)).join(""):`<div class="empty">Nothing planned for today yet. Add your first task above.</div>`}</div>`)}
+function donut(c,total){
+  if(!total)return `<div class="empty">No task data yet</div>`;
+  let off=0;const R=70,C=2*Math.PI*R;
+  const arcs=ST.map(s=>{const l=c[s]/total*C,e=`<circle r="${R}" cx="100" cy="100" fill="none" stroke="${SC[s]}" stroke-width="30" stroke-dasharray="${l} ${C-l}" stroke-dashoffset="${-off}" transform="rotate(-90 100 100)"/>`;off+=l;return e}).join("");
+  return `<svg viewBox="0 0 200 200" style="max-width:220px;display:block;margin:auto">${arcs}<text x="100" y="98" text-anchor="middle" font-size="30" font-weight="800" fill="currentColor">${Math.round(c.Completed/total*100)}%</text><text x="100" y="118" text-anchor="middle" font-size="11" fill="currentColor" opacity=".6">completed</text></svg>`}
+function renderAdmin(){
+  const days=range==="all"?null:+range,min=days?(()=>{const d=new Date();d.setDate(d.getDate()-days+1);return iso(d)})():"";
+  const f=tasks.filter(t=>(fmem==="all"||t.memberId===fmem)&&(!min||t.date>=min)).sort((a,b)=>a.date<b.date?1:-1);
+  const c={};ST.forEach(s=>c[s]=f.filter(t=>t.status===s).length);
+  const legend=`<div class="legend">${ST.map(s=>`<span><span class="dot" style="background:${SC[s]}"></span>${s} (${c[s]})</span>`).join("")}</div>`;
+  const per=members.filter(m=>fmem==="all"||m.id===fmem).map(m=>({m,t:f.filter(t=>t.memberId===m.id)})).filter(x=>x.t.length);
+  const perH=per.length?per.map(({m,t})=>`<div class="mrow"><div class="top"><b>${esc(m.name)}</b><span>${t.filter(x=>x.status==="Completed").length}/${t.length} done</span></div><div class="bar">${ST.map(s=>{const n=t.filter(x=>x.status===s).length;return n?`<div style="width:${n/t.length*100}%;background:${SC[s]}" title="${s}: ${n}"></div>`:""}).join("")}</div></div>`).join(""):`<div class="empty">No data yet</div>`;
+  const dl=[];for(let i=6;i>=0;i--){const d=new Date();d.setDate(d.getDate()-i);dl.push(iso(d))}
+  const base=tasks.filter(t=>fmem==="all"||t.memberId===fmem),mx=Math.max(1,...dl.map(d=>base.filter(t=>t.date===d).length));
+  const trend=base.length?`<div class="trend">${dl.map(d=>{const a=base.filter(t=>t.date===d).length,b=base.filter(t=>t.date===d&&t.status==="Completed").length;return `<div class="tcol"><div class="tbars"><i style="height:${a/mx*100}%;background:#8b5cf6" title="Planned ${a}"></i><i style="height:${b/mx*100}%;background:#10b981" title="Completed ${b}"></i></div>${nice(d).split(" ")[0]}<br>${d.slice(8)===""?"":nice(d).split(" ")[1]}</div>`}).join("")}</div><div class="legend"><span><span class="dot" style="background:#8b5cf6"></span>Planned</span><span><span class="dot" style="background:#10b981"></span>Completed</span></div>`:`<div class="empty">No data yet</div>`;
+  const y=tasks.filter(t=>t.date===yest()&&(fmem==="all"||t.memberId===fmem)),upd=new Set(y.map(t=>t.memberId));
+  const notUpd=members.filter(m=>(fmem==="all"||m.id===fmem)&&!tasks.some(t=>t.memberId===m.id&&t.date===yest()));
+  const ct=cTask&&tasks.find(x=>x.id===cTask),cm=ct&&mem(ct.memberId);
+  const composer=ct?`<div class="card" style="border:2px solid var(--p)"><h2>💬 Comment on: ${esc(ct.title)} <small style="color:var(--mut)">(${cm?esc(cm.name):"—"} · ${ct.status})</small></h2>
+  <div class="row" style="margin-bottom:8px"><input id="cauth" value="Admin" style="width:140px"><span style="color:var(--mut)">${cm&&cm.email?"Email will be prepared for "+esc(cm.email):"⚠️ This member has no email saved – comment will be visible in the app only"}</span></div>
+  <textarea id="ctext" rows="3" style="width:100%" placeholder="Write your comment for the team member…"></textarea>
+  <div class="row" style="margin-top:8px"><button class="btn" id="csave">Save &amp; email</button><button class="btn ghost" id="ccancel">Cancel</button></div></div>`:"";
+  $("v-admin").innerHTML=composer+`<div class="card row"><b>📊 Dashboard</b><select id="fm"><option value="all">All members</option>${members.map(m=>`<option value="${m.id}" ${fmem===m.id?"selected":""}>${esc(m.name)}</option>`).join("")}</select>
+  <select id="fr">${[["7","Last 7 days"],["30","Last 30 days"],["all","All time"]].map(([v,l])=>`<option value="${v}" ${range===v?"selected":""}>${l}</option>`).join("")}</select></div>
+  <div class="kpis"><div class="kpi" style="background:linear-gradient(135deg,#7c3aed,#a78bfa)"><b>${f.length}</b>Total tasks</div><div class="kpi" style="background:linear-gradient(135deg,#06b6d4,#3b82f6)"><b>${Math.round(f.reduce((a,t)=>a+(+t.est||0),0)*100)/100}</b>Est. hours</div>
+  ${ST.map(s=>`<div class="kpi" style="background:${SC[s]}"><b>${c[s]}</b>${s}</div>`).join("")}</div>
+  <div class="grid2"><div class="card"><h2>Status overview</h2>${donut(c,f.length)}${legend}</div>
+  <div class="card"><h2>Progress by team member</h2>${perH}</div></div>
+  <div class="grid2"><div class="card"><h2>Last 7 days</h2>${trend}</div>
+  <div class="card"><h2>Yesterday's updates (${nice(yest())})</h2>${members.length?`<p style="margin:0 0 8px">Logged: <b>${members.length-notUpd.length}</b> · No tasks logged: <b>${notUpd.length}</b></p>${notUpd.map(m=>`<span class="chip" style="background:${m.color};margin:2px">${esc(m.name)}</span>`).join("")||"<span style='color:var(--mut)'>Everyone has tasks logged 🎉</span>"}`:`<div class="empty">No team members yet</div>`}</div></div>
+  <div class="card"><h2>All tasks</h2>${f.length?`<div class="tblwrap"><table><tr><th>Date</th><th>Member</th><th>Task</th><th>Est. hrs</th><th>Status</th><th>Note</th><th>Comments</th><th></th></tr>${f.map(t=>{const m=mem(t.memberId);return `<tr><td>${nice(t.date)}</td><td>${m?esc(m.name):"—"}</td><td style="white-space:normal">${esc(t.title)}</td><td>${t.est||"—"}</td><td><span class="chip" style="background:${SC[t.status]}">${t.status}</span></td><td style="white-space:normal">${esc(t.note||"")}</td><td style="white-space:normal;min-width:180px">${comments.filter(x=>x.taskId===t.id).map(x=>"💬 "+esc(x.text)).join("<br>")}</td><td><button class="btn ghost" data-act="cm" data-id="${t.id}">Comment</button></td></tr>`}).join("")}</table></div>`:`<div class="empty">No tasks found for this filter.</div>`}</div>`}
+function renderTeam(){
+  $("v-team").innerHTML=`<div class="card"><h2>👥 Team members</h2><div class="row"><input class="grow" id="tn" placeholder="Member name"><input class="grow" id="te" type="email" placeholder="Email id"><button class="btn" id="tadd">Add member</button></div>
+  ${members.length?members.map(m=>{const n=tasks.filter(t=>t.memberId===m.id).length;if(editMem===m.id)return `<div class="task" style="border-left-color:${m.color}"><input class="grow" id="en" value="${esc(m.name)}"><input class="grow" id="ee" type="email" value="${esc(m.email||"")}" placeholder="Email id"><button class="btn" id="esave">Save</button><button class="btn ghost" id="ecancel">Cancel</button></div>`;
+  return `<div class="task" style="border-left-color:${m.color}"><div class="t">${esc(m.name)}<small>${m.email?"📧 "+esc(m.email):"⚠️ no email"} · ${n} task(s)</small></div><button class="btn ghost" data-act="rn" data-id="${m.id}">Edit</button><button class="btn ghost" data-act="dm" data-id="${m.id}">Remove</button></div>`}).join(""):`<div class="empty">No members yet. Add your first team member.</div>`}</div>`}
+function render(){
+  const a=document.activeElement;if(a&&/INPUT|TEXTAREA/.test(a.tagName)&&a.value)return;
+  if(view==="my")renderMy();else if(view==="admin")renderAdmin();else renderTeam()}
+async function addMember(name,email){name=name.trim();email=(email||"").trim();if(!name)return null;if(!okMail(email)){warn("Please enter a valid email id.");return null}let id=null;await w(async()=>{const r=await db.collection("members").add({name,email,color:PAL[members.length%PAL.length],createdAt:Date.now()});id=r.id});return id}
+document.addEventListener("click",async e=>{
+  const t=e.target,id=t.dataset&&t.dataset.id,act=t.dataset&&t.dataset.act;
+  if(t.id==="addMem"){const nid=await addMember($("newName").value,$("newEmail").value);if(nid){me=nid;try{localStorage.setItem("atm_me",me)}catch(x){}}}
+  if(t.id==="tadd"){await addMember($("tn").value,$("te").value)}
+  if(t.id==="esave"){const v=$("ee").value.trim(),n=$("en").value.trim();if(!n||!okMail(v)){warn("Enter a name and a valid email id.");return}await w(()=>db.doc("members/"+editMem).update({name:n,email:v}));editMem=null;render()}
+  if(t.id==="ecancel"){editMem=null;render()}
+  if(t.id==="saveEmail"){const v=$("meEmail").value.trim();if(!okMail(v)){warn("Please enter a valid email id.");return}await w(()=>db.doc("members/"+me).update({email:v}))}
+  if(act==="cm"){cTask=id;notice("");go("admin");setTimeout(()=>{const x=$("ctext");x&&x.focus();scrollTo(0,0)},50)}
+  if(t.id==="ccancel"){cTask=null;render()}
+  if(t.id==="csave"){const tx=$("ctext").value.trim(),au=($("cauth").value||"Admin").trim(),tk=tasks.find(x=>x.id===cTask),m=tk&&mem(tk.memberId);if(!tx||!tk)return;await w(()=>db.collection("comments").add({taskId:tk.id,memberId:tk.memberId,author:au,text:tx,at:Date.now()}));if(m&&okMail(m.email))notice(`✅ Comment saved. <a href="${mailLink(m,tk,tx,au)}" target="_blank" rel="noopener">✉️ Click here to send the email to ${esc(m.name)} (${esc(m.email)})</a>`);else notice("✅ Comment saved (member has no email, so no mail prepared).");cTask=null;render()}
+  if(t.id==="addT"){const title=$("nt").value.trim();const est=parseFloat($("ne").value);if(!title||!me)return;if(!(est>0)){warn("Please enter the estimated time in hours.");return}await w(()=>db.collection("tasks").add({memberId:me,title,est,date:$("nd").value||today(),status:"Pending",note:"",createdAt:Date.now()}));$("nt").value="";$("ne").value="";render()}
+  if(act==="del")await w(async()=>{for(const c of comments.filter(c=>c.taskId===id))await db.doc("comments/"+c.id).delete();await db.doc("tasks/"+id).delete()});
+  if(act==="rn"){editMem=id;render()}
+  if(act==="carry")await w(()=>db.doc("tasks/"+id).update({date:today(),status:"Pending"}));
+  if(act==="note"){const tk=tasks.find(x=>x.id===id),n=prompt("Add a note / remark",tk.note||"");if(n!==null)await w(()=>db.doc("tasks/"+id).update({note:n}))}
+  if(act==="dm"&&confirm("Remove this member? Their tasks will also be deleted.")){await w(async()=>{for(const x of tasks.filter(x=>x.memberId===id))await db.doc("tasks/"+x.id).delete();await db.doc("members/"+id).delete()});if(me===id)me=""}
+});
+document.addEventListener("change",async e=>{
+  const t=e.target;
+  if(t.id==="meSel"){me=t.value;try{localStorage.setItem("atm_me",me)}catch(x){}render()}
+  if(t.id==="fm"){fmem=t.value;render()}if(t.id==="fr"){range=t.value;render()}
+  if(t.dataset.act==="st")await w(()=>db.doc("tasks/"+t.dataset.id).update({status:t.value}));
+});
+document.addEventListener("keydown",e=>{if(e.key==="Enter"){if(e.target.id==="nt")$("addT").click();if(e.target.id==="newName")$("addMem").click();if(e.target.id==="tn")$("tadd").click()}});
+init();
+</script></body></html>
